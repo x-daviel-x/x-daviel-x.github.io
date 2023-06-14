@@ -7,10 +7,10 @@ https://www.tooplate.com/view/2115-marvel
 */
 
 
-@import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,700");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 body {
-  font-family: "Maven Pro", sans-serif;
-  padding-top: 30px;
+  font-family: 'Poppins', sans-serif;
+  padding-top: 25px;
 }
 
 .full-screen {
@@ -304,7 +304,7 @@ b, strong {
   border-bottom: 1px solid #1f1f1f;
 }
 .dark-mode .small-text {
-  background: #0d0c15;
+  background: #de0b39;
   color: #000000;
 }
 .dark-mode .feature-card .uil,
