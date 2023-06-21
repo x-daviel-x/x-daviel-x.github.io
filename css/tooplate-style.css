@@ -335,6 +335,10 @@ b, strong {
   left: 38px;
 }
 
+.custom-btn-fixed-width {
+  width: 150px;
+}
+
 .timeline-yr {
   background: #474559;
   border-radius: 100%;
@@ -344,12 +348,40 @@ b, strong {
   line-height: 75px;
   text-align: center;
 }
+
+.timeline-yr::before {
+  font-family: "Material Icons";
+  font-size: 32px;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.timeline-yr-1::before {
+  content: "\e87c"; /* Código del icono de la cara */
+}
+
+.timeline-yr-2::before {
+  content: "\e02f"; /* Código del icono de la estrella */
+}
+
+.timeline-yr-3::before {
+  content: "\e8f4"; /* Código del icono de la bandera */
+}
+
+.timeline-yr-4::before {
+  content: "\e8e2"; /* Código del icono de la bandera */
+}
+
+.timeline-yr-5::before {
+  content: "\e0af"; /* Código del icono de la bandera */
+}
+
+.timeline-yr-6::before {
+  content: "\ea66"; /* Código del icono de la bandera */
+}
+
 .timeline-yr span {
-  color: #ffffff;
-  font-size: 35px;
-  font-weight: bold;
-  display: block;
-  line-height: 75px;
+  display: none;
 }
 
 .timeline-info {
