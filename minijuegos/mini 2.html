@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+        img:hover {
+            border: 2px solid #333;
+        }
+        #score-bar {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="question-title">Pregunta 1</h1>
+        <div id="question">
+            <img src="imagen1.1.png" alt="Opción 1" id="option1" onclick="checkAnswer(1)">
+            <img src="imagen1.2.png" alt="Opción 2" id="option2" onclick="checkAnswer(2)">
+            <img src="imagen1.3.png" alt="Opción 3" id="option3" onclick="checkAnswer(3)">
+            <img src="imagen1.4.png" alt="Opción 4" id="option4" onclick="checkAnswer(4)">
+        </div>
+        <p id="feedback"></p>
+        <p id="score-bar">Puntaje: <span id="score">0</span></p>
+        <button id="next-button" onclick="nextQuestion()" disabled>Siguiente Pregunta</button>
+    </div>
+
+    <script>
+        let currentQuestion = 1;
+        let correctAnswer = 1;
+        let score = 0;
+
+        function checkAnswer(selectedOption) {
+            if (selectedOption === correctAnswer) {
+                document.getElementById('feedback').textContent = 'Respuesta Correcta';
+                document.getElementById('feedback').innerHTML += ' <img src="correct.png" alt="Correcto" class="icon">';
+                score++;
+            } else {
+                document.getElementById('feedback').textContent = 'Respuesta Incorrecta';
+                document.getElementById('feedback').innerHTML += ' <img src="incorrect.png" alt="Incorrecto" class="icon">';
+            }
+            disableOptions();
+            document.getElementById('next-button').disabled = true;
+            setTimeout(nextQuestion, 2500);
+        }
+
+        function disableOptions() {
+            for (let i = 1; i <= 4; i++) {
+                document.getElementById(`option${i}`).style.pointerEvents = 'none';
+            }
+        }
+
+        function nextQuestion() {
+            currentQuestion++;
+            if (currentQuestion <= 3) {
+                correctAnswer++;
+                document.getElementById('question-title').textContent = `Pregunta ${currentQuestion}`;
+                document.getElementById('feedback').textContent = '';
+                for (let i = 1; i <= 4; i++) {
+                    document.getElementById(`option${i}`).style.pointerEvents = 'auto';
+                }
+                document.getElementById('next-button').disabled = true;
+            } else {
+                showFinalScore();
+            }
+        }
+
+        function showFinalScore() {
+            document.getElementById('question-title').textContent = 'Puntaje Final';
+            document.getElementById('question').innerHTML = '';
+            document.getElementById('feedback').innerHTML = '';
+            document.getElementById('score-bar').innerHTML = 'Puntaje Final: <span id="final-score"></span>';
+            document.getElementById('final-score').textContent = score;
+            document.getElementById('next-button').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

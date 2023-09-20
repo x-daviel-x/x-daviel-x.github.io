@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        .question-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            position: relative;
+        }
+        img:hover {
+            border: 2px solid #333;
+        }
+        .feedback-icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            font-size: 36px;
+            color: green;
+            visibility: hidden;
+        }
+        .correct-feedback {
+            color: green;
+        }
+        .incorrect-feedback {
+            color: red;
+        }
+        #score-bar {
+            font-size: 18px;
+            text-align: right;
+            padding: 10px;
+            background-color: #f0f0f0;
+        }
+        #score-icon {
+            font-size: 24px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="score-bar">
+        <span id="score-icon">★</span> Puntaje: <span id="score">0</span>
+    </div>
+    <div class="container">
+        <h1 id="question-title">Pregunta 1</h1>
+        <div class="question-container">
+            <img src="imagen1.1.png" alt="Opción 1" id="option1">
+            <img src="imagen1.2.png" alt="Opción 2" id="option2">
+            <img src="imagen1.3.png" alt="Opción 3" id="option3">
+            <img src="imagen1.4.png" alt="Opción 4" id="option4">
+        </div>
+    </div>
+
+    <script>
+        let currentQuestion = 1;
+        let correctAnswer = 1;
+        let score = 0;
+
+        document.getElementById('option1').addEventListener('click', () => checkAnswer(1));
+        document.getElementById('option2').addEventListener('click', () => checkAnswer(2));
+        document.getElementById('option3').addEventListener('click', () => checkAnswer(3));
+        document.getElementById('option4').addEventListener('click', () => checkAnswer(4));
+
+        function checkAnswer(selectedOption) {
+            if (selectedOption === correctAnswer) {
+                document.getElementById('feedback').textContent = 'Correcto';
+                document.getElementById(`option${selectedOption}`).insertAdjacentHTML('afterbegin', '<div class="feedback-icon correct-feedback">&#10004;</div>');
+                score++;
+            } else {
+                document.getElementById('feedback').textContent = 'Incorrecto';
+                document.getElementById(`option${selectedOption}`).insertAdjacentHTML('afterbegin', '<div class="feedback-icon incorrect-feedback">&#10006;</div>');
+            }
+            updateScore();
+            setTimeout(nextQuestion, 1000);
+        }
+
+        function updateScore() {
+            document.getElementById('score').textContent = score;
+        }
+
+        function nextQuestion() {
+            currentQuestion++;
+            if (currentQuestion <= 3) {
+                correctAnswer++;
+                document.getElementById('question-title').textContent = `Pregunta ${currentQuestion}`;
+                document.getElementById('feedback').textContent = '';
+                for (let i = 1; i <= 4; i++) {
+                    document.getElementById(`option${i}`).style.pointerEvents = 'auto';
+                    document.getElementById(`option${i}`).innerHTML = '';
+                }
+            } else {
+                showFinalScore();
+            }
+        }
+
+        function showFinalScore() {
+            document.getElementById('question-title').textContent = 'Puntaje Final';
+            document.getElementById('feedback').innerHTML = '';
+        }
+    </script>
+</body>
+</html>
