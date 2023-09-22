@@ -1,7 +1,7 @@
 const elements = [
-    {title: "Berserk", subtitle: "(Franquicia)", link: "../inicio/fichas/franquicias/berserk/fr.html"},
-    {title: "Afro Samurai", subtitle: "(Anime)", link: "../inicio/fichas/animes/afro samurai/ft.html"},
-    {title: "Akira", subtitle: "(Pelicula)", link: "../inicio/fichas/peliculas/akira/ft.html"},
+    { title: "Berserk", subtitle: "(Franquicia)", link: "../inicio/fichas/franquicias/berserk/fr.html" },
+    { title: "Afro Samurai", subtitle: "(Anime)", link: "../inicio/fichas/animes/afro samurai/ft.html" },
+    { title: "Akira", subtitle: "(Pelicula)", link: "../inicio/fichas/peliculas/akira/ft.html" },
 ];
 
 const searchInput = document.getElementById("searchInput");
@@ -12,19 +12,19 @@ const noResultsText = document.getElementById("noResultsText");
 searchInput.value = "";
 searchInput.classList.add("tilted-text");
 
-searchInput.addEventListener("input", function() {
+searchInput.addEventListener("input", function () {
     const inputValue = searchInput.value.toLowerCase();
-    const filteredElements = elements.filter(element =>
+    const filteredElements = elements.filter((element) =>
         element.title.toLowerCase().includes(inputValue) || element.subtitle.toLowerCase().includes(inputValue)
     );
 
+    resultsList.innerHTML = ""; // Limpia la lista de resultados
+
     if (inputValue === "") {
-        resultsList.innerHTML = "";
         noResultsText.style.display = "block";
     } else {
-        resultsList.innerHTML = "";
         noResultsText.style.display = "none";
-        filteredElements.forEach(element => {
+        filteredElements.forEach((element) => {
             const listItem = document.createElement("li");
             listItem.classList.add("result");
 

@@ -28,6 +28,13 @@ body {
     vertical-align: middle;
 }
 
+.icon-2 {
+    font-size: 60px;
+    color: black;
+    display: inline-block;
+    vertical-align: middle;
+}
+
 .h1 {
     font-size: 24px;
     color: white;
