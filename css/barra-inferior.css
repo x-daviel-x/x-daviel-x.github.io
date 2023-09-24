@@ -8,10 +8,19 @@
     justify-content: space-around;
     align-items: center;
     padding: 10px 0;
-    box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
 }
 
-.barra-inferior-icon {
+.barra-inferior-icon-1 {
+    font-size: 30px;
+    display: inline-block;
+}
+
+.barra-inferior-icon-2 {
+    font-size: 30px;
+    display: inline-block;
+}
+.barra-inferior-icon-3 {
     font-size: 30px;
     display: inline-block;
 }

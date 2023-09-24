@@ -67,3 +67,15 @@ body {
     display: block;
     text-decoration: none;
 }
+
+.boton-2 {
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 100px;
+    display: block;
+    text-decoration: none;
+}
