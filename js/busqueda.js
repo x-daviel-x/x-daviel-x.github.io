@@ -1,7 +1,8 @@
 const elements = [
-    { title: "Berserk", subtitle: "(Franquicia)", link: "../inicio/fichas/franquicias/berserk/fr.html" },
+    { title: "Berserks", subtitle: "Franquicia", link: "../inicio/fichas/franquicias/berserk/fr.html" },
     { title: "Afro Samurai", subtitle: "(Anime)", link: "../inicio/fichas/animes/afro samurai/ft.html" },
     { title: "Akira", subtitle: "(Pelicula)", link: "../inicio/fichas/peliculas/akira/ft.html" },
+    { title: "La chica que saltaba a través del tiempo", subtitle: "Franquicia",                 link: "../inicio/fichas/franquicias/berserk/fr.html" },
 ];
 
 const searchInput = document.getElementById("searchInput");

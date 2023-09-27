@@ -18,6 +18,10 @@ body {
     border-radius: 5px;
 }
 
+.ultima-seccion {
+    padding: 15px;
+}
+
 .icon {
     font-size: 60px;
     color: black;

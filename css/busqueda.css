@@ -13,9 +13,14 @@ body {
 }
 
 .seccion {
-    padding: 15px;
+    padding: 15px 5px 5px 5px;
     text-align: center;
     border-radius: 5px;
+}
+
+
+.ultima-seccion {
+    padding: 30px;
 }
 
 .icon {
@@ -61,26 +66,6 @@ body {
 
 
 
-
-
-.search-container {
-    position: relative; /* Establece el contexto de posición relativa */
-    text-align: center;
-}
-
-input[type="text"] {
-    width: 100%;
-    padding: 10px 0px 10px; /* Ajusta el padding para crear espacio debajo del texto */
-    border: 1px solid #ccc;
-    border-radius: 25px;
-    cursor: pointer;
-    vertical-align: middle;
-    text-align: left;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'Poppins', sans-serif;
-}
-
 /* Agrega un nuevo estilo para el texto en la parte inferior */
 .search-text {
     position: absolute;
@@ -95,6 +80,25 @@ input[type="text"] {
 
 
 
+.search-container {
+    position: relative; /* Establece el contexto de posición relativa */
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 90%;
+    padding: 10px; /* Ajusta el padding para crear espacio debajo del texto */
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+
 
 .results {
     list-style-type: none;
@@ -103,17 +107,20 @@ input[type="text"] {
 }
 
 .result {
+    padding: 10px;
+
+    width: 90%;
+    border: 1px solid #ccc;
     background-color: white;
-    padding: 10px 20px;
+
+    color: white;
     border: none;
     border-radius: 90px;
-    margin: 10px 0px;
+    margin: 10px auto;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    font-size: 18px;
 }
 
 .title {
