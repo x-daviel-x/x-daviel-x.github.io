@@ -19,12 +19,12 @@
             },
             {
                 question: "Selecciona la imagen de Akame ga Kill!!.",
-                options: ["Assassination Classroom", "Akame ga Kill", "Akatsuki no Yona", "Anohana"],
+                options: ["Assassination Classroom", "Akame ga Kill", "Akatsuki no yona", "Anohana"],
                 correctAnswer: 2
             },
             {
                 question: "Selecciona la imagen de Akatsuki no Yona.",
-                options: ["Ataque a los titanes", "Assassination Classroom", "Akatsuki no Yona", "Anohana"],
+                options: ["Ataque a los titanes", "Assassination Classroom", "Akatsuki no yona", "Anohana"],
                 correctAnswer: 3
             },
         ];
