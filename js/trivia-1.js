@@ -14,7 +14,7 @@
         let questions = [
             {
                 question: "Selecciona la imagen de Afro Samurai.",
-                options: ["Afro Samurai", "Akame ga Kill", "Akatsuki no Yona", "Anohana"],
+                options: ["Afro Samurai", "Akame ga Kill", "Akatsuki no yona", "Anohana"],
                 correctAnswer: 1
             },
             {
