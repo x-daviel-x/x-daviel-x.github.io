@@ -14,12 +14,12 @@
         let questions = [
             {
                 question: "Selecciona la imagen de Afro Samurai.",
-                options: ["Afro Samurai", "Akame ga kill", "Akatsuki no Yona", "Anohana"],
+                options: ["Afro Samurai", "Akame ga Kill", "Akatsuki no Yona", "Anohana"],
                 correctAnswer: 1
             },
             {
                 question: "Selecciona la imagen de Akame ga Kill!!.",
-                options: ["Assassination Classroom", "Akame ga kill", "Akatsuki no Yona", "Anohana"],
+                options: ["Assassination Classroom", "Akame ga Kill", "Akatsuki no Yona", "Anohana"],
                 correctAnswer: 2
             },
             {
