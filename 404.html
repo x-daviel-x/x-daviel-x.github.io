@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="images/fav-icon/favicon.ico">
+  <link rel="stylesheet" href="css/barra-inferior.css">
     <title>Página en construcción</title>
   <style>
     body {
@@ -12,29 +13,32 @@
       text-align: center;
     }
     
-    .container {
+    .seccion {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 97vh;
+      height: 85vh;
+    }
+
+    .icon {
+      font-size: 60px;
+      color: black;
+      display: inline-block;
+      vertical-align: middle;
     }
     
-    .container img {
-      max-width: 100%;
-    }
-    
-    .text {
-      margin-top: 20px;
+    .h1 {
+      margin: 10px;
       font-size: 18px;
     }
     
-    .button {
-      margin-top: 20px;
+    .boton {
+      margin: 10px;
       background-color: red;
       color: white;
       font-size: 18px;
-      padding: 10px 20px;
+      padding: 10px 35px;
       border-radius: 100px;
       border: none;
       cursor: pointer;
@@ -42,10 +46,19 @@
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="images/404/imagen.png" alt="Imagen" />
-    <div class="text">Lo sentimos, esta página se encuentra en construcción.</div>
-    <button class="button" onclick="history.back()"> ↩ Volver</button>
+  <div class="seccion">
+    <div class="icon">🏗️</div>
+    <div class="h1">Lo sentimos, esta página se encuentra en construcción.</div>
+    <button class="boton" onclick="history.back()">Volver</boton>
   </div>
+
+    <div class="ultima-seccion">
+    </div>
+
+    <div class="barra-inferior">
+        <a href="minijuegos/trivia.html"><div class="barra-inferior-icon-1">&#x1F3AE;</div>
+        <a href="inicio/inicio.html"><div class="barra-inferior-icon-2">&#127968;</div>
+        <a href="busqueda/busqueda.html"><div class="barra-inferior-icon-3">&#128269;</div>
+    </div>
 </body>
 </html>
