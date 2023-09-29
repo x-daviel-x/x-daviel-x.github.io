@@ -14,18 +14,23 @@
         let questions = [
             {
                 question: "Selecciona la imagen de Afro Samurai.",
-                options: ["Afro Samurai", "Akame ga Kill", "Akatsuki no yona", "Anohana"],
+                options: ["Afro Samurai", "Akame ga Kill", "Akatsuki no Yona", "Anohana"],
                 correctAnswer: 1
             },
             {
                 question: "Selecciona la imagen de Akame ga Kill!!.",
-                options: ["Assassination Classroom", "Akame ga Kill", "Akatsuki no yona", "Anohana"],
-                correctAnswer: 2
+                options: ["Akame ga Kill", "Akatsuki no yona", "Anohana", "Assassination Classroom"],
+                correctAnswer: 1
             },
             {
                 question: "Selecciona la imagen de Akatsuki no Yona.",
-                options: ["Ataque a los titanes", "Assassination Classroom", "Akatsuki no yona", "Anohana"],
-                correctAnswer: 3
+                options: ["Akatsuki no yona", "Anohana", "Assassination Classroom", "Ataque a los titanes"],
+                correctAnswer: 1
+            },
+            {
+                question: "Selecciona la imagen de Anohana.",
+                options: ["Anohana", "Assassination Classroom", "Ataque a los titanes", "Baccanno!"],
+                correctAnswer: 1
             },
         ];
 
