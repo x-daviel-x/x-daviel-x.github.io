@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/trivia-2.css">
+    <link rel="stylesheet" href="../../css/barra-inferior.css">
+    <title>Batalla de Frases</title>
+</head>
+
+<body>
+    <audio id="correctSound" src="https://www.pacdv.com/sounds/interface_sound_effects/sound102.wav"></audio>
+    <audio id="incorrectSound" src="https://www.pacdv.com/sounds/interface_sound_effects/sound103.wav"></audio>
+    
+    <div class="primera-seccion">
+        <div class="icon">🪖</div>
+        <div class="h1">Batalla de Frases</div>
+        <div class="h2">
+            <span id="message">⏱️</span>
+            <span id="score">0 ⭐</span>
+        </div>
+    </div>
+
+    <div class="seccion">
+        <div class="h3"><div id="questionText"></div></div>
+        <div class="boton-caja">
+            <button class="boton" onclick="checkAnswer(1)"></button>
+            <button class="boton" onclick="checkAnswer(2)"></button>
+            <button class="boton" onclick="checkAnswer(3)"></button>
+            <button class="boton" onclick="checkAnswer(4)"></button>
+        </div>
+        <div id="message"></div>
+    </div>
+
+    <div class="seccion">
+        <div id="finalMessage"></div>
+        <div id="buttons">
+            <button id="restartButton" class="custom-button" style="display: none;" onclick="location.reload();">Reiniciar</button>
+
+        </div>
+    </div>
+
+    <div class="ultima-seccion">
+    </div>
+
+    <div class="barra-inferior">
+        <a href="../../minijuegos/trivia.html"><div class="barra-inferior-icon-1">&#x1F3AE;</div>
+        <a href="../../inicio/inicio.html"><div class="barra-inferior-icon-2">&#127968;</div>
+        <a href="../../busqueda/busqueda.html"><div class="barra-inferior-icon-3">&#128269;</div>
+    </div>
+
+    <script src="../../js/batalla de frases.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+/* SECCIONES */
+.seccion-encabezado {
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.seccion-busqueda {
+    margin: 10px;
+}
+
+.seccion-produccion-grande {
+    position: relative;
+    background-color: #333333;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin: 10px;
+    color: white;
+}
+
+.seccion-producciones {
+    border-radius: 20px;
+    background-color: #c9d1c9;
+    padding: 10px 10px;
+    margin: 10px;
+}
+
+.ultima-seccion {
+    padding: 35px;
+}
+
+/* TEXTO */
+.h1 {
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.h2 {
+    font-size: 18px;
+    color: gray;
+    font-weight: normal;
+}
+
+.h3 {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    color: white;
+    z-index: 1;
+    font-size: 24px;
+    font-weight: bold;
+    vertical-align: middle;
+    color: white;
+    text-shadow: black 0em 0em 0.2em
+}
+
+.h8 {
+    position: absolute;
+    top: 45px; /* Ajusta la posición vertical según tu preferencia */
+    left: 20px; /* Ajusta la posición horizontal según tu preferencia */
+    color: white; /* Asegura que el texto sea legible */
+    z-index: 1; /* Coloca el texto por encima de la imagen */
+    font-size: 14px;
+    vertical-align: middle;
+    color: white;
+    text-shadow: black 0em 0em 0.5em
+}
+
+.h4 {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+
+.h5 {
+    font-size: 12px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* ELEMENTOS DE LAS SECCIONES */
+.icon {
+    font-size: 60px;
+    color: black;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.portada {
+    border-radius: 20px;
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+}
+
+/* BOTONES */
+.boton-caja {
+    text-align: center;
+}
+
+.boton {
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 100px;
+    display: block;
+    text-decoration: none;
+}
+
+/* LISTADO DE PRODUCCIONES */
+.producciones {
+    display: flex;
+    overflow-x: auto;
+    padding: 0px;
+    gap: 10px;
+}
+
+.produccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0px;
+}
+
+.produccion img {
+    width: 60px;
+    height: 60px;
+    border-radius: 25%;
+    object-fit: cover;
+    margin-bottom: 3px;
+}
