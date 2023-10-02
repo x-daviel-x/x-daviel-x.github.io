@@ -15,17 +15,14 @@ let questions = [
     {
         question: "Selecciona la imagen de Afro Samurai.",
         options: [
-            { text: "Afro Samurai", imagePath: "../../archivo/animes/afro samurai/icon.png" },
-            { text: "Demon Slayer", imagePath: "../../archivo/colecciones/demon slayer/icon.png" },
-            { text: "Demon Slayer", imagePath: "../../archivo/colecciones/demon slayer/animes/demon slayer/icon.png" },
-            { text: "Afro Samurai", imagePath: "../../archivo/animes/afro samurai/icon.png" },
+            { text: "Afro Samurai", imagePath: "imagenes/afro_samurai.png" },
+            { text: "Akame ga Kill", imagePath: "imagenes/akame_ga_kill.png" },
+            { text: "Akatsuki no yona", imagePath: "imagenes/akatsuki_no_yona.png" },
+            { text: "Anohana", imagePath: "imagenes/anohana.png" }
         ],
         correctAnswer: 0
     },
-
-
-
-
+    // ... Otras preguntas ...
 ];
 
 function startQuiz() {

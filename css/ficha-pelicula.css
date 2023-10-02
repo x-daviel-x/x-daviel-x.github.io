@@ -9,7 +9,7 @@ body {
     background-color: #333333;
     border: none;
     padding: 10px 10px;
-    border-radius: 25px;
+    border-radius: 20px;
     text-align: center;
     margin-bottom: 10px;
     margin: 10px;
@@ -25,7 +25,7 @@ body {
 .poster {
     max-width: 100%;
     height: auto;
-    border-radius: 25px;
+    border-radius: 20px;
 }
 
 .h1 {
@@ -67,7 +67,7 @@ body {
     font-size: 18px;
     border: none;
     padding: 10px 20px;
-    border-radius: 100px;
+    border-radius: 20px;
     margin: 5px;
     display: block;
     text-decoration: none;

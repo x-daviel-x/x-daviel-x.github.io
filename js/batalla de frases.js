@@ -13,10 +13,12 @@
         let countdownTimer;
         let questions = [
             {
-                question: "❝¡No te rindas antes de intentarlo! Eso no es la forma en que soy! ¡Yo no retrocedo ni un solo paso!❞ - ¿Quién dijo esta frase y en qué serie?",
+                question: `❝¡No te rindas antes de intentarlo! Eso no es la forma en que soy!
+                ¡Yo no retrocedo ni un solo paso!❞ - ¿Quién dijo esta frase y en qué serie?`,
                 options: ["Goku / Dragon Ball", "Naruto / Naruto", "Monkey D. Luffy / One Piece", "Ichigo Kurosaki / Bleach"],
                 correctAnswer: 3
             },
+
             {
                 question: "❝Si no puedes encontrar un camino, créalo tú mismo.❞ - ¿Quién dijo esta frase y en qué serie?",
                 options: ["Light Yagami - Death Note", "Senku Ishigami - Dr. Stone", "Gon Freecss - Hunter x Hunter", "Saitama - One Punch Man"],
