@@ -68,7 +68,7 @@ body {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    border-radius: 100px;
+    border-radius: 20px;
     margin: 10px 0px 10px;
     display: block;
     width: 100%; /* Camostrar las opciones en una columna */
@@ -79,13 +79,11 @@ body {
     background-color: red;
     color: white;
     font-size: 18px;
-    border: none;
     padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 100px;
-    margin: 10px 0px 10px;
-    display: block;
-    width: 100%;
+    margin: 10px;
+    border: none;
+    border-radius: 20px;
+    width: 95%;
 }
 
 #options {
@@ -97,4 +95,10 @@ body {
 .option {
     width: 100%; /* Cambiamos el ancho al 100% para mostrar las opciones en una columna */
     margin: 5
+}
+
+.question-image {
+    max-width: 40%;
+    height: auto;
+    border-radius: 10px;
 }
