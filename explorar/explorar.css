@@ -1,8 +1,8 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f2f2f2;
     margin: 0;
     padding: 0;
+    background-color: #f2f2f2;
 }
 
 /* SECCIONES */
@@ -11,25 +11,21 @@ body {
     text-align: center;
     background-color: white;
     border-radius: 5px;
+    animation: barrido-desde-arriba 0.3s ease-in-out forwards;
 }
 
 .seccion-busqueda {
     margin: 10px;
+    animation: barrido-desde-arriba 0.4s ease-in-out forwards;
 }
 
 .seccion-portada {
     background-color: #333333;
-    border: none;
     padding: 10px;
     border-radius: 20px;
     text-align: center;
     margin: 10px;
-}
-
-.seccion-boton {
-    margin: 10px;
-    text-align: center;
-    border-radius: 20px;
+    animation: barrido-desde-arriba 0.5s ease-in-out forwards;
 }
 
 .seccion-producciones {
@@ -37,10 +33,18 @@ body {
     background-color: #c9d1c9;
     padding: 10px 10px;
     margin: 10px;
+    animation: barrido-desde-arriba 0.6s ease-in-out forwards;
+}
+
+.seccion-boton {
+    margin: 10px;
+    text-align: center;
+    animation: barrido-desde-arriba 0.7s ease-in-out forwards;
 }
 
 .seccion-ultima {
     padding: 35px;
+    animation: barrido-desde-arriba 0.8s ease-in-out forwards;
 }
 
 /* TEXTO */
@@ -50,39 +54,32 @@ a {
 }
 
 .h1 {
-    text-decoration: none;
     font-size: 24px;
-    color: black;
     font-weight: bold;
     display: inline-block;
     vertical-align: middle;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 .h2 {
-    text-decoration: none;
     font-size: 18px;
     color: gray;
-    font-weight: normal;
 }
 
 .h3 {
-    text-decoration: none;
-    font-size: 20px;
-    color: black;
-    margin-bottom: 3px;
+    font-size: 18px;
     font-weight: bold;
+    margin-bottom: 3px;
 }
 
 .h4 {
-    text-decoration: none;
     font-size: 12px;
-    color: black;
     font-weight: bold;
 }
 
 /* IMAGENES DE LAS SECCIONES */
 .icon {
+    font-family: 'Noto Color Emoji', sans-serif;
     font-size: 60px;
     color: black;
     display: inline-block;
@@ -131,4 +128,14 @@ a {
 }
 
 
-
+/* ANIMACIONES */
+@keyframes barrido-desde-arriba {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -10,12 +10,14 @@ body {
     text-align: center;
     background-color: #ffffff;
     border-radius: 5px;
+    animation: barrido-desde-arriba 0.3s ease-in-out forwards;
 }
 
 .seccion {
     padding: 10px;
     text-align: center;
     border-radius: 5px;
+    animation: barrido-desde-arriba 0.6s ease-in-out forwards;
 }
 
 .ultima-seccion {
@@ -90,4 +92,16 @@ body {
     border-radius: 100px;
     display: block;
     text-decoration: none;
+}
+
+/* ANIMACIONES */
+@keyframes barrido-desde-arriba {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

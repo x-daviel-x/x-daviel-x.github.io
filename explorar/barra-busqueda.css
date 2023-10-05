@@ -52,6 +52,7 @@ input[type="text"] {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    animation: barrido-desde-arriba 0.6s ease-in-out forwards;
 }
 
 .result img {
@@ -83,4 +84,17 @@ input[type="text"] {
     font-size: 18px;
     color: gray;
     margin-top: 20px;
+}
+
+
+/* ANIMACIONES */
+@keyframes barrido-desde-arriba {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

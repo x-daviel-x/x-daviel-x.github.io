@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#barra-inferior {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.icono a {
+    font-size: 30px;
+    display: inline-block;
+    position: relative; /* Agregar posición relativa para alinear la línea al icono */
+    text-decoration: none; /* Eliminar la subrayado del enlace */
+}
+
+/* Línea roja debajo del icono con animación */
+.icono a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 20px;
+    height: 5px;
+    width: 100%;
+    background-color: red;
+    transform: scaleX(0); /* Inicialmente, la línea está oculta */
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out; /* Animación de la línea */
+}
+
+/* Al pasar el mouse sobre el icono, expandir la línea roja */
+.icono a:hover::before {
+    transform: scaleX(1); /* Expandir la línea al 100% del ancho */
+}

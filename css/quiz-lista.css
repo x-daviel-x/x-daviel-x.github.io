@@ -10,12 +10,14 @@ body {
     text-align: center;
     background-color: #ffffff;
     border-radius: 5px;
+    animation: barrido-desde-arriba 0.3s ease-in-out forwards;
 }
 
 .seccion {
     padding: 15px;
     text-align: center;
     border-radius: 5px;
+    animation: barrido-desde-arriba 0.4s ease-in-out forwards;
 }
 
 .ultima-seccion {
@@ -84,6 +86,7 @@ body {
     border: none;
     border-radius: 20px;
     width: 95%;
+    animation: barrido-desde-arriba 0.3s ease-in-out forwards;
 }
 
 #options {
@@ -101,4 +104,17 @@ body {
     max-width: 40%;
     height: auto;
     border-radius: 10px;
+    animation: barrido-desde-arriba 0.4s ease-in-out forwards;
+}
+
+/* ANIMACIONES */
+@keyframes barrido-desde-arriba {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
