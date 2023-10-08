@@ -5,6 +5,11 @@ body {
     background-color: #f2f2f2;
 }
 
+:focus {
+    outline: none;
+}
+
+
 .primera-seccion {
     padding: 10px;
     text-align: center;
@@ -81,11 +86,13 @@ body {
     background-color: red;
     color: white;
     font-size: 18px;
-    padding: 10px 20px;
-    margin: 10px;
     border: none;
+    padding: 10px 20px;
+    cursor: pointer;
     border-radius: 20px;
-    width: 95%;
+    margin: 10px 0px 10px;
+    display: block;
+    width: 100%;
     animation: barrido-desde-arriba 0.3s ease-in-out forwards;
 }
 
@@ -96,7 +103,7 @@ body {
 }
 
 .option {
-    width: 100%; /* Cambiamos el ancho al 100% para mostrar las opciones en una columna */
+    width: 100%;
     margin: 5
 }
 
@@ -117,4 +124,9 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.boton:active, .custom-button {
+    transform: scale(0.65); /* Escala ligeramente y rota el botón al hacer clic */
+    transition: transform 0.65s ease-in-out; /* Transición para suavizar la animación */
 }

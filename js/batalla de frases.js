@@ -13,22 +13,87 @@
         let countdownTimer;
         let questions = [
             {
-                question: `❝¡No te rindas antes de intentarlo! Eso no es la forma en que soy!
-                ¡Yo no retrocedo ni un solo paso!❞ - ¿Quién dijo esta frase y en qué serie?`,
+                question: "❝¡No te rindas antes de intentarlo! Eso no es la forma en que soy! ¡Yo no retrocedo ni un solo paso!❞ - ¿Quién dijo esta frase y en qué serie?",
                 options: ["Goku / Dragon Ball", "Naruto / Naruto", "Monkey D. Luffy / One Piece", "Ichigo Kurosaki / Bleach"],
                 correctAnswer: 3
             },
 
             {
                 question: "❝Si no puedes encontrar un camino, créalo tú mismo.❞ - ¿Quién dijo esta frase y en qué serie?",
-                options: ["Light Yagami - Death Note", "Senku Ishigami - Dr. Stone", "Gon Freecss - Hunter x Hunter", "Saitama - One Punch Man"],
+                options: ["Light Yagami / Death Note", "Senku Ishigami / Dr. Stone", "Gon Freecss / Hunter x Hunter", "Saitama / One Punch Man"],
                 correctAnswer: 4
             },
             {
                 question: "❝La única vez que un hombre puede ser valiente es cuando tiene miedo.❞ - ¿Quién dijo esta frase y en qué serie?",
-                options: ["Eren Yeager - Ataque a los titanes", "Edward Elric - Fullmetal Alchemist", "Simon - Gurren Lagann", "Roy Mustang - Fullmetal Alchemist"],
+                options: ["Eren Yeager / Ataque a los titanes", "Edward Elric / Fullmetal Alchemist", "Simon / Gurren Lagann", "Roy Mustang / Fullmetal Alchemist"],
                 correctAnswer: 3
             },
+
+
+            {
+                question: "❝La justicia prevalecerá siempre que alguien esté dispuesto a sacrificar algo por ella.❞ - ¿Quién dijo esta frase y en qué serie?",
+                options: ["Roronoa Zoro / One Piece", "Shinichi Kudo / Detective Conan", "Lelouch Lamperouge / Code Geass", "Gon Freecss / Hunter x Hunter"],
+                correctAnswer: 1
+            },
+            {
+                question: "❝En el ajedrez, es el jugador, no el rey, quien queda atrapado en una esquina.❞ - ¿Quién dijo esta frase y en qué serie?",
+                options: ["Vegeta / Dragon Ball Z", "Spike Spiegel / Cowboy Bebop", "Kenshin Himura / Rurouni Kenshin", "Light Yagami / Death Note"],
+                correctAnswer: 4
+            },
+            {
+                question: "❝No te preocupes por lo que no puedes hacer. Preocúpate por lo que puedes hacer.❞ - ¿Quién dijo esta frase y en qué serie?",
+                options: ["Naruto Uzumaki / Naruto", "Goku / Dragon Ball Z", "Edward Elric / Fullmetal Alchemist", "Sasuke Uchiha / Naruto"],
+                correctAnswer: 1
+            },
+            {
+                question: "❝Nunca mires hacia atrás. Si lo haces, puedes ver a tus enemigos.❞ - ¿Quién dijo esta frase y en qué serie?",
+                options: ["Monkey D. Luffy / One Piece", "Eren Yeager / Ataque a los titanes", "Alucard / Hellsing", "Gintoki Sakata / Gintama"],
+                correctAnswer: 2
+            },
+            {
+                question: "❝Un hombre se vuelve más fuerte solo cuando se da cuenta de que es débil.❞ - ¿Quién dijo esta frase y en qué serie?",
+                options: ["Izuku Midoriya / My Hero Academia", "Shinji Ikari / Neon Genesis Evangelion", "Tanjiro Kamado / Demon Slayer", "Koyomi Araragi / Bakemonogatari"],
+                correctAnswer: 1
+            },
+            {
+                question: "❝No juzgues a cada día por la cosecha que recoges, sino por las semillas que plantas.❞ - ¿Quién dijo esta frase y en qué serie?",
+                options: ["Kaori Miyazono / Your Lie in April", "Goku / Dragon Ball Z", "Kenshin Himura / Rurouni Kenshin", "Spike Spiegel / Cowboy Bebop"],
+                correctAnswer: 3
+            },
+            {
+                question: "❝Un corazón solitario es un infierno.❞ - ¿Quién dijo esta frase y en qué serie?",
+                options: ["Guts / Berserk", "Kurisu Makise / Steins;Gate", "Light Yagami / Death Note", "Lelouch Lamperouge / Code Geass"],
+                correctAnswer: 0
+            },
+            {
+                question: "❝La venganza es un plato que se sirve frío.❞ - ¿Quién dijo esta frase y en qué serie?",
+                options: ["Roy Mustang / Fullmetal Alchemist", "Mugen / Samurai Champloo", "Holo / Spice and Wolf", "Vegeta / Dragon Ball Z"],
+                correctAnswer: 1
+            },
+            {
+                question: "❝Las cicatrices nos recuerdan de dónde venimos. Nos cuentan hacia dónde vamos.❞ - ¿Quién dijo esta frase y en qué serie?",
+                options: ["Scar / Fullmetal Alchemist: Brotherhood", "Rin Tohsaka / Fate/stay night", "Gon Freecss / Hunter x Hunter", "Saitama / One Punch Man"],
+                correctAnswer: 0
+            },
+            {
+                question: "❝Nada es más fácil que perderse en el mundo y nada es más difícil que encontrarse a uno mismo.❞ - ¿Quién dijo esta frase y en qué serie?",
+                options: ["Sakura Kinomoto / Cardcaptor Sakura", "Kaneki Ken / Tokyo Ghoul", "Eren Yeager / Attack on Titan", "Ginko / Mushishi"],
+                correctAnswer: 3
+            },
+            {
+                question: "❝La victoria sonríe a los que sufren más.❞ - ¿Quién dijo esta frase y en qué serie?",
+                options: ["Kirei Kotomine / Fate/Zero", "Saber / Fate/stay night", "Simon / Gurren Lagann", "Spike Spiegel / Cowboy Bebop"],
+                correctAnswer: 2
+            },
+            {
+                question: "❝No importa cuántos tesoros busques, no hay un tesoro mayor que las personas.❞ - ¿Quién dijo esta frase y en qué serie?",
+                options: ["Monkey D. Luffy / One Piece", "Sasuke Uchiha / Naruto", "Yusuke Urameshi / Yu Yu Hakusho", "Alucard / Hellsing"],
+                correctAnswer: 1
+            },
+
+
+
+
         ];
 
         function startQuiz() {

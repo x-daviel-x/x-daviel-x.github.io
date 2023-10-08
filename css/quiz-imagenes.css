@@ -71,7 +71,7 @@ body {
     border: none;
     padding: 3px;
     cursor: pointer;
-    border-radius: 40px;
+    border-radius: 20px;
     margin: 0px;
     margin-color: red;
     width: 100%;
@@ -90,7 +90,7 @@ body {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    border-radius: 100px;
+    border-radius: 20px;
     margin: 10px 0px 10px;
     display: block;
     width: 100%;

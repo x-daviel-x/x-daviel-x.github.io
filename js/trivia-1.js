@@ -20,7 +20,7 @@ let questions = [
             { text: "Demon Slayer", imagePath: "../../archivo/colecciones/demon slayer/animes/demon slayer/icon.png" },
             { text: "Afro Samurai", imagePath: "../../archivo/animes/afro samurai/icon.png" },
         ],
-        correctAnswer: 0
+        correctAnswer: 1
     },
 
 

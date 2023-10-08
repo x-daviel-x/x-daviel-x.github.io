@@ -218,7 +218,7 @@
 
         // Reemplaza la función showFinalMessage() actual con esta versión modificada
         function showFinalMessage() {
-            questionText.textContent = "Tu puntaje final es: " + score + " ⭐";
+            questionText.textContent = "Tu puntaje puntaje final ha sido de " + score + "/10 ⭐";
             message.textContent = "";
             timeDisplay.style.display = "none"; // Oculta el texto del tiempo restante
             scoreDisplay.style.display = "none"; // Oculta el puntaje (⭐)
