@@ -9,7 +9,7 @@ const incorrectSound = document.getElementById("incorrectSound");
 let currentQuestionIndex = -1; 
 let score = 0;
 const maxQuestions = 10; // Límite de preguntas
-const questionTime = 10; // Tiempo por pregunta en segundos
+const questionTime = 15; // Tiempo por pregunta en segundos
 let countdownTimer;
 let questions = [
 
@@ -529,7 +529,6 @@ let questions = [
 
 
 
-
     {
         question: "Selecciona la imagen de DARLING in the FRANXX.",
         options: [
@@ -656,7 +655,6 @@ let questions = [
         ],
         correctAnswer: 3
     },
-
 
 
 
