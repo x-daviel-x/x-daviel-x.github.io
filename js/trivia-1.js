@@ -656,8 +656,6 @@ let questions = [
         correctAnswer: 3
     },
 
-
-
 ];
 
 function startQuiz() {

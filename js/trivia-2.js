@@ -193,19 +193,6 @@ const incorrectSound = document.getElementById("incorrectSound");
             options: ["Zoro", "Luffy", "Sanji", "Nami"],
             correctAnswer: 1
         },
-
-
-
-
-            {
-                question: "¿Cuál es el nombre del mundo virtual en Sword Art Online?",
-                options: ["Alfheim Online", "Log Horizon", "Aincrad", "Calibur"],
-                correctAnswer: 3
-            },
-
-
-
-
         {
             question: "¿En qué serie de anime los personajes son atrapados en un videojuego de supervivencia?",
             options: ["Log Horizon", "No Game No Life", "Sword Art Online", "Overlord"],
