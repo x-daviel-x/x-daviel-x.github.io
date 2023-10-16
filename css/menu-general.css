@@ -30,14 +30,14 @@ body {
 }
 
 /* ELEMENTOS DE LAS SECCIONES */
-.icon {
+.icono {
     font-size: 60px;
     color: black;
     display: inline-block;
     vertical-align: middle;
 }
 
-.icon-2 {
+.icono-2 {
     font-size: 40px;
     color: black;
     display: inline-block;
@@ -83,6 +83,9 @@ a {
     padding: 10px;
     border-radius: 20px;
     display: block;
+
+    animation: button-shimmer 1s infinite;
+    transition: all 0.2s ease-in-out;
 }
 
 .boton-2 {
@@ -95,9 +98,13 @@ a {
     margin-top: 10px;
     border-radius: 20px;
     display: block;
+
+    animation: button-shimmer 1s infinite;
+    transition: all 0.2s ease-in-out;
 }
 
 /* ANIMACIONES */
+/* Transición */
 @keyframes barrido-desde-arriba {
     0% {
         opacity: 0;
@@ -109,7 +116,10 @@ a {
     }
 }
 
-.boton:active, .boton-2:active {
-    transform: scale(0.65); /* Escala ligeramente y rota el botón al hacer clic */
-    transition: transform 0.65s ease-in-out; /* Transición para suavizar la animación */
-}
+/* Botones */
+.boton:active {
+    transform: scale(0.97);
+  }
+.boton-2:active {
+    transform: scale(0.97);
+  }

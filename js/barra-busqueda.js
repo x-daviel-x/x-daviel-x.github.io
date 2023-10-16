@@ -1,10 +1,10 @@
 const elements = [
     { 
-        title: "Demon Slayer", 
+        title: "Kimetsu no Yaiba", 
         subtitle: "Colección", 
-        link: "../archivo/colecciones/demon slayer/fr.html", 
-        icon: "../archivo/colecciones/demon slayer/icon.png",
-        keywords: ["Koyoharu Gotouge", "colección", "鬼滅の刃"]
+        link: "../archivo/colecciones/kimetsu no yaiba/fr.html", 
+        icon: "../archivo/colecciones/kimetsu no yaiba/icono.png",
+        keywords: ["koyoharu gotouge", "demon slayer", "鬼滅の刃"]
     },
 
 
@@ -13,15 +13,15 @@ const elements = [
         title: "Afro Samurai", 
         subtitle: "Anime", 
         link: "../archivo/animes/afro samurai/ft.html", 
-        icon: "../archivo/animes/afro samurai/icon.png",
-        keywords: ["afro samurai", ""]
+        icon: "../archivo/animes/afro samurai/icono.png",
+        keywords: ["afro samurai", "negro", "prieto"]
     },
     { 
-        title: "Demon Slayer", 
+        title: "Kimetsu no Yaiba", 
         subtitle: "Anime", 
-        link: "../archivo/colecciones/demon slayer/animes/demon slayer/ft.html", 
-        icon: "../archivo/colecciones/demon slayer/animes/demon slayer/icon.png",
-        keywords: ["demon slayer", "鬼滅の刃"]
+        link: "../archivo/colecciones/kimetsu no yaiba/animes/kimetsu no yaiba/ft.html", 
+        icon: "../archivo/colecciones/kimetsu no yaiba/animes/kimetsu no yaiba/icono.png",
+        keywords: ["koyoharu gotouge", "demon slayer", "鬼滅の刃"]
     },
 
 
@@ -34,14 +34,6 @@ const elements = [
         keywords: ["akira", "pelicula", ""]
     },
 ];
-
-
-
-
-
-
-
-
 
 
 const searchInput = document.getElementById("searchInput");

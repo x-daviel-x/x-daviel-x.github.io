@@ -9,7 +9,7 @@ body {
     outline: none;
 }
 
-
+/* SECCIONES */
 .primera-seccion {
     padding: 10px;
     text-align: center;
@@ -36,6 +36,7 @@ body {
     vertical-align: middle;
 }
 
+/* TEXTO */
 .h1 {
     font-size: 24px;
     color: black;
@@ -63,6 +64,7 @@ body {
     vertical-align: middle;
 }
 
+/* BOTONES */
 .boton-caja {
     text-align: center;
 }
@@ -96,6 +98,7 @@ body {
     animation: barrido-desde-arriba 0.3s ease-in-out forwards;
 }
 
+/* OPCIONES */
 #options {
     display: flex;
     flex-wrap: wrap;
@@ -124,9 +127,4 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-.boton:active, .custom-button {
-    transform: scale(0.65); /* Escala ligeramente y rota el botón al hacer clic */
-    transition: transform 0.65s ease-in-out; /* Transición para suavizar la animación */
 }

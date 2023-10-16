@@ -76,7 +76,7 @@ a {
     font-weight: bold;
 }
 
-/* IMAGENES DE LAS SECCIONES */
+/* ELEMENTOS DE LAS SECCIONES */
 .icon {
     font-family: 'Noto Color Emoji', sans-serif;
     font-size: 60px;
@@ -99,10 +99,12 @@ a {
     margin-top: 0px;
     border-radius: 20px;
     display: block;
-    text-decoration: none;
+
+    animation: button-shimmer 1s infinite;
+    transition: all 0.2s ease-in-out;
 }
 
-/* LISTADO DE PRODUCCIONES */
+/* PRODUCCIONES */
 .producciones {
     display: flex;
     overflow-x: auto;
@@ -126,8 +128,8 @@ a {
     margin-bottom: 3px;
 }
 
-
 /* ANIMACIONES */
+/* Transición */
 @keyframes barrido-desde-arriba {
     0% {
         opacity: 0;
@@ -138,3 +140,11 @@ a {
         transform: translateY(0);
     }
 }
+
+/* Botones */
+.boton:active {
+    transform: scale(0.97);
+  }
+.boton-2:active {
+    transform: scale(0.97);
+  }

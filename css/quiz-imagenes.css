@@ -5,6 +5,7 @@ body {
     background-color: #f2f2f2;
 }
 
+/* SECCIONES */
 .primera-seccion {
     padding: 10px;
     text-align: center;
@@ -22,6 +23,7 @@ body {
     padding: 15px;
 }
 
+/* ELEMENTOS DE LAS SECCIONES */
 .icon {
     font-size: 60px;
     color: black;
@@ -29,6 +31,7 @@ body {
     vertical-align: middle;
 }
 
+/* TEXTO */
 .h1 {
     font-size: 24px;
     color: black;
@@ -54,8 +57,7 @@ body {
     vertical-align: middle;
 }
 
-
-
+/* BOTONES */
 .boton-caja {
     text-align: center;
     display: grid;
@@ -73,7 +75,7 @@ body {
     cursor: pointer;
     border-radius: 20px;
     margin: 0px;
-    margin-color: red;
+    margin-block: red;
     width: 100%;
 }
 
@@ -96,8 +98,7 @@ body {
     width: 100%;
 }
 
-
-
+/* OPCIONES */
 #options {
     display: flex;
     flex-wrap: wrap;

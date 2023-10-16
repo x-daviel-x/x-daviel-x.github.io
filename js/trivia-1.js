@@ -147,7 +147,7 @@ let questions = [
         options: [
             { text: "Pokemon", imagePath: "../../archivo/animes/baki/icono.png" },
             { text: "One Piece", imagePath: "../../archivo/animes/ataque a los titanes/icono.png" },
-            { text: "Naruto", imagePath: "../../archivo/animes/Assassination Classroom/icono.png" },
+            { text: "Naruto", imagePath: "../../archivo/animes/assassination classroom/icono.png" },
             { text: "Anohana", imagePath: "../../archivo/animes/anohana/icono.png" },
         ],
         correctAnswer: 4
