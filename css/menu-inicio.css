@@ -43,7 +43,7 @@ body {
 }
 
 .seccion-ultima {
-    padding: 35px;
+    padding: 55px;
 }
 
 /* TEXTO */
@@ -77,7 +77,7 @@ a {
 }
 
 /* ELEMENTOS DE LAS SECCIONES */
-.icon {
+.icono {
     font-family: 'Noto Color Emoji', sans-serif;
     font-size: 60px;
     color: black;
