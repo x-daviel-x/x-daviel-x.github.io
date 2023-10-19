@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="../imagenes/favicon.ico">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="../css/barra-inferior.css">
+    <link rel="stylesheet" href="../fuentes/css/all.min.css">
     <link rel="stylesheet" href="../css/menu-inicio.css">
     <link rel="stylesheet" href="../css/barra-busqueda.css">
-    <link rel="stylesheet" href="../css/barra-inferior1.css">
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <title>Explorar</title>
 </head>
 <body>
     <div class="seccion-encabezado">
-        <div class="icono">🏠</div>
+        <i class="fa-duotone fa-house-chimney icono-1"></i>
         <div class="h1">Inicio</div>
     </div>
 
@@ -22,6 +23,17 @@
             <input type="text" id="searchInput" placeholder="Busca aquí...">
             <ul class="results" id="resultsList"></ul>
         </div>
+    </div>
+
+    <div class="seccion-portada">
+        <div class="slider">
+            <img src="imagenes/portada 1.png">
+            <img src="imagenes/portada 2.png">
+            <img src="imagenes/portada 3.png">
+            <img src="imagenes/portada 4.png">
+            <img src="imagenes/portada 5.png">
+        </div>
+            <a href="../archivo/colecciones/kimetsu no yaiba/animes/kimetsu no yaiba/ft.html" class="boton">Ver Novedades</a>
     </div>
 
     <div class="seccion-portada">
@@ -73,12 +85,11 @@
     </div>
 
     <div class="bottom-bar">
-        <a href="../minijuegos/minijuegos.html"><ion-icon name="person-outline" class="icon" onclick="change(this)"></ion-icon></a>
-        <a href="#"><ion-icon name="home-outline" class="icon active" onclick="change(this)"></ion-icon></a>
-        <a href="../archivo/archivo.html"><ion-icon name="folder-outline" class="icon" onclick="change(this)"></ion-icon></a>
+        <a href="../minijuegos/minijuegos.html"><i class="fa-regular fa-joystick icon" onclick="change(this)"></i></a>
+        <a href="../inicio/inicio.html"><i class="fa-regular fa-home icon active" onclick="change(this)"></i></a>
+        <a href="../archivo/archivo.html"><i class="fa-regular fa-folders icon" onclick="change(this)"></i></a>
     </div>
     
-    <script src="../js/barra-inferior.js"></script>
     <script src="../js/barra-busqueda.js"></script>
 </body>
 </html>

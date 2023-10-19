@@ -15,14 +15,13 @@ body {
     text-align: center;
     background-color: #ffffff;
     border-radius: 5px;
-    animation: barrido-desde-arriba 0.3s ease-in-out forwards;
+    animation: barrido-desde-arriba 0.4s ease-in-out forwards;
 }
 
 .seccion {
     padding: 10px;
     text-align: center;
-    border-radius: 5px;
-    animation: barrido-desde-arriba 0.3s ease-in-out forwards;
+    animation: barrido-desde-arriba 0.4s ease-in-out forwards;
 }
 
 .seccion-ultima {
@@ -30,6 +29,20 @@ body {
 }
 
 /* ELEMENTOS DE LAS SECCIONES */
+.icono-1 {
+    font-size: 55px;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icono-2 {
+    font-size: 35px;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
 .icono {
     font-size: 60px;
     color: black;
@@ -37,12 +50,13 @@ body {
     vertical-align: middle;
 }
 
-.icono-2 {
+.icono-3 {
     font-size: 40px;
     color: black;
     display: inline-block;
     vertical-align: middle;
 }
+
 
 /* TEXTO */
 a {
@@ -56,7 +70,7 @@ a {
     font-weight: bold;
     display: inline-block;
     vertical-align: middle;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 .h2 {
@@ -71,7 +85,7 @@ a {
     font-weight: bold;
     display: inline-block;
     vertical-align: middle;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 /* BOTONES */
@@ -108,7 +122,7 @@ a {
 @keyframes barrido-desde-arriba {
     0% {
         opacity: 0;
-        transform: translateY(-20px);
+        transform: translateY(-0px);
     }
     100% {
         opacity: 1;

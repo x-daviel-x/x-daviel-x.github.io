@@ -1,27 +1,48 @@
-.barra-inferior {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 90%;
+.bottom-bar {
     background-color: #ffffff;
+    width: 100%;
     display: flex;
     justify-content: space-around;
+    position: fixed;
     align-items: center;
-    padding: 10px 0;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+    bottom: 0px; /* Fija la barra en la parte inferior de la ventana */
 }
 
-.barra-inferior-icon-1 {
+.icon {
     font-size: 30px;
-    display: inline-block;
+    padding: 10px;
+    margin: 0em;
+    border-radius: 20%;
+    border: 7px solid #ffffff;
+    animation: barrido-desde-abajo 0.3s ease-in-out forwards;
 }
 
-.barra-inferior-icon-2 {
+.active {
     font-size: 30px;
-    display: inline-block;
+    background: red;
+    border: 5px solid #f2f2f2d2;
+    color: white;
+    animation: boton-arriba 0.3s ease-in-out forwards;
+    
 }
 
-.barra-inferior-icon-3 {
-    font-size: 30px;
-    display: inline-block;
+/* ANIMACIONES */
+@keyframes boton-arriba {
+    0% {
+        opacity: 0;
+        transform: scale(0.5) translateY(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(-1em);
+    }
+}
+
+@keyframes barrido-desde-abajo {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

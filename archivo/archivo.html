@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="../imagenes/favicon.ico">
+    <link rel="stylesheet" href="../css/barra-inferior.css">
+    <link rel="stylesheet" href="../fuentes/css/all.min.css">
     <link rel="stylesheet" href="../css/menu-general.css">
-    <link rel="stylesheet" href="../css/barra-inferior1.css">
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <title>Archivo</title>
 </head>
 <body>
+
     <div class="seccion-encabezado">
-        <div class="icono">🗃️</div>
+        <i class="fa-duotone fa-folders icono-1" style="--fa-primary-color: #ffb12f; --fa-secondary-color: #fcd53f; --fa-secondary-opacity: 1;"></i>
         <div class="h1">Archivo</div>
     </div>
 
     <div class="seccion">
-        <div class="icono-2">📂</div>
+        <i class="fa-duotone fa-folder-open icono-2" style="--fa-primary-color: #ffb12f; --fa-primary-opacity: 1; --fa-secondary-color: #fcd53f; --fa-secondary-opacity: 1;"></i>
         <div class="h3">Colecciones</div>
         <div class="btn-container">
             <a href="colecciones/lista de colecciones.html" class="boton">Explorar</a>
@@ -25,7 +26,7 @@
     </div>
 
     <div class="seccion">
-        <div class="icono-2">🍙</div>
+        <i class="fa-duotone fa-bowl-chopsticks-noodles icono-2" style="--fa-primary-color: #5a9e1a; --fa-secondary-color: #62d737; --fa-secondary-opacity: 1;"></i>
         <div class="h3">Animes</div>
         <div class="btn-container">
             <a href="animes/lista de animes.html" class="boton">Explorar</a>
@@ -33,7 +34,7 @@
     </div>
 
     <div class="seccion">
-        <div class="icono-2">🍿</div>
+        <i class="fa-duotone fa-popcorn icono-2" style="--fa-primary-color: #e63b3b; --fa-secondary-color: #e1dc37; --fa-secondary-opacity: 1;"></i>
         <div class="h3">Películas</div>
         <div class="btn-container">
             <a href="peliculas/lista de peliculas.html" class="boton">Explorar</a>
@@ -41,7 +42,7 @@
     </div>
 
     <div class="seccion">
-        <div class="icono-2">🎞️</div>
+        <i class="fa-duotone fa-films icono-2"></i>
         <div class="h3">Géneros</div>
         <div class="btn-container">
             <a href="generos/lista de generos.html" class="boton">Explorar</a>
@@ -52,11 +53,10 @@
     </div>
 
     <div class="bottom-bar">
-        <a href="../minijuegos/minijuegos.html"><ion-icon name="person-outline" class="icon" onclick="change(this)"></ion-icon></a>
-        <a href="../inicio/inicio.html"><ion-icon name="home-outline" class="icon" onclick="change(this)"></ion-icon></a>
-        <a href="#"><ion-icon name="folder-outline" class="icon active" onclick="change(this)"></ion-icon></a>
+        <a href="../minijuegos/minijuegos.html"><i class="fa-regular fa-joystick icon" onclick="change(this)"></i></a>
+        <a href="../inicio/inicio.html"><i class="fa-regular fa-home icon" onclick="change(this)"></i></a>
+        <a href="../archivo/archivo.html"><i class="fa-regular fa-folders icon active" onclick="change(this)"></i></a>
     </div>
     
-    <script src="../js/barra-inferior.js"></script>
     </body>
   </html>
