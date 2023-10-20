@@ -26,6 +26,30 @@
     
 }
 
+/* Estilos para el Modo Oscuro */
+.modo-oscuro .bottom-bar {
+    background-color: #1b1b1b;
+}
+
+.modo-oscuro .icon {
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    border: 7px solid #1b1b1b;
+}
+
+.modo-oscuro .active {
+    font-size: 30px;
+    background: #ff0033;
+    border: 5px solid #252525;
+}
+
+
+
+
+
+
+
+
 /* ANIMACIONES */
 @keyframes boton-arriba {
     0% {

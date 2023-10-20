@@ -1,0 +1,36 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para el modo claro */
+body.modo-claro {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Estilos para el modo oscuro */
+body.modo-oscuro {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Botón de cambio de modo */
+#cambiar-modo {
+    background-color: #007acc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Estilos específicos para dark_mode.html */
+body.modo-oscuro h1 {
+    color: #ffc107;
+}
+
+body.modo-oscuro h1 {
+    color: #ffc107;
+}
