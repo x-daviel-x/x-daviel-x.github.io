@@ -9,10 +9,12 @@ document.addEventListener('DOMContentLoaded', () => {
     setMode(isModoOscuro);
 
     // Escucha los clics en el botón para alternar modos
-    toggleButton.addEventListener('click', () => {
-        const currentMode = document.cookie.includes('modoOscuro=activado');
-        setMode(!currentMode);
-    });
+    if (toggleButton) {
+        toggleButton.addEventListener('click', () => {
+            const currentMode = document.cookie.includes('modoOscuro=activado');
+            setMode(!currentMode);
+        });
+    }
 
     function setMode(estaOscuro) {
         if (estaOscuro) {
