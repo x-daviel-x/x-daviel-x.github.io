@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.cookie = 'modoOscuro=activado; expires=Fri, 31 Dec 9999 23:59:59 GMT';
         } else {
             document.body.classList.remove('modo-oscuro');
-            document.cookie = 'modoOscuro=; expires=Thu, 01 Jan 1970 00:00:00 GMT';
+            document.cookie = 'modoOscuro=; expires=Thu, 01 Jan 2970 00:00:00 GMT';
         }
     }
 });
