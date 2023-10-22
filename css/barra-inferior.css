@@ -26,7 +26,7 @@
     
 }
 
-/* Estilos para el Modo Oscuro */
+/* MODO OSCURO */
 .modo-oscuro .bottom-bar {
     background-color: #1b1b1b;
 }
@@ -40,12 +40,8 @@
 .modo-oscuro .active {
     font-size: 30px;
     background: #ff0033;
-    border: 5px solid #252525;
+    border: 5px solid #313131;
 }
-
-
-
-
 
 
 
