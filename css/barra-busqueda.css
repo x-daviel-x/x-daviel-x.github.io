@@ -84,3 +84,16 @@ input[type="text"] {
         transform: translateY(0);
     }
 }
+
+/* MODO OSCURO */
+body.modo-oscuro {
+    background-color: #252525;
+}
+
+.modo-oscuro .result{
+    background-color: #333; /* Color de fondo diferente en modo oscuro */
+}
+
+.modo-oscuro .title{
+    color:#ccc; /* Color de fondo diferente en modo oscuro */
+}

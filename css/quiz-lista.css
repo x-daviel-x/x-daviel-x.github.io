@@ -14,14 +14,12 @@ body {
     padding: 10px;
     text-align: center;
     background-color: #ffffff;
-    border-radius: 5px;
     animation: barrido-desde-arriba 0.3s ease-in-out forwards;
 }
 
 .seccion {
     padding: 15px;
     text-align: center;
-    border-radius: 5px;
     animation: barrido-desde-arriba 0.4s ease-in-out forwards;
 }
 
@@ -30,8 +28,8 @@ body {
 }
 
 .icon {
-    font-size: 60px;
-    color: black;
+    font-size: 55px;
+    margin: 10px;
     display: inline-block;
     vertical-align: middle;
 }
@@ -116,6 +114,39 @@ body {
     border-radius: 10px;
     animation: barrido-desde-arriba 0.4s ease-in-out forwards;
 }
+
+/* MODO OSCURO */
+body.modo-oscuro {
+    background-color: #252525;
+    color: #fff;
+}
+
+.modo-oscuro .primera-seccion {
+    background-color: #1b1b1b; /* Color de fondo diferente en modo oscuro */
+}
+
+.modo-oscuro .seccion {
+    background-color: #252525; /* Color de fondo diferente en modo oscuro */
+}
+
+.modo-oscuro .seccion-ultima {
+    background-color: #252525; /* Color de fondo diferente en modo oscuro */
+}
+
+.modo-oscuro .h1 {
+    color: rgb(255, 255, 255);
+}
+
+.modo-oscuro .h3 {
+    font-weight: normal;
+    color: rgb(228, 228, 228);
+}
+
+.modo-oscuro .boton {
+    background-color: #ff0033; /* Color de fondo diferente en modo oscuro */
+}
+
+
 
 /* ANIMACIONES */
 @keyframes barrido-desde-arriba {
