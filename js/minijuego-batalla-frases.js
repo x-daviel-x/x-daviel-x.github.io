@@ -9,7 +9,7 @@ const incorrectSound = document.getElementById("incorrectSound");
 let currentQuestionIndex = -1;
 let score = 0;
 const maxQuestions = 10; // Límite de preguntas
-const questionTime = 15; // Tiempo por pregunta en segundos
+const questionTime = 20000; // Tiempo por pregunta en segundos
 let countdownTimer;
 let questions = [
     {
@@ -341,13 +341,6 @@ let questions = [
     },
     
     {
-        frase: "«»",
-        pregunta: "<br>¿Quién dijo esta frase y en qué serie?",
-        opciones: ["Personaje 1", "Producción2 / Producción2", "Producción3 / Producción3", "Personaje4 / Producción4"],
-        respuestaCorrecta: 1
-    },
-    
-    {
         frase: "«Si no tienes recuerdos felices, nunca es tarde para comenzar a construirlos.»",
         pregunta: "<br>¿Quién dijo esta frase y en qué serie?",
         opciones: ["Dr. Tenma / Monster", "Producción2 / Producción2", "Producción3 / Producción3", "Personaje4 / Producción4"],
@@ -588,7 +581,7 @@ function disableOptions() {
 
 // Reemplaza la función showFinalMessage() actual con esta versión modificada
 function showFinalMessage() {
-    questionText.innerHTML = "Tu puntaje final es: " + score + " ⭐";
+    questionText.innerHTML = "Tu puntaje final ha sido " + score + " ⭐";
     message.textContent = "";
     timeDisplay.style.display = "none"; // Oculta el texto del tiempo restante
     scoreDisplay.style.display = "none"; // Oculta el puntaje (⭐)

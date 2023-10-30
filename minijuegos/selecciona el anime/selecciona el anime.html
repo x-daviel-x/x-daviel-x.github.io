@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../css/quiz-imagenes.css">
-    <link rel="stylesheet" href="../../css/barra-inferior.css">
-    <title>Trivia Fácil</title>
+    <link rel="stylesheet" href="../../fuentes/css/all.min.css">
+    <title>Selecciona el Anime</title>
 </head>
 
 <body>
@@ -14,8 +14,8 @@
     <audio id="incorrectSound" src="https://www.pacdv.com/sounds/interface_sound_effects/sound103.wav"></audio>
     
     <div class="primera-seccion">
-        <div class="icon">🥇</div>
-        <div class="h1">Trivia Fácil</div>
+        <i class="fa-duotone fa-images-user icon" style="--fa-primary-color: #2e2e2e; --fa-secondary-color: #4a8ccf; --fa-secondary-opacity: 1;"></i>
+        <div class="h1">Selecciona el Anime</div>
         <div class="h2">
             <span id="message">⏱️</span>
             <span id="score">0 ⭐</span>
@@ -25,7 +25,7 @@
     <div class="seccion">
         <div class="h3"><div id="questionText"></div></div>
         <div class="boton-caja">
-            <button class="boton" onclick="checkAnswer(1)"></button>
+            <button class="boton img" onclick="checkAnswer(1)"></button>
             <button class="boton" onclick="checkAnswer(2)"></button>
             <button class="boton" onclick="checkAnswer(3)"></button>
             <button class="boton" onclick="checkAnswer(4)"></button>
@@ -41,6 +41,7 @@
         </div>
     </div>
 
+    <script src="../../js/modo-oscuro.js"></script>   
     <script src="../../js/minijuego-selecciona-anime.js"></script>
 </body>
 </html>

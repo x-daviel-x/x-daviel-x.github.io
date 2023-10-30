@@ -10,10 +10,9 @@ const questionImage = document.getElementById("questionImage"); // Elemento de i
 let currentQuestionIndex = -1;
 let score = 0;
 const maxQuestions = 10; // Límite de preguntas
-const questionTime = 15; // Tiempo por pregunta en segundos
+const questionTime = 15000; // Tiempo por pregunta en segundos
 let countdownTimer;
 let questions = [
-
   {
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Afro / Afro Samurai", "Asta / Black Clover ", "Baki Hanma / Baki", "Edward Elric / Fullmetal Alchemist"],
@@ -435,7 +434,7 @@ function disableOptions() {
 
 // Reemplaza la función showFinalMessage() actual con esta versión modificada
 function showFinalMessage() {
-    questionText.textContent = "Tu puntaje ha sido de " + score + "/10 ⭐";
+    questionText.textContent = "Tu puntaje final ha sido " + score + "/10 ⭐";
     message.textContent = "";
     timeDisplay.style.display = "none"; // Oculta el texto del tiempo restante
     scoreDisplay.style.display = "none"; // Oculta el puntaje (⭐)

@@ -9,10 +9,9 @@ const incorrectSound = document.getElementById("incorrectSound");
 let currentQuestionIndex = -1; 
 let score = 0;
 const maxQuestions = 10; // Límite de preguntas
-const questionTime = 15; // Tiempo por pregunta en segundos
+const questionTime = 15000; // Tiempo por pregunta en segundos
 let countdownTimer;
 let questions = [
-
     {
         question: "Selecciona la imagen de Kimetsu no Yaiba.",
         options: [
@@ -742,7 +741,7 @@ function disableOptions() {
 
 // Reemplaza la función showFinalMessage() actual con esta versión modificada
 function showFinalMessage() {
-    questionText.textContent = "Tu puntaje final es: " + score + " ⭐";
+    questionText.textContent = "Tu puntaje final ha sido " + score + " ⭐";
     message.textContent = "";
     timeDisplay.style.display = "none"; // Oculta el texto del tiempo restante
     scoreDisplay.style.display = "none"; // Oculta el puntaje (⭐)

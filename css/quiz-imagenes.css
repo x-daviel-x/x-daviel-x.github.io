@@ -10,13 +10,13 @@ body {
     padding: 10px;
     text-align: center;
     background-color: #ffffff;
-    border-radius: 5px;
+    border-radius: 20px;
+    margin: 10px;
 }
 
 .seccion {
-    padding: 15px;
+    padding: 5px 15px 15px 15px;
     text-align: center;
-    border-radius: 5px;
 }
 
 .ultima-seccion {
@@ -25,8 +25,8 @@ body {
 
 /* ELEMENTOS DE LAS SECCIONES */
 .icon {
-    font-size: 60px;
-    color: black;
+    font-size: 55px;
+    margin: 10px;
     display: inline-block;
     vertical-align: middle;
 }
@@ -38,17 +38,14 @@ body {
     font-weight: bold;
     display: inline-block;
     vertical-align: middle;
-    margin-left: 10px;
 }
 
 .h2 {
     font-size: 18px;
     color: gray;
     font-weight: normal;
-    padding: 0px 5px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .h3 {
@@ -59,10 +56,10 @@ body {
 
 /* BOTONES */
 .boton-caja {
-    text-align: center;
+    margin-top: 10px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 5px; /* Espacio entre los botones */
+    grid-gap: 5px;
 }
 
 .boton {
@@ -75,7 +72,6 @@ body {
     border-radius: 20px;
     margin: 0px;
     margin-block: red;
-    width: 100%;
 }
 
 .boton img {

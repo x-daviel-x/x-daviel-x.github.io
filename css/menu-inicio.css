@@ -11,11 +11,13 @@ body {
     text-align: center;
     background-color: white;
     border-radius: 5px;
+    margin: 10px;
+    border-radius: 20px;
     animation: barrido-desde-arriba 0.4s ease-in-out forwards;
 }
 
 .seccion-busqueda {
-    margin: 10px 0px 0px 0px;
+    margin: 3%;
     animation: barrido-desde-arriba 0.4s ease-in-out forwards;
 }
 
@@ -44,26 +46,26 @@ body {
     padding: 10px;
     border-radius: 20px;
     text-align: center;
-    margin: 10px;
+    margin: 3%;
     animation: barrido-desde-arriba 0.4s ease-in-out forwards;
 }
 
 .seccion-producciones {
     border-radius: 20px;
-    background-color: #c9d1c9;
+    background-color: #ccc;
     padding: 10px 10px;
-    margin: 10px;
+    margin: 3%;
     animation: barrido-desde-arriba 0.4s ease-in-out forwards;
 }
 
 .seccion-boton {
-    margin: 10px;
+    margin: 3%;
     text-align: center;
     animation: barrido-desde-arriba 0.4s ease-in-out forwards;
 }
 
 .seccion-ultima {
-    padding: 45px;
+    padding: 50px;
 }
 
 /* TEXTO */

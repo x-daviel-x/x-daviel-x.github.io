@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f2f2f2;
@@ -13,18 +15,20 @@ body {
 .seccion-encabezado {
     padding: 10px;
     text-align: center;
+    margin: 3%;
+    border-radius: 20px;
     background-color: #ffffff;
     animation: barrido-desde-arriba 0.4s ease-in-out forwards;
 }
 
 .seccion {
-    padding: 10px;
+    margin: 3%;
     text-align: center;
     animation: barrido-desde-arriba 0.4s ease-in-out forwards;
 }
 
 .seccion-ultima {
-    padding: 35px;
+    padding: 40px;
 }
 
 /* ELEMENTOS DE LAS SECCIONES */
@@ -65,8 +69,8 @@ a {
 
 .h1 {
     font-size: 24px;
-    color: black;
     font-weight: bold;
+    color: black;
     display: inline-block;
     vertical-align: middle;
     margin-left: 5px;

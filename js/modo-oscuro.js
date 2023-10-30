@@ -1,3 +1,9 @@
+window.addEventListener("beforeunload", function (e) {
+    // Redirige al usuario a la página específica
+    const paginaEspecifica = "https://x-daviel-x.github.io/inicio/inicio.html"; // Reemplaza con la URL que desees
+    window.location.href = paginaEspecifica;
+});
+
 // REINICIA LA PÁGINA ANTERIOR
 
 // Escucha el evento beforeunload

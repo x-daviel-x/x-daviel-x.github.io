@@ -1,44 +1,56 @@
-.bottom-bar {
+:focus {
+    outline:#fbff00;
+}
+
+.barra-inferior {
     background-color: #ffffff;
-    width: 100%;
+    width: 94%;
     display: flex;
     justify-content: space-around;
     position: fixed;
+    border-radius: 20px;
+    margin-left: 3%;
+    margin-bottom: 10px;
+    margin-right: 3%;
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.3);
     align-items: center;
-    bottom: 0px; /* Fija la barra en la parte inferior de la ventana */
+    bottom: 0px;
 }
 
-.icon {
+.icono-b {
+    font-size: 30px;
+    padding: 10px;
+    cursor:pointer;
+    margin: 0em;
+    border-radius: 20%;
+    border: 5px solid #ffffff;
+    animation: barrido-desde-abajo 0.3s ease-in-out forwards;
+}
+
+.icono-b-activo {
     font-size: 30px;
     padding: 10px;
     margin: 0em;
     border-radius: 20%;
-    border: 7px solid #ffffff;
-    animation: barrido-desde-abajo 0.3s ease-in-out forwards;
-}
-
-.active {
-    font-size: 30px;
     background: red;
     border: 5px solid #f2f2f2d2;
     color: white;
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.3);
     animation: boton-arriba 0.3s ease-in-out forwards;
     
 }
 
 /* MODO OSCURO */
-.modo-oscuro .bottom-bar {
+.modo-oscuro .barra-inferior {
     background-color: #1b1b1b;
 }
 
-.modo-oscuro .icon {
-    padding: 10px;
+.modo-oscuro .icono-b {
     color: rgb(255, 255, 255);
     border: 7px solid #1b1b1b;
 }
 
-.modo-oscuro .active {
-    font-size: 30px;
+.modo-oscuro .icono-b-activo {
     background: #ff0033;
     border: 5px solid #313131;
 }
