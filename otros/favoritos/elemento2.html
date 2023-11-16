@@ -1,15 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elemento 2</title>
-</head>
-<body>
-    <h1>Elemento 2</h1>
-    <p>Descripción del Elemento 2.</p>
-    <button id="agregarFavorito">Agregar a Favoritos</button>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favoritos</title>
+  <script>
+    function mostrarFavoritos() {
+      let favoritos = JSON.parse(localStorage.getItem('favoritos')) || [];
+      let listaFavoritos = document.getElementById('lista-favoritos');
+      listaFavoritos.innerHTML = '';
 
-    <script src="script.js"></script>
+      favoritos.forEach(produccion => {
+        let elemento = document.createElement('div');
+        elemento.textContent = produccion.titulo;
+        listaFavoritos.appendChild(elemento);
+      });
+    }
+  </script>
+</head>
+<body onload="mostrarFavoritos()">
+  <h1>Mis Favoritos</h1>
+  <div id="lista-favoritos"></div>
 </body>
 </html>

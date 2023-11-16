@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../fuentes/iconos/css/all.min.css">
+    <link rel="stylesheet" href="../../css/barra-inferior.css">
     <link rel="stylesheet" href="../../css/quiz-lista.css">
     <link rel="stylesheet" href="../../css/barra-inferior.css">
     <title>Batalla de Frases</title>
@@ -14,7 +15,7 @@
     <audio id="incorrectSound" src="https://www.pacdv.com/sounds/interface_sound_effects/sound103.wav"></audio>
     
     <div class="primera-seccion">
-        <div class="icon">🤼</div>
+        <i class="fa-duotone fa-message-quote icon" style="--fa-primary-color: #2e2e2e; --fa-secondary-color: #6e6e6e;"></i>
         <div class="h1">Batalla de Frases</div>
         <div class="h2">
             <span id="message">⏱️</span>
@@ -24,7 +25,6 @@
 
     <div class="seccion">
         <div class="h3"><div id="questionText"></div></div>
-        <button id="muteButton">Silenciar</button>
             <button class="boton" onclick="checkAnswer(1)"></button>
             <button class="boton" onclick="checkAnswer(2)"></button>
             <button class="boton" onclick="checkAnswer(3)"></button>
@@ -41,8 +41,13 @@
         </div>
     </div>
 
-    <script src="../../js/modo-oscuro.js"></script>  
-    <script src="../../js/silenciar-app.js"></script>  
+    <div class="barra-inferior">
+        <a href="../../minijuegos/minijuegos.html"><i class="fa-regular fa-joystick icono-b-activo" onclick="change(this)"></i></a>
+        <a href="../../inicio/inicio.html"><i class="fa-regular fa-home icono-b" onclick="change(this)"></i></a>
+        <a href="../../archivo/archivo.html"><i class="fa-regular fa-folders icono-b" onclick="change(this)"></i></a>
+    </div>
+
+    <script src="../../js/modo-oscuro.js"></script>
     <script src="../../js/minijuego-batalla-frases.js"></script>
 </body>
 </html>

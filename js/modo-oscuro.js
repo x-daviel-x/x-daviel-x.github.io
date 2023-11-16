@@ -33,13 +33,16 @@ document.addEventListener('DOMContentLoaded', () => {
       const toggleButton = document.getElementById('cambiar-modo');
       if (toggleButton) {
           if (isModoOscuro) {
-              toggleButton.textContent = 'Desactivar Modo Oscuro';
+              toggleButton.textContent = 'Desactivar';
           } else {
-              toggleButton.textContent = 'Activar Modo Oscuro';
+              toggleButton.textContent = 'Activar';
           }
       }
   }
 });
+
+
+
 
 
 
@@ -62,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Desactiva el sonido por defecto si la configuración indica que esté desactivado
       correctSound.muted = true;
       incorrectSound.muted = true;
-      muteButton.textContent = 'Activar Sonido';
+      muteButton.textContent = 'Activar';
     }
   
     muteButton.addEventListener('click', () => {
@@ -76,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Desactiva el sonido y almacena la configuración en una cookie
         correctSound.muted = true;
         incorrectSound.muted = true;
-        muteButton.textContent = 'Activar Sonido';
+        muteButton.textContent = 'Activar';
         setCookie('soundEnabled', 'false', 365); // 365 días de expiración
       }
     });
@@ -96,6 +99,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const expires = "expires=" + date.toUTCString();
     document.cookie = name + "=" + value + "; " + expires + "; path=/";
   }  
+
+
+
+
 
 
 

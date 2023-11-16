@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f2f2f2;
@@ -13,7 +13,7 @@ body {
     text-align: center;
     background-color: white;
     border-radius: 5px;
-    margin: 10px;
+    margin: 3%;
     border-radius: 20px;
     animation: barrido-desde-arriba 0.4s ease-in-out forwards;
 }
@@ -22,7 +22,6 @@ body {
     margin: 3%;
     animation: barrido-desde-arriba 0.4s ease-in-out forwards;
 }
-
 
 .slider {
     width: 100%;
@@ -42,7 +41,6 @@ body {
     height: auto;
 }
 
-
 .seccion-portada {
     background-color: #333333;
     padding: 10px;
@@ -54,7 +52,7 @@ body {
 
 .seccion-producciones {
     border-radius: 20px;
-    background-color: #ccc;
+    background-color: #e2e2e2;
     padding: 10px 10px;
     margin: 3%;
     animation: barrido-desde-arriba 0.4s ease-in-out forwards;
@@ -93,12 +91,18 @@ a {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 3px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
 }
 
 .h4 {
     font-size: 12px;
     font-weight: bold;
 }
+
+
 
 /* ELEMENTOS DE LAS SECCIONES */
 .icono-1 {
@@ -126,6 +130,14 @@ a {
     animation: button-shimmer 1s infinite;
     transition: all 0.2s ease-in-out;
 }
+
+.boton-flecha {
+    padding: 0px 5px;
+
+    animation: button-shimmer 1s infinite;
+    transition: all 0.2s ease-in-out;
+}
+
 
 /* PRODUCCIONES */
 .producciones {

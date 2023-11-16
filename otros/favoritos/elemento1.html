@@ -1,15 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elemento 1</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serie/Película</title>
+  <script>
+    function agregarAFavoritos(produccion) {
+      let favoritos = JSON.parse(localStorage.getItem('favoritos')) || [];
+
+      if (!favoritos.some(item => item.id === produccion.id)) {
+        favoritos.push(produccion);
+        localStorage.setItem('favoritos', JSON.stringify(favoritos));
+        alert('Añadido a Favoritos');
+      } else {
+        alert('Ya está en Favoritos');
+      }
+    }
+  </script>
 </head>
 <body>
-    <h1>Elemento 1</h1>
-    <p>Descripción del Elemento 1.</p>
-    <button id="agregarFavorito">Agregar a Favoritos</button>
-
-    <script src="script.js"></script>
+  <h1>Nombre de la Serie/Película</h1>
+  <!-- Contenido de la página -->
+  <button onclick="agregarAFavoritos({ id: 1, titulo: 'Akira / Película' })">
+    Agregar a Favoritoss
+  </button>
 </body>
 </html>
