@@ -26,26 +26,6 @@ body {
     animation: barrido-desde-arriba 0.3s ease-in-out forwards;
 }
 
-.seccion-favoritos {
-    background-color: #c4c4c4;
-    margin: 3%;
-    color: white;
-    animation: barrido-desde-arriba 0.3s ease-in-out forwards;
-}
-
-.seccion-favorito {
-    padding: 10px;
-    background-color: white;
-    border: none;
-    border-radius: 20px;
-    margin: 10px auto;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    animation: barrido-desde-arriba-barra 0s ease-in-out forwards;
-}
-
 .seccion-ultima {
     padding: 50px;
 }
@@ -69,28 +49,7 @@ body {
 .trailer {
     position: relative;
     padding-bottom: 50%;
-  }
-  
-.trailer iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
 }
-
-
-.estilo-imagen {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-    border-radius: 25%;
-    object-fit: cover;
-    border: 1px solid #ccc;
-}
-
-
 
 /* TEXTO */
 .h1 {
@@ -102,32 +61,36 @@ body {
     margin-left: 5px;
 }
 
-.h2 {
-    font-size: 18px;
-    color: black;
-    padding: 5px 5px 5px 5px;
-    font-weight: bold;
+
+/* Estilos adicionales para la lista de favoritos */
+.seccion-favoritos {
+    margin: 3%;
+    color: white;
+    animation: barrido-desde-arriba 0.3s ease-in-out forwards;
+}
+
+.seccion-favorito {
+    padding: 10px;
+    background-color: #e2e2e2;
+    border: none;
+    border-radius: 20px;
+    margin: 10px auto;
+    cursor: pointer;
     display: flex;
-    justify-content: space-between;
+    align-items: center; /* Alinea los elementos verticalmente en el centro */
+    justify-content: flex-start;
+    animation: barrido-desde-arriba-barra 0s ease-in-out forwards;
 }
 
-.h3 {
-    font-size: 14px;
-    color: black;
-    align-items: center;
-    padding: 5px 5px 5px 0px;
-    display: flex;
-    justify-content: space-between;
+/* Estilos para la imagen */
+.estilo-imagen {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 25%;
+    object-fit: cover;
+    border: 1px solid #ccc;
 }
-
-.h4 {
-    font-size: 16px;
-    color: black;
-    padding: 0px 5px 5px 5px;
-    vertical-align: middle;
-}
-
-
 
 /* Estilos para el ID */
 .h8 {
@@ -136,10 +99,7 @@ body {
     font-weight: bold;
     text-align: left;
     text-decoration: none;
-    box-shadow: inset 0 -3px 0 0 red;
-    box-shadow: none;
     display: block; /* Muestra el ID en una línea separada */
-    margin-bottom: 5px; /* Espacio entre el ID y el Nombre */
 }
 
 /* Estilos para el Nombre */
@@ -148,16 +108,4 @@ body {
     color: gray;
     text-align: left;
     display: block; /* Muestra el Nombre en una línea separada */
-}
-
-/* ANIMACIONES */
-@keyframes barrido-desde-arriba {
-    0% {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }

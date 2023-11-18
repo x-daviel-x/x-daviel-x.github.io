@@ -33,9 +33,9 @@ document.addEventListener('DOMContentLoaded', () => {
       const toggleButton = document.getElementById('cambiar-modo');
       if (toggleButton) {
           if (isModoOscuro) {
-              toggleButton.textContent = 'Desactivar';
-          } else {
               toggleButton.textContent = 'Activar';
+          } else {
+              toggleButton.textContent = 'Desactivar';
           }
       }
   }
