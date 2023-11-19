@@ -10,6 +10,10 @@
     <title>Configuración</title>
 </head>
 <body>
+    
+    <audio id="correctSound"></audio>
+    <audio id="incorrectSound"></audio>
+
     <div class="seccion-encabezado">
         <i class="fa-duotone fa-gear icono-1" style="--fa-primary-color: #41577c; --fa-secondary-color: #41577c;"></i>
         <div class="h1">Configuración</div>
@@ -32,8 +36,13 @@
         </div>
     </div>
 
-    <audio id="correctSound"></audio>
-    <audio id="incorrectSound"></audio>
+    <div class="seccion-ultima"></div>
+
+    <div class="barra-inferior">
+        <a href="../../minijuegos/minijuegos.html"><i class="fa-regular fa-joystick icono-b" onclick="change(this)"></i></a>
+        <a href="../../inicio/inicio.html"><i class="fa-regular fa-home icono-b icono-b-activo" onclick="change(this)"></i></a>
+        <a href="../../archivo/archivo.html"><i class="fa-regular fa-folders icono-b" onclick="change(this)"></i></a>
+    </div>
 
     <script src="../../js/modo-oscuro.js"></script>
 </body>

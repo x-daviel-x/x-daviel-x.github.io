@@ -263,7 +263,7 @@ let questions = [
             { text: "Assassination Classroom", imagePath: "../../archivo/animes/code geass/icono.png" },
             { text: "Anohana", imagePath: "../../archivo/animes/chainsaw man/icono.png" },
             { text: "Afro Samurai", imagePath: "../../archivo/animes/cowboy bebop/icono.png" },
-            { text: "Ataque a los titanes", imagePath: "../../archivo/animes/darwin's game/icono.png" },
+            { text: "Ataque a los titanes", imagePath: "../../archivo/animes/darwins game/icono.png" },
         ],
         correctAnswer: 2
     },
@@ -273,7 +273,7 @@ let questions = [
     {
         question: "Selecciona la imagen de Code Geass.",
         options: [
-            { text: "Banana Fish", imagePath: "../../archivo/animes/darwin's game/icono.png" },
+            { text: "Banana Fish", imagePath: "../../archivo/animes/darwins game/icono.png" },
             { text: "One Piece", imagePath: "../../archivo/animes/cowboy bebop/icono.png" },
             { text: "Naruto", imagePath: "../../archivo/animes/code geass/icono.png" },
             { text: "Anohana", imagePath: "../../archivo/animes/death note/icono.png" },
@@ -284,7 +284,7 @@ let questions = [
         question: "Selecciona la imagen de Cowboy Bebop.",
         options: [
             { text: "Afro Samurai", imagePath: "../../archivo/animes/death note/icono.png" },
-            { text: "Pokemon", imagePath: "../../archivo/animes/darwin's game/icono.png" },
+            { text: "Pokemon", imagePath: "../../archivo/animes/darwins game/icono.png" },
             { text: "One Piece", imagePath: "../../archivo/animes/cowboy bebop/icono.png" },
             { text: "Anohana", imagePath: "../../archivo/animes/digimon adventure/icono.png" },
         ],
@@ -295,7 +295,7 @@ let questions = [
         options: [
             { text: "Anohana", imagePath: "../../archivo/animes/digimon adventure/icono.png" },
             { text: "Afro Samurai", imagePath: "../../archivo/animes/death note/icono.png" },
-            { text: "Pokemon", imagePath: "../../archivo/animes/darwin's game/icono.png" },
+            { text: "Pokemon", imagePath: "../../archivo/animes/darwins game/icono.png" },
             { text: "Assassination Classroom", imagePath: "../../archivo/animes/dr. stone/icono.png" },
         ],
         correctAnswer: 3

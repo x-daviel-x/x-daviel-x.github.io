@@ -18,7 +18,7 @@ body {
 }
 
 .seccion {
-    background-color: #c4c4c4;
+    background-color: #e2e2e2;
     padding: 10px;
     border-radius: 20px;
     margin: 10px;
@@ -113,7 +113,7 @@ body {
 
 .h3 {
     font-size: 14px;
-    color: black;
+    color: rgb(66, 66, 66);
     align-items: center;
     padding: 5px 5px 5px 0px;
     display: flex;
@@ -122,7 +122,7 @@ body {
 
 .h4 {
     font-size: 16px;
-    color: black;
+    color: rgb(66, 66, 66);
     padding: 0px 5px 5px 5px;
     vertical-align: middle;
 }

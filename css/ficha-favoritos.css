@@ -61,8 +61,14 @@ body {
     margin-left: 5px;
 }
 
+.h2 {
+    font-size: 18px;
+    color: gray;
+    font-weight: normal;
+}
 
-/* Estilos adicionales para la lista de favoritos */
+
+
 .seccion-favoritos {
     margin: 3%;
     color: white;

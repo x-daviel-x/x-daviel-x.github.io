@@ -27,8 +27,8 @@ body {
     animation: barrido-desde-arriba 0.3s ease-in-out forwards;
 }
 
-.ultima-seccion {
-    padding: 15px;
+.seccion-ultima {
+    padding: 30px;
 }
 
 /* ELEMENTOS DE LAS SECCIONES */

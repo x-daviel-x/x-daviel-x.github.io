@@ -21,8 +21,8 @@ body {
     text-align: center;
 }
 
-.ultima-seccion {
-    padding: 15px;
+.seccion-ultima {
+    padding: 45px;
 }
 
 /* ELEMENTOS DE LAS SECCIONES */
@@ -32,6 +32,63 @@ body {
     display: inline-block;
     vertical-align: middle;
 }
+
+
+
+
+
+.minijuego-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px; /* Limitando el ancho para evitar que el juego se expanda demasiado en pantallas grandes */
+    margin: auto; /* Centra el contenedor horizontalmente y agrega margen superior e inferior */
+  }
+  
+  .memory-game {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    grid-gap: 5px;
+  }
+  .card {
+    border-radius: 20px;
+    width: 100%;
+    position: relative;
+    background-color: #ddd;
+    cursor: pointer;
+    transition: transform 0.5s;
+    overflow: hidden; /* Asegura que las imágenes se ajusten correctamente */
+  }
+  
+  .card img {
+    border-radius: 20px;
+    width: 80%;
+    padding: 5px 0px 5px 0px;
+    height: 80%;
+    vertical-align: middle;
+    object-fit: cover;
+  }
+  
+  .card.flipped {
+    transform: rotateY(180deg);
+  }
+  
+  .card.matched {
+    background-color: #8aff8a;
+    cursor: default;
+  }
+
+
+
+
+
+
+
+
+
+
+
 
 /* TEXTO */
 .h1 {
