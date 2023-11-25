@@ -13,32 +13,34 @@ body {
     padding: 10px;
     border-radius: 20px;
     text-align: center;
-    margin: 10px;
+    margin: 3%;
     animation: barrido-desde-arriba 0.3s ease-in-out forwards;
 }
 
 .seccion {
-    padding: 10px;
+    margin: 3%;
     text-align: center;
     animation: barrido-desde-arriba 0.6s ease-in-out forwards;
+}
+
+.seccion-ultima {
+    padding: 40px;
 }
 
 /* TEXTO */
 .h1 {
     font-size: 24px;
-    color: white;
     font-weight: bold;
-     /* Tamaño del icono anterior */display: inline-block;
+    color: white;
     vertical-align: middle;
-    margin-left: 10px;
+    display: inline-block;
+    margin-left: 5px;
 }
 
 .h2 {
-    padding: 10px 0px;
-    border-radius: 5px;
     font-size: 18px;
     color: white;
-    font-weight: normal;
+    padding: 10px 0px;
 }
 
 .h3 {
@@ -48,7 +50,7 @@ body {
 
 .h4 {
     font-size: 18px;
-    color: gray;
+    color: #333333;
 }
 
 a {
@@ -56,50 +58,29 @@ a {
     text-decoration: none;
 }
 
-/* BOTONES */
-.boton {
-    background-color: red;
-    color: white;
-    font-size: 18px;
-    padding: 10px;
-    border-radius: 20px;
-    display: block;
-}
-
-.boton-2 {
-    background-color: red;
-    color: white;
-    font-size: 18px;
-    padding: 10px 20px;
-    border-radius: 20px;
-    margin-top: 10px;
-    display: block;
-}
-
 /* ELEMENTOS DE LAS SECCIONES */
-.icon {
+.icono-i {
     width: 60px;
     height: 60px;
     vertical-align: middle;
     border-radius: 20px;
 }
 
-.icono-2 {
-    font-size: 55px;
+.icono-f {
+    font-size: 45px;
     display: inline-block;
     vertical-align: middle;
 }
 
 .poster {
     max-width: 100%;
-    height: auto;
     border-radius: 20px;
 }
 
 .trailer {
     position: relative;
     padding-bottom: 50%;
-  }
+}
   
 .trailer iframe {
     position: absolute;
@@ -110,7 +91,25 @@ a {
     border-radius: 20px;
 }
 
+/* BOTONES */
+.boton {
+    font-size: 18px;
+    color: white;
+    background-color: red;
+    padding: 10px;
+    border-radius: 20px;
+    display: block;
+}
 
+.boton-2 {
+    font-size: 18px;
+    color: white;
+    background-color: red;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: block;
+    margin-top: 10px;
+}
 
 /* MODO OSCURO */
 body.modo-oscuro {
@@ -141,8 +140,6 @@ body.modo-oscuro {
 .modo-oscuro .boton-2 {
     background-color: #ff0033; /* Color de fondo diferente en modo oscuro */
 }
-
-
 
 /* ANIMACIONES */
 @keyframes barrido-desde-arriba {

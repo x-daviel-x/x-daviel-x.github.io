@@ -23,45 +23,6 @@ body {
     animation: barrido-desde-arriba 0.4s ease-in-out forwards;
 }
 
-.slider {
-    width: 100%;
-    position: relative;
-    display: flex;
-    overflow: scroll;
-    scroll-snap-type: x mandatory;
-}
-.slider img {
-    width: 100%;
-    position: sticky;
-    object-fit: cover;
-    scroll-snap-align: center;
-    border-radius: 20px;
-    height: auto;
-    margin-right: 10px; /* Ajusta el margen entre las imágenes */
-}
-
-.slider {
-    width: 100%;
-    position: relative;
-    display: flex;
-    overflow: scroll;
-    scroll-snap-type: x mandatory;
-}
-
-.slide {
-    position: relative;
-    flex: 0 0 calc(100% - 10px);
-    margin-right: 10px;
-    scroll-snap-align: start;
-}
-
-.slide img {
-    width: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-    height: auto;
-}
-
 .seccion-portada {
     background-color: #333333;
     padding: 10px;
@@ -71,7 +32,43 @@ body {
     animation: barrido-desde-arriba 0.4s ease-in-out forwards;
 }
 
-.seccion-producciones {
+.slide {
+    position: relative;
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.slide img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 5px;
+}
+
+.slider {
+    width: 100%;
+    position: relative;
+    display: flex;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.texto-slider {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border: black;
+    text-align: center;
+    text-shadow: black 0px 0px 6px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.seccion-catalogo {
     border-radius: 20px;
     background-color: #e2e2e2;
     padding: 10px 10px;
@@ -86,7 +83,7 @@ body {
 }
 
 .seccion-ultima {
-    padding: 50px;
+    padding: 40px;
 }
 
 /* TEXTO */
@@ -123,48 +120,12 @@ a {
     font-weight: bold;
 }
 
-/* Agrega esto al final de tu archivo CSS */
-
-.slider {
-    width: 100%;
-    position: relative;
-    display: flex;
-    overflow: scroll;
-    scroll-snap-type: x mandatory;
-}
-
-.slide {
-    position: relative;
-    flex: 0 0 100%; /* Ajusta esto según sea necesario */
-    scroll-snap-align: start;
-}
-
-.texto-slider {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    font-weight: bold;
-    transform: translateX(-50%);
-    color: white;
-    font-size: 20px;
-    border: black;
-    text-align: center;
-    text-shadow: black 0px 0px 6px;
-}
-
-
 /* ELEMENTOS DE LAS SECCIONES */
 .icono-1 {
     font-size: 55px;
     margin: 10px;
     display: inline-block;
     vertical-align: middle;
-}
-
-.portada {
-    border-radius: 20px;
-    max-width: 100%;
-    height: auto;
 }
 
 .boton {
@@ -186,7 +147,6 @@ a {
     animation: button-shimmer 1s infinite;
     transition: all 0.2s ease-in-out;
 }
-
 
 /* PRODUCCIONES */
 .producciones {
@@ -231,9 +191,7 @@ a {
   }
 .boton-2:active {
     transform: scale(0.97);
-  }
-
-
+}
 
 /* MODO OSCURO */
 body.modo-oscuro {

@@ -1,5 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
   const images = [
+    '../../archivo/colecciones/dragon ball/icono.png',
+    '../../archivo/colecciones/evangelion/icono.png',
+    '../../archivo/colecciones/fullmetal alchemist/icono.png',
+    '../../archivo/colecciones/ghost in the shell/icono.png',
+    '../../archivo/colecciones/hunter x hunter/icono.png',
+    '../../archivo/colecciones/kimetsu no yaiba/icono.png',
+    '../../archivo/colecciones/los siete pecados capitales/icono.png',
+    '../../archivo/colecciones/my hero academia/icono.png',
+    '../../archivo/colecciones/naruto/icono.png',
+    '../../archivo/colecciones/one piece/icono.png',
+    '../../archivo/colecciones/pokemon/icono.png',
+
     '../../archivo/animes/afro samurai/icono.png',
     '../../archivo/animes/akame ga kill!/icono.png',
     '../../archivo/animes/akatsuki no yona/icono.png',
@@ -28,9 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     '../../archivo/animes/espiritu de lucha/icono.png',
     '../../archivo/animes/fairy tail/icono.png',
     '../../archivo/animes/fire force/icono.png',
-    // ... Agrega más rutas de imágenes según sea necesario
   ];
-
 
   const cantidadMinima = 3;
   const cantidadMaxima = 5;

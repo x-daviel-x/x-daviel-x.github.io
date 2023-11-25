@@ -13,47 +13,47 @@ body {
     padding: 10px;
     border-radius: 20px;
     text-align: center;
-    margin: 10px;
-    color: white;
+    margin: 3%;
     animation: barrido-desde-arriba 0.3s ease-in-out forwards;
 }
 
 .seccion {
-    padding: 10px;
+    margin: 3%;
     text-align: center;
-    border-radius: 0px;
     animation: barrido-desde-arriba 0.3s ease-in-out forwards;
 }
 
-/* ELEMENTOS DE LAS SECCIONES */
-.logo {
-    max-width: 100%;
-    height: auto;
-}
-
-.imagen {
-    height: auto;
-    max-width: 100%;
-    border-radius: 20px;
+.seccion-ultima {
+    padding: 40px;
 }
 
 /* TEXTO */
 .h1 {
     font-size: 20px;
     font-weight: bold;
+    color: white;
     vertical-align: middle;
 }
 
 .h2 {
     font-size: 18px;
     font-weight: bold;
-    vertical-align: middle;
 }
 
 .h3 {
     font-size: 16px;
     color: #333333;
-    vertical-align: middle;
+    padding: 0px 5px;
+}
+
+/* ELEMENTOS DE LAS SECCIONES */
+.logo {
+    max-width: 100%;
+}
+
+.imagen {
+    max-width: 100%;
+    border-radius: 20px;
 }
 
 /* ANIMACIONES */
