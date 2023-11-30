@@ -59,6 +59,7 @@ body {
     cursor: pointer;
     transition: transform 0.5s;
     overflow: hidden; /* Asegura que las imágenes se ajusten correctamente */
+    transform: rotateY(180deg);
   }
   
   .card img {
@@ -71,7 +72,7 @@ body {
   }
   
   .card.flipped {
-    transform: rotateY(180deg);
+    transform: rotateY(360deg);
   }
   
   .card.matched {
@@ -82,14 +83,7 @@ body {
 
 
 
-
-
-
-
-
-
-
-
+  
 /* TEXTO */
 .h1 {
     font-size: 24px;
@@ -139,7 +133,7 @@ body {
 }
 
 .custom-button {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
     background-color: red;
     color: white;
     font-size: 18px;

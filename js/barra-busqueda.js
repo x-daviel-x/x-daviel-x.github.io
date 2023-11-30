@@ -3,7 +3,21 @@ const elements = [
         title: "Kimetsu no Yaiba", 
         subtitle: "Colección", 
         link: "../archivo/colecciones/kimetsu no yaiba/fr.html", 
-        icon: "../archivo/colecciones/kimetsu no yaiba/icono.png",
+        icon: "../archivo/colecciones/kimetsu no yaiba/icono.webp",
+        keywords: ["koyoharu gotouge", "demon slayer", "鬼滅の刃"]
+    },
+    { 
+        title: "Kimetsu no Yaiba", 
+        subtitle: "Anime", 
+        link: "../archivo/colecciones/kimetsu no yaiba/animes/kimetsu no yaiba/ft.html", 
+        icon: "../archivo/colecciones/kimetsu no yaiba/animes/kimetsu no yaiba/icono.webp",
+        keywords: ["koyoharu gotouge", "demon slayer", "鬼滅の刃"]
+    },
+    { 
+        title: "El tren infinito", 
+        subtitle: "Película de Kimetsu no Yaiba", 
+        link: "../archivo/colecciones/kimetsu no yaiba/peliculas/mugen ressha-hen/ft.html", 
+        icon: "../archivo/colecciones/kimetsu no yaiba/peliculas/mugen ressha-hen/poster.webp", 
         keywords: ["koyoharu gotouge", "demon slayer", "鬼滅の刃"]
     },
 
@@ -13,15 +27,8 @@ const elements = [
         title: "Afro Samurai", 
         subtitle: "Anime", 
         link: "../archivo/animes/afro samurai/ft.html", 
-        icon: "../archivo/animes/afro samurai/icono.png",
+        icon: "../archivo/animes/afro samurai/icono.webp",
         keywords: ["afro samurai", "negro", "prieto"]
-    },
-    { 
-        title: "Kimetsu no Yaiba", 
-        subtitle: "Anime", 
-        link: "../archivo/colecciones/kimetsu no yaiba/animes/kimetsu no yaiba/ft.html", 
-        icon: "../archivo/colecciones/kimetsu no yaiba/animes/kimetsu no yaiba/icono.png",
-        keywords: ["koyoharu gotouge", "demon slayer", "鬼滅の刃"]
     },
 
 
@@ -30,7 +37,7 @@ const elements = [
         title: "Akira", 
         subtitle: "Película", 
         link: "../archivo/peliculas/akira/ft.html", 
-        icon: "../archivo/peliculas/akira/poster.png",
+        icon: "../archivo/peliculas/akira/poster.webp",
         keywords: ["akira", "pelicula", ""]
     },
 ];

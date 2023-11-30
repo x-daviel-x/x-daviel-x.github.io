@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="../../../images/favicon.ico">
     <link rel="stylesheet" href="../../../css/ficha-general.css">
+    <link rel="stylesheet" href="../../../css/barra-inferior.css">
     <title>Akira</title>
 </head>
 
 <body>
     <div class="primera-seccion">
-        <img id="icono" src="poster.png" class="poster">
+        <img id="icono" src="poster.webp" class="poster">
         <div id="nombre" class="h1">Akira</div>
         <div id="tipo" style="display: none;">Película</div>
         <div class="h2">Akira (アキラ), en un Neo-Tokio posapocalíptico, dos amigos, Kaneda y Tetsuo, enfrentan un poder psíquico desatado después de un experimento secreto. La lucha de Tetsuo por controlar su poder desencadena el caos y revela oscuros secretos sobre el proyecto "Akira".</div>
@@ -37,20 +37,8 @@
     </div>
 
     <div class="seccion">
-        <div class="h3">Idiomas</div>
-        <div class="h4">Español y Japonés</div>
-        </div>
-    </div>
-
-    <div class="seccion">
         <div class="h3">Estudio</div>
         <div class="h4">TMS Entertaiment</div>
-        </div>
-    </div>
-
-    <div class="seccion">
-        <div class="h3">Calificación</div>
-        <div class="h4">IMDb: 7.7 de 10 (16K)</div>
         </div>
     </div>
 
@@ -67,7 +55,15 @@
         </div>
     </div>
     
-    <script src="../../../js/modo-oscuro.js"></script>   
+    <div class="seccion-ultima"></div>
+
+    <div class="barra-inferior">
+        <a href="../../../minijuegos/minijuegos.html"><i class="fa-regular fa-joystick icono-b" onclick="change(this)"></i></a>
+        <a href="../../../inicio/inicio.html"><i class="fa-regular fa-home icono-b" onclick="change(this)"></i></a>
+        <a href="../../../archivo/archivo.html"><i class="fa-regular fa-folders icono-b-activo" onclick="change(this)"></i></a>
+    </div>
+    
+    <script src="../../../js/configuracion.js"></script>   
     <script src="../../../js/favorito-produccion.js"></script>  
 </body>
 </html>
