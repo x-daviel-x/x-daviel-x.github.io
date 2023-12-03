@@ -104,6 +104,57 @@ body {
     vertical-align: middle;
 }
 
+
+
+/* MODO OSCURO */
+body.modo-oscuro {
+    background-color: #252525;
+}
+
+.modo-oscuro .seccion-encabezado {
+    background-color: #1b1b1b; /* Color de fondo diferente en modo oscuro */
+}
+
+.modo-oscuro .seccion {
+    background-color: #333; /* Color de fondo diferente en modo oscuro */
+}
+
+
+.modo-oscuro .seccion-ultima {
+    background-color: #252525; /* Color de fondo diferente en modo oscuro */
+}
+
+.modo-oscuro .h1 {
+    color: rgb(255, 255, 255);
+}
+
+.modo-oscuro .h2 {
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+}
+
+.modo-oscuro .h3 {
+    font-weight: normal;
+    color: rgb(228, 228, 228);
+}
+
+.modo-oscuro .h4 {
+    color: rgb(200, 200, 200);
+}
+
+.modo-oscuro .boton {
+    background-color: #ff0033; /* Color de fondo diferente en modo oscuro */
+}
+
+.modo-oscuro .boton-2 {
+    background-color: #ff0033; /* Color de fondo diferente en modo oscuro */
+}
+
+
+
+
+
+
 /* ANIMACIONES */
 @keyframes barrido-desde-arriba {
     0% {

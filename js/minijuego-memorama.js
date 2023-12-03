@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const cards = getShuffledSubset(images, cantidadAMostrar);
   const duplicatedCards = [...cards, ...cards];
 
-  const initialImagePath = 'fondo.png';
+  const initialImagePath = 'fondo.webp';
 
   const memoryGame = document.querySelector('.memory-game');
   let flippedCards = [];

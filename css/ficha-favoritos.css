@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
-
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
@@ -89,4 +88,47 @@ body {
     color: gray;
     text-align: left;
     display: block; /* Muestra el Nombre en una línea separada */
+}
+
+/* MODO OSCURO */
+body.modo-oscuro {
+    background-color: #252525;
+}
+
+.modo-oscuro .seccion-encabezado {
+    background-color: #1b1b1b; /* Color de fondo diferente en modo oscuro */
+}
+
+.modo-oscuro .seccion {
+    background-color: #252525; /* Color de fondo diferente en modo oscuro */
+}
+
+.modo-oscuro .seccion-favorito {
+    background-color: #333; /* Color de fondo diferente en modo oscuro */
+}
+
+.modo-oscuro .seccion-ultima {
+    background-color: #252525; /* Color de fondo diferente en modo oscuro */
+}
+
+.modo-oscuro .h1 {
+    color: rgb(255, 255, 255);
+}
+
+.modo-oscuro .h3 {
+    font-weight: normal;
+    color: rgb(228, 228, 228);
+}
+
+.modo-oscuro .h8 {
+    font-weight: normal;
+    color: rgb(228, 228, 228);
+}
+
+.modo-oscuro .boton {
+    background-color: #ff0033; /* Color de fondo diferente en modo oscuro */
+}
+
+.modo-oscuro .boton-2 {
+    background-color: #ff0033; /* Color de fondo diferente en modo oscuro */
 }

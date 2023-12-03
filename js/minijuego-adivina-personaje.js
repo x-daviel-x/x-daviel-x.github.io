@@ -17,25 +17,25 @@ let questions = [
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Afro / Afro Samurai", "Asta / Black Clover ", "Baki Hanma / Baki", "Edward Elric / Fullmetal Alchemist"],
     correctAnswer: 1,
-    image: "imagenes/afro.png"
+    image: "imagenes/afro.webp"
   },
   {
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Asta / Black Clover", "Baki Hanma / Baki", "Edward Elric / Fullmetal Alchemist", "Eren Yeager / Ataque a los titanes"],
     correctAnswer: 1,
-    image: "imagenes/asta.png"
+    image: "imagenes/asta.webp"
   },
   {
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Baki Hanma / Baki", "Edward Elric / Fullmetal Alchemist", "Eren Yeager / Ataque a los titanes", "Gon Freecss / Hunter x Hunter"],
     correctAnswer: 1,
-    image: "imagenes/baki hanma.png"
+    image: "imagenes/baki hanma.webp"
   },
   {
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Edward Elric / Fullmetal Alchemist", "Eren Yeager / Ataque a los titanes", "Gon Freecss / Hunter x Hunter", "Izuku Midoriya / My Hero Academia"],
     correctAnswer: 1,
-    image: "imagenes/edward elric.png"
+    image: "imagenes/edward elric.webp"
   },
 
 
@@ -44,25 +44,25 @@ let questions = [
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Gon Freecss / Hunter x Hunter", "Eren Yeager / Ataque a los Titanes", "Izuku Midoriya / My Hero Academia", "Jotaro Kujo / JoJo's Bizarre Adventure"],
     correctAnswer: 2,
-    image: "imagenes/eren yeager.png"
+    image: "imagenes/eren yeager.webp"
   },
   {
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Izuku Midoriya / My Hero Academia", "Gon Freecss / Hunter x Hunter", "Jotaro Kujo / JoJo's Bizarre Adventure", "Kenshin Himura / Sámurai X"],
     correctAnswer: 2,
-    image: "imagenes/gon freecss.png"
+    image: "imagenes/gon freecss.webp"
   },
   {
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Jotaro Kujo / JoJo's Bizarre Adventure", "Izuku Midoriya / My Hero Academia", "Kenshin Himura / Sámurai X", "Lelouch Lamperouge / Code Geass"],
     correctAnswer: 2,
-    image: "imagenes/izuku midoriya.png"
+    image: "imagenes/izuku midoriya.webp"
   },
   {
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Kenshin Himura / Sámurai X", "Jotaro Kujo / JoJo's Bizarre Adventure", "Lelouch Lamperouge / Code Geass", "Monkey D. Luffy / One Piece"],
     correctAnswer: 2,
-    image: "imagenes/jotaro kujo.png"
+    image: "imagenes/jotaro kujo.webp"
   },
 
 
@@ -71,25 +71,25 @@ let questions = [
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Monkey D. Luffy / One Piece", "Lelouch Lamperouge / Code Geass", "Kenshin Himura / Sámurai X", "Naruto Uzumaki / Naruto Shippuden"],
     correctAnswer: 3,
-    image: "imagenes/kenshin himura.png"
+    image: "imagenes/kenshin himura.webp"
   },
   {
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Naruto Uzumaki / Naruto Shippuden", "Monkey D. Luffy / One Piece", "Lelouch Lamperouge / Code Geass", "Ryuk / Death Note"],
     correctAnswer: 3,
-    image: "imagenes/lelouch lamperouge.png"
+    image: "imagenes/lelouch lamperouge.webp"
   },
   {
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Ryuk / Death Note", "Naruto Uzumaki / Naruto Shippuden", "Monkey D. Luffy / One Piece", "Saitama / One Punch Man"],
     correctAnswer: 3,
-    image: "imagenes/monkey d. luffy.png"
+    image: "imagenes/monkey d. luffy.webp"
   },
   {
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Saitama / One Punch Man", "Ryuk / Death Note", "Naruto Uzumaki /  Naruto Shippuden", "Shinji Ikari / Neon Genesis Evangelion"],
     correctAnswer: 3,
-    image: "imagenes/naruto uzumaki 2.png"
+    image: "imagenes/naruto uzumaki 2.webp"
   },
 
 
@@ -98,25 +98,25 @@ let questions = [
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Son Goku / Dragon Ball", "Shinji Ikari / Neon Genesis Evangelion", "Saitama / One Punch Man", "Ryuk / Death Note"],
     correctAnswer: 4,
-    image: "imagenes/ryuk.png"
+    image: "imagenes/ryuk.webp"
   },
   {
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Tanjiro Kamado / Kimetsu no Yaiba", "Son Goku / Dragon Ball", "Shinji Ikari / Neon Genesis Evangelion", "Saitama / One Punch Man"],
     correctAnswer: 4,
-    image: "imagenes/saitama.png"
+    image: "imagenes/saitama.webp"
   },
   {
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Usagi Tsukino / Sailor Moon ", "Tanjiro Kamado / Kimetsu no Yaiba", "Son Goku / Dragon Ball", "Shinji Ikari / Neon Genesis Evangelion"],
     correctAnswer: 4,
-    image: "imagenes/shinji ikari.png"
+    image: "imagenes/shinji ikari.webp"
   },
   {
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Agumon / Digimon", "Usagi Tsukino / Sailor Moon ", "Tanjiro Kamado / Kimetsu no Yaiba", "Son Goku / Dragon Ball"],
     correctAnswer: 4,
-    image: "imagenes/son goku.png"
+    image: "imagenes/son goku.webp"
   },
 
 
@@ -125,25 +125,25 @@ let questions = [
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Tanjiro Kamado / Demon Slayer", "Usagi Tsukino / Sailor Moon", "Agumon / Digimon", "Akame / Akame ga Kill!"],
     correctAnswer: 1,
-    image: "imagenes/tanjiro kamado.png"
+    image: "imagenes/tanjiro kamado.webp"
   },
   {
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Usagi Tsukino / Sailor Moon", "Agumon / Digimon", "Akame / Akame ga Kill!", "Alucard / Hellsing"],
     correctAnswer: 1,
-    image: "imagenes/usagi tsukino.png"
+    image: "imagenes/usagi tsukino.webp"
   },
   {
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Agumon / Digimon", "Akame / Akame ga Kill!", "Alucard / Hellsing", "Ash Ketchum / Pokémon"],
     correctAnswer: 1,
-    image: "imagenes/agumon.png"
+    image: "imagenes/agumon.webp"
   },
   {
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Akame / Akame ga Kill!", "Alucard / Hellsing", "Ash Ketchum / Pokémon", "Ash Lynx / Banana Fish"],
     correctAnswer: 1,
-    image: "imagenes/akame.png"
+    image: "imagenes/akame.webp"
   },
 
 
@@ -152,25 +152,25 @@ let questions = [
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Ash Ketchum / Pokémon", "Alucard / Hellsing", "Ash Lynx / Banana Fish", "Chihiro Ogino / El viaje de Chihiro"],
     correctAnswer: 2,
-    image: "imagenes/alucard.png"
+    image: "imagenes/alucard.webp"
   },
   {
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Ash Lynx / Banana Fish", "Ash Ketchum / Pokémon", "Chihiro Ogino / El viaje de Chihiro", "Conan Edogawa / Detective Conan"],
     correctAnswer: 2,
-    image: "imagenes/ash ketchum.png"
+    image: "imagenes/ash ketchum.webp"
   },
   {
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Chihiro Ogino / El viaje de Chihiro", "Ash Lynx / Banana Fish", "Conan Edogawa / Detective Conan", "Denji / Chainsaw Man"],
     correctAnswer: 2,
-    image: "imagenes/ash lynx.png"
+    image: "imagenes/ash lynx.webp"
   },
   {
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Conan Edogawa / Detective Conan", "Chihiro Ogino / El viaje de Chihiro", "Denji / Chainsaw Man", "Eijun Sawamura / Diamond no Ace"],
     correctAnswer: 2,
-    image: "imagenes/chihiro ogino.png"
+    image: "imagenes/chihiro ogino.webp"
   },
 
 
@@ -179,25 +179,25 @@ let questions = [
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Eijun Sawamura / Diamond No Ace", "Denji / Chainsaw Man", "Conan Edogawa / Detective Conan", "Firo Prochainezo / Baccano!"],
     correctAnswer: 3,
-    image: "imagenes/conan edogawa.png"
+    image: "imagenes/conan edogawa.webp"
   },
   {
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Firo Prochainezo / Baccano!", "Eijun Sawamura / Diamond No Ace", "Denji / Chainsaw Man", "Guts / Berserk"],
     correctAnswer: 3,
-    image: "imagenes/denji.png"
+    image: "imagenes/denji.webp"
   },
   {
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Guts / Berserk", "Firo Prochainezo / Baccano!", "Eijun Sawamura / Diamond No Ace", "Ichigo Kurosaki / Bleach"],
     correctAnswer: 3,
-    image: "imagenes/eijun sawamura.png"
+    image: "imagenes/eijun sawamura.webp"
   },
   {
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Ichigo Kurosaki / Bleach", "Guts / Berserk", "Firo Prochainezo / Baccano!", "Inuyasha / Inuyasha"],
     correctAnswer: 3,
-    image: "imagenes/firo prochainezo.png"
+    image: "imagenes/firo prochainezo.webp"
   },
 
 
@@ -207,25 +207,25 @@ let questions = [
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Korosensei / Assassination Classroom", "Inuyasha / Inuaysha", "Ichigo Kurasaki / Bleach", "Guts / Berserk"],
     correctAnswer: 4,
-    image: "imagenes/guts.png"
+    image: "imagenes/guts.webp"
   },
   {
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Maka Albarn / Soul Eater", "Korosensei / Assassination Classroom", "Inuyasha / Inuaysha", "Ichigo Kurasaki / Bleach"],
     correctAnswer: 4,
-    image: "imagenes/ichigo kurosaki.png"
+    image: "imagenes/ichigo kurosaki.webp"
   },
   {
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Meiko Honma / Anohana", "Maka Albarn / Soul Eater", "Korosensei / Assassination Classroom", "Inuyasha / Inuaysha"],
     correctAnswer: 4,
-    image: "imagenes/inuyasha.png"
+    image: "imagenes/inuyasha.webp"
   },
   {
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Natsu Dragneel / Fairy Tail", "Meiko Honma / Anohana", "Maka Albarn / Soul Eater", "Korosensei / Assassination Classroom"],
     correctAnswer: 4,
-    image: "imagenes/korosensei.png"
+    image: "imagenes/korosensei.webp"
   },
 
 
@@ -235,25 +235,25 @@ let questions = [
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Maka Albarn / Soul Eater", "Meiko Honma / Anohana", "Natsu Dragneel / Fairy Tail", "Sakura Kinomoto / Sakura Card Captor"],
     correctAnswer: 1,
-    image: "imagenes/maka albarn.png"
+    image: "imagenes/maka albarn.webp"
   },
   {
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Meiko Honma / Anohana", "Natsu Dragneel / Fairy Tail", "Sakura Kinomoto / Sakura Card Captor", "Satoru Gojo / Jujutsu Kaisen"],
     correctAnswer: 1,
-    image: "imagenes/meiko honma.png"
+    image: "imagenes/meiko honma.webp"
   },
   {
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Natsu Dragneel / Fairy Tail", "Sakura Kinomoto / Sakura Card Captor", "Satoru Gojo / Jujutsu Kaisen", "Senku Ishigami / Dr. Stone"],
     correctAnswer: 1,
-    image: "imagenes/natsu dragneel.png"
+    image: "imagenes/natsu dragneel.webp"
   },
   {
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Sakura Kinomoto / Sakura Card Captor", "Satoru Gojo / Jujutsu Kaisen", "Senku Ishigami / Dr. Stone", "Shinra Kusakabe / Fire Force"],
     correctAnswer: 1,
-    image: "imagenes/sakura kinomoto.png"
+    image: "imagenes/sakura kinomoto.webp"
   },
 
 
@@ -262,25 +262,25 @@ let questions = [
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Senku Ishigami / Dr. Stone", "Satoru Gojo / Jujutsu Kaisen", "Shinra Kusakabe / Fire Force", "Shotaro Kaneda / Akira"],
     correctAnswer: 2,
-    image: "imagenes/satoru gojo.png"
+    image: "imagenes/satoru gojo.webp"
   },
   {
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Shinra Kusakabe / Fire Force", "Senku Ishigami / Dr. Stone", "Shotaro Kaneda / Akira", "Shoyo Hinata / Haikyuu!!"],
     correctAnswer: 2,
-    image: "imagenes/senku ishigami.png"
+    image: "imagenes/senku ishigami.webp"
   },
   {
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Shotaro Kaneda / Akira", "Shinra Kusakabe / Fire Force", "Shoyo Hinata  / Haikyuu!!", "Simon / Tengen Toppa Gurren Lagann"],
     correctAnswer: 2,
-    image: "imagenes/shinra kusakabe.png"
+    image: "imagenes/shinra kusakabe.webp"
   },
   {
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Shoyo Hinata / Haikyuu!!", "Shotaro Kaneda / Akira", "Simon / Tengen Toppa Gurren Lagann", "Spike Spiegel / Cowboy Bebop"],
     correctAnswer: 2,
-    image: "imagenes/shotaro kaneda.png"
+    image: "imagenes/shotaro kaneda.webp"
   },
 
 
@@ -289,25 +289,25 @@ let questions = [
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Spike Spiegel / Cowboy Bebop", "Simon / Tengen Toppa Gurren Lagann", "Shoyo Hinata / Haikyuu!!", "Takashi Mitsuya / Tokyo Revengers"],
     correctAnswer: 3,
-    image: "imagenes/shoyo hinata.png"
+    image: "imagenes/shoyo hinata.webp"
   },
   {
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Takashi Mitsuya / Tokyo Revengers", "Spike Spiegel / Cowboy Bebop", "Simon / Tengen Toppa Gurren Lagann", "Totoro /  Mi vecino Totoro"],
     correctAnswer: 3,
-    image: "imagenes/simon.png"
+    image: "imagenes/simon.webp"
   },
   {
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Totoro / Mi vecino Totoro", "Takashi Mitsuya / Tokyo Revengers", "Spike Spiegel / Cowboy Bebop", "Yona / Akatsuki no Yona"],
     correctAnswer: 3,
-    image: "imagenes/spike spiegel.png"
+    image: "imagenes/spike spiegel.webp"
   },
   {
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Yona / Akatsuki no Yona", "Totoro / Mi vecino Totoro", "Takashi Mitsuya / Tokyo Revengers", "Yugi Muto / Yu-Gi-Oh!"],
     correctAnswer: 3,
-    image: "imagenes/takashi mitsuya.png"
+    image: "imagenes/takashi mitsuya.webp"
   },
 
 
@@ -317,25 +317,25 @@ let questions = [
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Yumeko Jabami / Kakegurui", "Yugi Muto / Yu-Gi-Oh!", "Yona / Akatsuki no Yona", "Totoro / Mi vecino Totoro"],
     correctAnswer: 4,
-    image: "imagenes/totoro.png"
+    image: "imagenes/totoro.webp"
   },
   {
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Yusuke Urameshi / Yū Yū Hakusho", "Yumeko Jabami / Kakegurui", "Yugi Muto / Yu-Gi-Oh!", "Yona / Akatsuki no Yona"],
     correctAnswer: 4,
-    image: "imagenes/yona.png"
+    image: "imagenes/yona.webp"
   },
   {
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Zero Two / DARLING in the FRANXX", "Yusuke Urameshi / Yū Yū Hakusho", "Yumeko Jabami / Kakegurui", "Yugi Muto / Yu-Gi-Oh!"],
     correctAnswer: 4,
-    image: "imagenes/yugi muto.png"
+    image: "imagenes/yugi muto.webp"
   },
   {
     question: "¿De quién es esta silueta y a qué serie pertenece?",
     options: ["Meliodas / Los Siete Pecados Capitales", "Zero Two / DARLING in the FRANXX", "Yusuke Urameshi / Yū Yū Hakusho", "Yumeko Jabami / Kakegurui"],
     correctAnswer: 4,
-    image: "imagenes/yumeko jabami.png"
+    image: "imagenes/yumeko jabami.webp"
   },
 
 

@@ -136,14 +136,12 @@ a {
     margin-top: 0px;
     border-radius: 20px;
     display: block;
-
     animation: button-shimmer 1s infinite;
     transition: all 0.2s ease-in-out;
 }
 
 .boton-flecha {
     padding: 0px 5px;
-
     animation: button-shimmer 1s infinite;
     transition: all 0.2s ease-in-out;
 }
@@ -199,15 +197,15 @@ body.modo-oscuro {
 }
 
 .modo-oscuro .seccion-encabezado {
-    background-color: #1b1b1b; /* Color de fondo diferente en modo oscuro */
+    background-color: #1b1b1b;
 }
 
-.modo-oscuro .seccion {
-    background-color: #252525; /* Color de fondo diferente en modo oscuro */
+.modo-oscuro .seccion-catalogo {
+    background-color: #333;
 }
 
 .modo-oscuro .seccion-producciones {
-    background-color: #333; /* Color de fondo diferente en modo oscuro */
+    background-color: #3333;
 }
 
 .modo-oscuro .h1 {
@@ -224,5 +222,5 @@ body.modo-oscuro {
 }
 
 .modo-oscuro .boton {
-    background-color: #ff0033; /* Color de fondo diferente en modo oscuro */
+    background-color: #ff0033;
 }
