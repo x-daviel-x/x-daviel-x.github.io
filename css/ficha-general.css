@@ -92,6 +92,12 @@ a {
 }
 
 /* BOTONES */
+
+.espacio-botones {
+    display: flex;
+    justify-content: space-between;
+}
+
 .boton {
     font-size: 18px;
     color: white;
@@ -107,9 +113,65 @@ a {
     background-color: red;
     padding: 10px 20px;
     border-radius: 20px;
+    margin: 10px 0px 10px;
     display: block;
-    margin-top: 10px;
 }
+
+
+
+
+
+.boton11 {
+    width: 100%;
+    font-size: 18px;
+    color: white;
+    background-color: red;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton00 {
+    width: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+.boton-22 {
+    width: 8%;
+    font-size: 18px;
+    color: white;
+    background-color: red;
+    padding: 10px 15px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.boton-flotante {
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    color: white;
+    background-color: red;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 20px;
+
+
+}
+
+
+
+
+
+
 
 /* MODO OSCURO */
 body.modo-oscuro {
@@ -117,11 +179,11 @@ body.modo-oscuro {
 }
 
 .modo-oscuro .primera-seccion {
-    background-color: #202020; /* Color de fondo diferente en modo oscuro */
+    background-color: #202020;
 }
 
 .modo-oscuro .seccion {
-    background-color: #252525; /* Color de fondo diferente en modo oscuro */
+    background-color: #252525;
 }
 
 .modo-oscuro .h1 {
@@ -138,11 +200,11 @@ body.modo-oscuro {
 }
 
 .modo-oscuro .boton {
-    background-color: #ff0033; /* Color de fondo diferente en modo oscuro */
+    background-color: #ff0033;
 }
 
 .modo-oscuro .boton-2 {
-    background-color: #ff0033; /* Color de fondo diferente en modo oscuro */
+    background-color: #ff0033;
 }
 
 /* ANIMACIONES */

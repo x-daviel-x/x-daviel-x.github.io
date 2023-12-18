@@ -1,4 +1,10 @@
 /* BUSQUEDA */
+.search-container {
+    position: relative;
+    width: 60%;
+    text-align: left;
+}
+
 .search-text {
     position: absolute;
     left: 50%;
@@ -6,26 +12,25 @@
     font-size: 18px;
 }
 
-.search-container {
-    position: relative;
-    text-align: center;
-    width: 100%;
-}
-
 input[type="text"] {
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-weight: bold;
-    width: 93%;
-    padding: 10px;
-    border: 1px solid #ccc;
+    width: 94%;
+    padding: 10px 0px 10px 10px;
+    border: 2px solid #e2e2e2;
     border-radius: 20px;
-    vertical-align: middle;
+    vertical-align:bottom;
     text-align: left;
     cursor: pointer;
 }
 
 /* RESULTADOS */
+.seccion-resultados {
+    position: relative;
+    text-align: center;
+}
+
 .results {
     list-style-type: none;
     padding: 0;
@@ -34,7 +39,6 @@ input[type="text"] {
 
 .result {
     padding: 10px;
-    width: 94%;
     background-color: white;
     border: none;
     border-radius: 20px;

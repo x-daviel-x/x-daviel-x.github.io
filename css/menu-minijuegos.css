@@ -9,8 +9,9 @@ body {
 
 /* SECCIONES */
 .seccion-encabezado {
-    padding: 30px 10px;
+    padding: 15px;
     text-align: center;
+    border-radius: 5px;
     margin: 3%;
     border-radius: 20px;
     animation: barrido-desde-arriba 0.4s ease-in-out forwards;
@@ -18,6 +19,16 @@ body {
 
 .seccion {
     margin: 3%;
+    text-align: center;
+    animation: barrido-desde-arriba 0.4s ease-in-out forwards;
+}
+
+
+.seccion-2 {
+    margin: 0% 3%;
+    border-radius: 20px;
+    background-color: #333;
+    padding: 10px;
     text-align: center;
     animation: barrido-desde-arriba 0.4s ease-in-out forwards;
 }
@@ -35,6 +46,15 @@ body {
 }
 
 
+.icono-2 {
+    font-size: 55px;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    color: black;
+}
+
+
 /* TEXTO */
 a {
     color: inherit;
@@ -42,16 +62,16 @@ a {
 }
 
 .h1 {
-    font-size: 24px;
+    font-size: 35px;
     font-weight: bold;
-    color: white;
     display: inline-block;
     vertical-align: middle;
-    text-shadow: black 0px 0px 6px;
+    margin-left: 5px;
 }
 
 .h3 {
-    font-size: 14px;
+    font-size: 20px;
+    padding-bottom: 10px;
     color: black;
     font-weight: bold;
     vertical-align: middle;
@@ -60,28 +80,27 @@ a {
 /* BOTONES */
 .cuadricula {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr)); /* Mínimo 200px, máximo 1fr */
+    grid-template-columns: repeat(2, 1fr); /* Mínimo 200px, máximo 1fr */
     grid-gap: 10px;
+    justify-items: center;
+}
+
+.cuadricula2 {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Mínimo 200px, máximo 1fr */
+    grid-gap: 10px;
+    justify-items: center;
 }
 
 .boton {
-    padding: 10px;
+    width: 100%;
     background-color: #e2e2e2;
     font-size: 14px;
     border-radius: 20px;
-    width: 80%; 
     animation: button-shimmer 1s infinite;
     transition: all 0.2s ease-in-out;
-    margin: 0 auto;
 }
-
-.boton img {
-    width: 60px;
-    height: 60px;
-    border-radius: 20%;
-    object-fit: cover;
-}
-
 
 
 
@@ -100,6 +119,11 @@ body.modo-oscuro {
 
 .modo-oscuro .seccion-ultima {
     background-color: #252525;
+}
+
+
+.modo-oscuro .icono-2 {
+    color: rgb(255, 255, 255);
 }
 
 .modo-oscuro .h1 {

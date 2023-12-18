@@ -34,7 +34,7 @@ let questions = [
         correctAnswer: 2
     },
     {
-        question: "¿Cuál es el nombre japonés de Ash Ketchum?",
+        question: "¿Cuál es el nombre japonés de Ash Ketchum en Pokémon?",
         options: ["Satoshi", "Shinji", "Yuji", "Aoi"],
         correctAnswer: 1
     },
@@ -49,12 +49,12 @@ let questions = [
         correctAnswer: 1
     },
     {
-        question: "¿Cómo se llama en la versión japonesa la escuela a la que va Ozora Tsubasa?",
+        question: "¿Cómo se llama en la versión japonesa la escuela a la que va Ozora Tsubasa en Supercampeones?",
         options: ["Toho", "Shutetsu", "Nankatsu", "Yamamoto"],
         correctAnswer: 3
     },
     {
-        question: "¿Qué deporte juega Sakuragi?",
+        question: "¿Qué deporte juega Sakuragi en Slam Dunk?",
         options: ["Rugby", "Baloncesto", "Beisbol", "Voleibol"],
         correctAnswer: 2
     },
@@ -69,7 +69,7 @@ let questions = [
         correctAnswer: 3
     },
     {
-        question: "¿Quién resolvió el Rompecabezas del Milenio?",
+        question: "¿Quién resolvió el Rompecabezas del Milenio en Yu-Gi-Oh!?",
         options: ["Joey Wheeler", "Bakura", "Seto Kaiba", "Yugi Muto"],
         correctAnswer: 4
     },
@@ -79,8 +79,8 @@ let questions = [
         correctAnswer: 2
     },
     {
-        question: "¿Cuántas esferas del dragón hay?",
-        options: ["8", "6", "5", "7"],
+        question: "¿Cuántas esferas del dragón hay en Dragon Ball?",
+        options: ["Ocho", "Seis", "Cinco", "Siete"],
         correctAnswer: 4
     },
     {
@@ -94,7 +94,7 @@ let questions = [
         correctAnswer: 4
     },
     {
-        question: "¿Quién es miembro de una raza guerrera extraterrestre llamada Saiyajin?",
+        question: "¿Quién es miembro de una raza guerrera extraterrestre llamada Saiyajin en Dragon Ball?",
         options: ["Ichigo", "Cell", "Goku", "Naruto"],
         correctAnswer: 3
     },
@@ -119,7 +119,7 @@ let questions = [
         correctAnswer: 2
     },
     {
-        question: "¿Quién es un genio detective de fama mundial amante de los dulces y los misterios?",
+        question: "¿Quién es un genio detective de fama mundial amante de los dulces y los misterios en Death Note?",
         options: ["Pikachu", "Light Yagami", "Kira", "L"],
         correctAnswer: 4
     },
@@ -234,7 +234,7 @@ let questions = [
         correctAnswer: 3
     },
     {
-        question: "¿Quién es conocido como el ❝Pirata del Sombrero de Paja❞ en One Piece?",
+        question: "¿Quién es conocido como el Pirata del Sombrero de Paja en One Piece?",
         options: ["Roronoa Zoro", "Monkey D. Luffy", "Sanji Vinsmoke", "Nico Robin"],
         correctAnswer: 2
     },
@@ -244,17 +244,17 @@ let questions = [
         correctAnswer: 2
     },
     {
-        question: "¿Cuál es el nombre del legendario shinobi conocido como ❝El relámpago amarillo de Konoha❞ en Naruto?",
+        question: "¿Cuál es el nombre del legendario shinobi conocido como El relámpago amarillo de Konoha en Naruto?",
         options: ["A (Raikage)", "Tobirama Senju", "Might Guy", "Minato Namikaze"],
         correctAnswer: 4
     },
     {
-        question: "¿Cuál es el nombre del protagonista en ❝Akira❞?",
+        question: "¿Cuál es el nombre del protagonista en Akira?",
         options: ["Shōtarō Kaneda", "Tetsuo Shima", "El coronel (Taisa)", "Miyako"],
         correctAnswer: 1
     },
     {
-        question: "¿Qué personaje en Neon Genesis Evangelion es conocido como ❝El segundo niño❞?",
+        question: "¿Qué personaje en Neon Genesis Evangelion es conocido como El segundo niño?",
         options: ["Rei Ayanami", "Shinji Ikari", "Asuka Langley Soryu", "Kaworu Nagisa"],
         correctAnswer: 3
     },

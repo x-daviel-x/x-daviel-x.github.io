@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../../../imagenes/favicon.ico">
+    <link rel="stylesheet" href="../../../css/ficha-general.css">
+    <link rel="stylesheet" href="../../../css/barra-inferior.css">
+    <title>Afro Samurai</title>
+  </head>
+  <body>
+    <div class="primera-seccion"> <img id="icono" src="icono.webp" alt="Icon"
+
+        class="icono-i">
+      <div id="nombre" class="h1">Afro Samurai</div>
+      <div id="tipo" style="display: none;">Anime</div>
+      <div class="h2">Afro Samurai (アフロサムライ), la historia gira en torno a un
+        samurái con peinado afro que busca la venganza, en un mundo que mezcla
+        elementos de la cultura samurái y la cultura afro-urbana.</div>
+      <div class="espacio-botones"> <span href="dc.html" class="boton11">Datos
+          Curiosos<a href="dc.html%22"></a></span> <span class="boton00"></span>
+        <span id="favoritoButton" class="boton-22"></span> </div>
+    </div>
+    <div class="seccion">
+      <div class="h3">Creador</div>
+      <div class="h4">Takashi Okazaki</div>
+    </div>
+    <div class="seccion">
+      <div class="h3">Episodios</div>
+      <div class="h4">1 Temporada - 5 Episodios</div>
+    </div>
+    <div class="seccion">
+      <div class="h3">Emisiones</div>
+      <div class="h4">Inicio: 4 de Enero del 2007</div>
+      <div class="h4">Fin: 1 de Febrero del 2007</div>
+    </div>
+    <div class="seccion">
+      <div class="h3">Estudio</div>
+      <div class="h4">Gonzo</div>
+    </div>
+    <div class="seccion">
+      <div class="h3">Géneros</div>
+      <div class="h4"> <a href="Accion.html">Acción</a>, <a href="CienciaFiccion.html">Ciencia
+          Ficción</a>, <a href="../../generos/historico.html">Histórico</a> y <a
+
+          href="Postapocaliptico.html">Postapocalíptico</a> </div>
+    </div>
+    <div class="seccion">
+      <div class="h3">Trailer</div>
+      <div class="trailer"> <iframe src="https://www.youtube.com/embed/cnZS1M23gRE?controls=0&amp;showinfo=0"
+
+          title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+
+          allowfullscreen="" height="315" frameborder="0" width="560"></iframe>
+      </div>
+    </div>
+    <div class="seccion">
+      <div class="h3">Plataformas</div>
+      <div class="boton-caja"> <a href="hola" class="boton">Explorar</a> </div>
+    </div>
+    <div class="seccion-ultima"></div>
+    <div class="barra-inferior"> <a href="../../../minijuegos/minijuegos.html"><i
+
+          class="fa-regular fa-joystick icono-b" onclick="change(this)"></i></a>
+      <a href="../../../inicio/inicio.html"><i class="fa-regular fa-home icono-b"
+
+          onclick="change(this)"></i></a> <a href="../../../archivo/archivo.html"><i
+
+          class="fa-regular fa-folders icono-b-activo" onclick="change(this)"></i></a>
+    </div>
+    <script src="../../../js/configuracion.js"></script>
+    <script src="../../../js/favorito-produccion.js"></script>
+  </body>
+</html>

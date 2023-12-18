@@ -11,13 +11,14 @@
 </head>
 <body>
     <div class="seccion-encabezado">
-        <i class="fa-duotone fa-house-chimney icono-1"></i>
-        <div class="h1">Inicio</div>
-    </div>
-
-    <div class="seccion-busqueda">
+        <div class="h1">AniPlus</div>
         <div class="search-container">
             <input type="text" id="searchInput" placeholder="Busca aquí...">
+        </div>
+    </div>
+    
+    <div class="seccion-busqueda">
+        <div class="seccion-resultados">
             <ul class="results" id="resultsList"></ul>
         </div>
     </div>
@@ -26,7 +27,7 @@
         <div class="slider">
             <a href="novedades/novedades.html#1" class="slide">
                 <img src="imagenes/portada 1.webp">
-                <div class="texto-slider">¡Nueva Temporada!</div>
+                <div class="texto-slider">¡Nueva Temporada Muy Larga!</div>
             </a>
             <a href="novedades/novedades.html#2" class="slide">
                 <img src="imagenes/portada 2.webp">
@@ -38,7 +39,7 @@
             </a>
             <a href="novedades/novedades#4.html" class="slide">
                 <img src="imagenes/portada 4.webp">
-                <div class="texto-slider">Clásico de Acción</div>
+                <div class="texto-slider">Clásico de Acción con un texto aun más largo</div>
             </a>
             <a href="../archivo/animes/afro samurai/ft.html" class="slide">
                 <img src="imagenes/portada 5.webp">
@@ -46,6 +47,19 @@
             </a>
         </div>
         <a href="novedades/novedades.html" class="boton">Ver Novedades</a>
+    </div>
+
+    <div class="seccion-catalogo">
+        <a href="catalogos/animes clasicos.html">
+            <span class="h3">Colecciones clásicas<span>
+            <span class="boton-flecha">➜</span>
+        </a>
+        <div class="producciones">
+            <a href="../archivo/colecciones/kimetsu no yaiba/fr.html" class="produccion">
+                <img src="../archivo/colecciones/kimetsu no yaiba/icono.webp" alt="Historia 3">
+                <span class="h4">Kimetsu no Yaiba</span>
+            </a>
+        </div>
     </div>
 
     <div class="seccion-catalogo">
@@ -66,33 +80,24 @@
     </div>
 
     <div class="seccion-catalogo">
-        <div class="h3">
-            <span>Películas clásicas</span>
-            <a href="catalogos/catalogo de accion.html" class="boton-flecha">➜</a>
-        </div>
-        <div class="producciones">
-            <a href="../archivo/peliculas/akira/ft.html" class="produccion">
-                <img src="../archivo/peliculas/akira/icono.webp" alt="Producción 1">
-                <span class="h4">Akira</span>
-            </a>
-        </div>
-    </div>
-
-    <div class="seccion-catalogo">
-        <a href="../archivo/archivo.html">
-            <span class="h3">Colecciones clásicas<span>
+        <a href="catalogos/animes clasicos.html">
+            <span class="h3">Películas clásicas<span>
             <span class="boton-flecha">➜</span>
         </a>
         <div class="producciones">
-            <a href="../archivo/colecciones/kimetsu no yaiba/fr.html" class="produccion">
-                <img src="../archivo/colecciones/kimetsu no yaiba/icono.webp" alt="Historia 3">
-                <span class="h4">Kimetsu no Yaiba</span>
+            <a href="../archivo/peliculas/akira/ft.html" class="produccion">
+                <img src="../archivo/peliculas/akira/icono.webp" alt="Producción 1">
+                <div class="h4">Akira</div>
+            </a>
+            <a href="../archivo/colecciones/kimetsu no yaiba/peliculas/mugen ressha-hen/ft.html" class="produccion">
+                <img src="../archivo/colecciones/kimetsu no yaiba/peliculas/mugen ressha-hen/poster.webp" alt="Historia 2">
+                <span class="h4">El tren infinito</span>
             </a>
         </div>
     </div>
 
     <div class="seccion-boton">
-        <a href="configuracion/configuracion.html" class="boton">Configuración</a>
+        <a href="../archivo/archivo.html" class="boton">Todas las Producciones</a>
     </div>
     
     <div class="seccion-ultima">
@@ -100,8 +105,8 @@
 
     <div class="barra-inferior">
         <a href="../minijuegos/minijuegos.html"><i class="fa-regular fa-joystick icono-b" onclick="change(this)"></i></a>
-        <a href="../inicio/inicio.html"><i class="fa-regular fa-home icono-b icono-b-activo" onclick="change(this)"></i></a>
-        <a href="../archivo/archivo.html"><i class="fa-regular fa-folders icono-b" onclick="change(this)"></i></a>
+        <a href="../inicio/inicio.html"><i class="fa-solid fa-home icono-b icono-b-activo" onclick="change(this)"></i></a>
+        <a href="../archivo/cuenta.html"><i class="fa-regular fa-user icono-b" onclick="change(this)"></i></a>
     </div>
     
     <script src="../js/barra-busqueda.js"></script>

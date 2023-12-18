@@ -38,7 +38,7 @@ const elements = [
         subtitle: "Película", 
         link: "../archivo/peliculas/akira/ft.html", 
         icon: "../archivo/peliculas/akira/poster.webp",
-        keywords: ["akira", "pelicula", ""]
+        keywords: ["akira", "pelicula", "acción"]
     },
 ];
 

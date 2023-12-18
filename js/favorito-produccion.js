@@ -29,15 +29,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Función para actualizar el estado del botón de favoritos
     function actualizarEstadoFavorito() {
-        let favoritos = JSON.parse(localStorage.getItem('favoritos')) || [];
+       let favoritos = JSON.parse(localStorage.getItem('favoritos')) || [];
         const esFavorito = favoritos.some(item => item.id === nombre);
+     const claseIcono = esFavorito ? 'fa-solid fa-bookmark fa-beat' : 'fa-regular fa-bookmark';
 
-        if (esFavorito) {
-            favoritoButton.textContent = 'Eliminar de Favoritos';
-        } else {
-            favoritoButton.textContent = 'Añadir a Favoritos';
-        }
+        favoritoButton.innerHTML = `<i class="${claseIcono}"></i>`;
     }
+
+
+
 
     // Asigna la función al evento click del botón
     favoritoButton.addEventListener('click', toggleFavorito);

@@ -40,6 +40,8 @@ document.addEventListener('DOMContentLoaded', () => {
     '../../archivo/animes/espiritu de lucha/icono.webp',
     '../../archivo/animes/fairy tail/icono.webp',
     '../../archivo/animes/fire force/icono.webp',
+    
+    '../../archivo/peliculas/akira/icono.webp',
   ];
 
   const cantidadMinima = 3;

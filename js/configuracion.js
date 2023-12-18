@@ -39,6 +39,40 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+// INTERRUPTOR DE MODO OSCURO
+document.addEventListener('DOMContentLoaded', () => {
+  const interruptorModo = document.getElementById('interruptor-modo');
+
+  // Verifica el modo actual almacenado en localStorage
+  const isModoOscuro = localStorage.getItem('modoOscuro') === 'activado';
+
+  // Aplica el modo actual
+  setMode(isModoOscuro);
+
+  // Establece el estado inicial del interruptor
+  interruptorModo.checked = isModoOscuro;
+
+  // Escucha los cambios en el interruptor para alternar modos
+  if (interruptorModo) {
+      interruptorModo.addEventListener('change', () => {
+          setMode(interruptorModo.checked);
+      });
+  }
+
+  function setMode(estaOscuro) {
+      if (estaOscuro) {
+          document.body.classList.add('modo-oscuro');
+          localStorage.setItem('modoOscuro', 'activado');
+      } else {
+          document.body.classList.remove('modo-oscuro');
+          localStorage.removeItem('modoOscuro');
+      }
+
+      // No es necesario llamar a updateToggleButton aquí ya que el estado del interruptor refleja el modo actual
+  }
+});
+
+
 
 // SONIDO DE LA APP
 document.addEventListener('DOMContentLoaded', () => {
@@ -95,4 +129,4 @@ function setCookie(name, value, days) {
 
 
   
-// ENVÍO DE NOTIFICACIONES
+// IDIOMA SELECCIONADO
