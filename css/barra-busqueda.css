@@ -1,24 +1,17 @@
 /* BUSQUEDA */
 .search-container {
     position: relative;
-    width: 60%;
+    width: 100%;
     text-align: left;
-}
-
-.search-text {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 18px;
 }
 
 input[type="text"] {
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-weight: bold;
-    width: 94%;
-    padding: 10px 0px 10px 10px;
-    border: 2px solid #e2e2e2;
+    width: 95%;
+    padding: 2.5%;
+    border: 1px solid #e2e2e2;
     border-radius: 20px;
     vertical-align:bottom;
     text-align: left;
@@ -56,7 +49,6 @@ input[type="text"] {
     margin-right: 10px;
     border-radius: 25%;
     object-fit: cover;
-    border: 1px solid #ccc;
 }
 
 /* TEXTO */
@@ -76,6 +68,26 @@ input[type="text"] {
     text-align: left;
 }
 
+.search-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+}
+
+/* MODO OSCURO */
+.modo-oscuro input[type="text"] {
+    background-color: #222222;
+    border: none;
+    color:#ffffff;
+}
+.modo-oscuro .result{
+    background-color: #222222;
+}
+.modo-oscuro .title{
+    color: white;
+}
+
 /* ANIMACIONES */
 @keyframes barrido-desde-arriba-barra {
     0% {
@@ -86,23 +98,4 @@ input[type="text"] {
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-/* MODO OSCURO */
-body.modo-oscuro {
-    background-color: #252525;
-}
-
-.modo-oscuro input[type="text"] {
-    background-color: #333; /* Color de fondo diferente en modo oscuro */
-    border: #333;
-    color:#ffffff;
-}
-
-.modo-oscuro .result{
-    background-color: #333; /* Color de fondo diferente en modo oscuro */
-}
-
-.modo-oscuro .title{
-    color:#ccc; /* Color de fondo diferente en modo oscuro */
 }

@@ -13,52 +13,37 @@ body {
 
 /* SECCIONES */
 .seccion-encabezado {
-    padding: 5px;
-    text-align: center;
+    margin: 3% 3% 25px;
+    display: flex;
+    align-items: center;
+}
+
+
+.seccion-f {
     margin: 3%;
+    background: #e6e6e6;
     border-radius: 20px;
-    background-color: #ffffff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
     animation: barrido-desde-arriba 0.4s ease-in-out forwards;
 }
 
-.seccion {
+.seccion-i {
     margin: 3%;
-    text-align: center;
-    animation: barrido-desde-arriba 0.4s ease-in-out forwards;
+    padding: 10px;
+    background-color: #e2e2e2;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    animation: barrido-desde-arriba 0.2s ease-in-out forwards;
 }
 
 .seccion-ultima {
     padding: 40px;
 }
 
-/* ELEMENTOS DE LAS SECCIONES */
-.icono-1 {
-    font-size: 55px;
-    margin: 10px;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.icono-2 {
-    font-size: 35px;
-    margin: 10px;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.icono {
-    font-size: 60px;
-    color: black;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.icono-3 {
-    font-size: 40px;
-    color: black;
-    display: inline-block;
-    vertical-align: middle;
-}
 
 
 /* TEXTO */
@@ -68,91 +53,223 @@ a {
 }
 
 .h1 {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
     color: black;
-    display: inline-block;
-    vertical-align: middle;
     margin-left: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.h2 {
+/* Textos Divisores */
+.hf-2 {
     font-size: 18px;
     color: gray;
-    font-weight: normal;
+    margin: 3%;
+    padding: 10px 10px 0px 10px;
+    animation: barrido-desde-arriba 0.4s ease-in-out forwards;
 }
 
-.h3 {
+.hd-2 {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    margin: 3%;
+    padding: 10px 10px 0px 10px;
+    animation: barrido-desde-arriba 0.4s ease-in-out forwards;
+}
+
+/* Texto de Menú con Iconos de Fuente */
+.hf-3 {
     font-size: 20px;
     color: black;
     font-weight: normal;
     display: inline-block;
-    vertical-align: middle;
-    margin-left: 5px;
+    align-items: center;
+    margin-right: 55px;
+    justify-content: space-between;
 }
 
-/* BOTONES */
-.boton {
-    outline: yellow;
-    background-color: red;
-    color: white;
+
+
+/* Texto de Menú (Lista) con Imágenes */
+/* Estilos para el ID */
+.h2 {
     font-size: 18px;
-    padding: 10px;
-    border-radius: 20px;
-    display: block;
-    animation: button-shimmer 1s infinite;
-    transition: all 0.2s ease-in-out;
+    color: black;
+    text-align: left;
+    text-decoration: none;
+    display: block; /* Muestra el ID en una línea separada */
 }
 
-.boton-2 {
-    outline: yellow;
-    background-color: red;
-    color: white;
+/* Estilos para el Nombre */
+.h3 {
     font-size: 18px;
-    border: none;
-    padding: 10px 20px;
-    margin-top: 10px;
-    border-radius: 20px;
-    display: block;
-    animation: button-shimmer 1s infinite;
-    transition: all 0.2s ease-in-out;
+    color: gray;
+    text-align: left;
+    display: block; /* Muestra el Nombre en una línea separada */
 }
+
+
+
+/* ELEMENTOS DE LAS SECCIONES */
+.🡰 {
+    font-size: 30px;
+    background: #e2e2e2;
+    border-radius: 10px;
+    padding: 5px 8px;
+}
+
+.icono-f {
+    font-size: 35px;
+    width: 35px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.icono-i {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 25%;
+    object-fit: cover;
+}
+
+.≫ {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    bottom: 35%;
+    right: 20px;
+}
+
+/* Interruptor */
+.interruptor {
+    width: 60px;
+    height: 34px;
+    background-color: #ccc;
+    border-radius: 34px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute;
+    bottom: 25%;
+    right: 20px;
+    align-items: center;
+}
+.interruptor::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+#interruptor-modo:checked + .interruptor {
+    background-color: #f32121; /* Color del interruptor encendido */
+}
+#interruptor-modo:checked + .interruptor::after {
+    transform: translateX(26px); /* Posición del interruptor cuando está encendido */
+}
+
+
+
+
+
+
+/* Interruptor */
+/* Estilo para el interruptor de Sonidos en la App */
+.interruptor2 {
+    width: 60px;
+    height: 34px;
+    background-color: #ccc;
+    border-radius: 34px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute;
+    bottom: 25%;
+    right: 20px;
+    align-items: center;
+}
+
+.interruptor2::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+#interruptor-sonido:checked + .interruptor2 {
+    background-color: #f32121; /* Color del interruptor encendido */
+}
+#interruptor-sonido:checked + .interruptor2::after {
+    transform: translateX(26px);
+    /* Posición del interruptor cuando está encendido */
+}
+
+
+
+
+
+
 
 
 
 /* MODO OSCURO */
 body.modo-oscuro {
-    background-color: #252525;
+    background-color: #000000;
 }
-
-.modo-oscuro .seccion-encabezado {
-    background-color: #1b1b1b; /* Color de fondo diferente en modo oscuro */
+.modo-oscuro .🡰 {
+    color: white;
+    background-color: #222222;
 }
-
-.modo-oscuro .seccion {
-    background-color: #252525; /* Color de fondo diferente en modo oscuro */
+.modo-oscuro .seccion-f {
+    background-color: #222222;
 }
-
-.modo-oscuro .seccion-ultima {
-    background-color: #252525; /* Color de fondo diferente en modo oscuro */
+.modo-oscuro .seccion-i {
+    background-color: #222222;
 }
-
+.modo-oscuro .icono-f {
+    color: rgb(216, 216, 216);
+}
+.modo-oscuro .≫ {
+    color: rgb(228, 228, 228);
+}
 .modo-oscuro .h1 {
     color: rgb(255, 255, 255);
 }
-
-.modo-oscuro .h3 {
+.modo-oscuro .hf-3 {
     font-weight: normal;
     color: rgb(228, 228, 228);
 }
-
-.modo-oscuro .boton {
-    background-color: #ff0033; /* Color de fondo diferente en modo oscuro */
+.modo-oscuro .h2 {
+    font-weight: normal;
+    color: rgb(228, 228, 228);
+}
+.modo-oscuro .h3 {
+    font-weight: normal;
 }
 
-.modo-oscuro .boton-2 {
-    background-color: #ff0033; /* Color de fondo diferente en modo oscuro */
-}
 
 
 /* ANIMACIONES */
@@ -167,11 +284,3 @@ body.modo-oscuro {
         transform: translateY(0);
     }
 }
-
-/* Botones */
-.boton:active {
-    transform: scale(0.97);
-  }
-.boton-2:active {
-    transform: scale(0.97);
-  }

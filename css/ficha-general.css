@@ -7,76 +7,218 @@ body {
     background-color: #f2f2f2;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 /* SECCIONES */
 .primera-seccion {
-    background-color: #333333;
-    padding: 10px;
     border-radius: 20px;
     text-align: center;
     margin: 3%;
     animation: barrido-desde-arriba 0.3s ease-in-out forwards;
 }
 
+.seccion-inicial {
+    margin: 3%;
+    animation: barrido-desde-arriba 0.6s ease-in-out forwards;
+}
+
 .seccion {
     margin: 3%;
-    text-align: center;
-    animation: barrido-desde-arriba 0.6s ease-in-out forwards;
+    transition : all .4s 0s ease;
 }
 
 .seccion-ultima {
     padding: 40px;
 }
 
+
+
 /* TEXTO */
+/* Parte Inicial */
 .h1 {
     font-size: 24px;
     font-weight: bold;
     color: white;
     vertical-align: middle;
-    display: inline-block;
-    margin-left: 5px;
+    position: fixed;
+    left: 75px;
+    bottom: 40px;
+    text-shadow: 0px 0px 10px black;
 }
 
 .h2 {
     font-size: 18px;
     color: white;
-    padding: 10px 0px;
+    vertical-align: middle;
+    position: fixed;
+    left: 75px;
+    bottom: 20px;
+    text-shadow: 0px 0px 10px black;
 }
 
+/* Ficha Técnica */
 .h3 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
+    padding-bottom: 5px;
 }
 
 .h4 {
-    font-size: 18px;
+    font-size: 16px;
     color: #333333;
+    display: inline-block;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
+.h5 {
+    font-size: 16px;
+    background-color: #e2e2e2;
+    border-radius: 25px;
+    padding: 10px;
+    white-space: nowrap;
 }
+
+/* Datos Curiosos */
+.h-d1 {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.h-d2 {
+    font-size: 16px;
+    color: #333333;
+    display: inline-block;
+}
+
+
 
 /* ELEMENTOS DE LAS SECCIONES */
-.icono-i {
-    width: 60px;
-    height: 60px;
-    vertical-align: middle;
-    border-radius: 20px;
+/* Sección Inicial */
+.🡰 {
+    font-size: 30px;
+    background: #e2e2e2;
+    padding: 5px 8px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    border-radius: 18px 0px 10px 0px;
 }
 
-.icono-f {
-    font-size: 60px;
-    display: inline-block;
-    vertical-align: middle;
+.⭐ {
+    font-size: 20px;
+    background: #e2e2e2;
+    padding: 5px 10px;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    border-radius: 15px;
 }
 
 .poster {
-    max-width: 100%;
+    width: 100%;
     border-radius: 20px;
+    height: 200px;
+    object-fit: cover;
 }
 
+.poster-p {
+    width: 100%;
+    height: 450px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.icono-i {
+    display: flex;
+    position: fixed;
+    width: 60px;
+    bottom: 10px;
+    left: 5px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #999999;
+}
+
+/* Interruptor de Ficha Técnica y Datos Curiosos */
+.cuadricula {
+    border-width: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    gap: 10px;
+}
+
+.wrapper {
+    display: flex;
+    gap: 10px;
+    text-align: center;
+}
+
+.boton {
+    flex-grow: 1;
+}
+  
+.boton input[type=radio] {
+    display: none;
+}
+  
+.boton label {
+    display: block;
+    padding: 15px 10px;
+    background-color: #e2e2e2;
+    color: black;
+    font-size: 18px;
+    border: 3px solid #e2e2e2;
+    border-radius: 20px;
+    transition : all .3s 0s ease;
+}
+  
+.boton input[type=radio]:checked + label {
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    border: 3px solid #e2e2e2;
+}
+
+/* Deslizador de Iconos de Fuente */
+.slider-f {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+    overflow-x: auto;
+    justify-items: center;
+    gap: 10px;
+}
+
+.elemento-f {
+    display: grid;
+    width: 100px;
+}
+
+.icono-f {
+    font-size: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-bottom: 5px;
+}
+
+/* Deslizador de Géneros */
+.slider-t {
+    display: flex;
+    overflow-x: auto;
+    gap: 5px;
+    scroll-snap-type: x mandatory;
+}
+
+.elemento-t {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0px;
+}
+
+/* Sección Trailer */
 .trailer {
     position: relative;
     padding-bottom: 50%;
@@ -91,127 +233,73 @@ a {
     border-radius: 20px;
 }
 
-/* BOTONES */
-
-.espacio-botones {
-    display: flex;
-    justify-content: space-between;
-}
-
-.boton {
-    font-size: 18px;
-    color: white;
-    background-color: red;
+/* Datos Curiosos */
+.dato {
     padding: 10px;
     border-radius: 20px;
-    display: block;
+    border: 3px solid #dfdfdf;
 }
-
-.boton-2 {
-    font-size: 18px;
-    color: white;
-    background-color: red;
-    padding: 10px 20px;
-    border-radius: 20px;
-    margin: 10px 0px 10px;
-    display: block;
+.imagen {
+    max-width: 100%;
+    border-radius: 15px;
+    padding-bottom: 5px;
 }
-
-
-
-
-
-.boton11 {
-    width: 100%;
-    font-size: 18px;
-    color: white;
-    background-color: red;
-    padding: 10px;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.boton00 {
-    width: 2%;
-    display: flex;
-    justify-content: center;
-}
-
-.boton-22 {
-    width: 8%;
-    font-size: 18px;
-    color: white;
-    background-color: red;
-    padding: 10px 15px;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-
-.boton-flotante {
-    position: absolute;
-    top: 2%;
-    right: 5%;
-    color: white;
-    background-color: red;
-    font-size: 18px;
-    padding: 10px 15px;
-    border-radius: 20px;
-
-
-}
-
-
-
-
 
 
 
 /* MODO OSCURO */
 body.modo-oscuro {
-    background-color: #252525;
+    background-color: #000000;
 }
-
-.modo-oscuro .primera-seccion {
-    background-color: #202020;
+.modo-oscuro .🡰 {
+    background: #000000;
+    color: white;
 }
-
-.modo-oscuro .seccion {
-    background-color: #252525;
+.modo-oscuro .icono-f {
+    color: white;
 }
-
+.modo-oscuro .⭐ {
+    background: #000000;
+    color: white;
+}
 .modo-oscuro .h1 {
     color: rgb(255, 255, 255);
 }
-
 .modo-oscuro .h3 {
     color: rgb(228, 228, 228);
 }
-
 .modo-oscuro .h4 {
     font-weight: normal;
     color: rgb(200, 200, 200);
 }
-
-.modo-oscuro .boton {
-    background-color: #ff0033;
+.modo-oscuro .h5 {
+    color: white;
+    background-color: #222222;
 }
-
-.modo-oscuro .boton-2 {
-    background-color: #ff0033;
+.modo-oscuro .boton label {
+    color: white;
+    background-color: #222222;
+    border: 3px solid #222222;
+}
+.modo-oscuro .boton input[type=radio]:checked + label {
+    border: 3px solid #222222;
+    background-color: #000000;
+}
+.modo-oscuro .dato {
+    border: 3px solid #222222;
+}
+.modo-oscuro .h-d1 {
+    color: #e4e4e4;
+}
+.modo-oscuro .h-d2 {
+    color: #c8c8c8;
 }
 
 /* ANIMACIONES */
 @keyframes barrido-desde-arriba {
     0% {
         opacity: 0;
-        transform: translateY(-20px);
+        transform: translateY(0px);
     }
     100% {
         opacity: 1;

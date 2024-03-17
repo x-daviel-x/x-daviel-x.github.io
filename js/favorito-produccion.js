@@ -31,13 +31,10 @@ document.addEventListener('DOMContentLoaded', function () {
     function actualizarEstadoFavorito() {
        let favoritos = JSON.parse(localStorage.getItem('favoritos')) || [];
         const esFavorito = favoritos.some(item => item.id === nombre);
-     const claseIcono = esFavorito ? 'fa-solid fa-bookmark fa-beat' : 'fa-regular fa-bookmark';
+     const claseIcono = esFavorito ? 'fa-solid fa-bookmark' : 'fa-regular fa-bookmark';
 
         favoritoButton.innerHTML = `<i class="${claseIcono}"></i>`;
     }
-
-
-
 
     // Asigna la función al evento click del botón
     favoritoButton.addEventListener('click', toggleFavorito);
@@ -59,11 +56,11 @@ document.addEventListener('DOMContentLoaded', function () {
     favoritos.forEach(item => {
         // Crear contenedor principal
         const listItem = document.createElement('div');
-        listItem.classList.add('seccion-favorito');
+        listItem.classList.add('seccion-i');
 
         // Crear elemento de imagen con estilo personalizado
         const imagen = document.createElement('img');
-        imagen.classList.add('estilo-imagen'); // Agregar clase de estilo personalizado
+        imagen.classList.add('icono-i'); // Agregar clase de estilo personalizado
         imagen.src = item.imagen; // Utilizar la ruta directa proporcionada por el objeto favorito
         imagen.alt = 'Imagen de la Producción';
 
@@ -73,13 +70,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Crear elemento para mostrar el ID de la producción con estilos aplicados
         const idElement = document.createElement('div');
-        idElement.classList.add('h8'); // Agregar clase de estilo personalizado
+        idElement.classList.add('h2'); // Agregar clase de estilo personalizado
         idElement.textContent = `${item.id}`;
         infoContainer.appendChild(idElement);
 
         // Crear elemento para mostrar el Nombre de la producción con estilos aplicados
         const nombreElement = document.createElement('div');
-        nombreElement.classList.add('h9', 'estilo-nombre'); // Agregar clase de estilo personalizado
+        nombreElement.classList.add('h3'); // Agregar clase de estilo personalizado
         nombreElement.textContent = `${item.nombre}`;
         infoContainer.appendChild(nombreElement);
 
@@ -94,3 +91,21 @@ document.addEventListener('DOMContentLoaded', function () {
         favoritosLista.appendChild(enlace);
     });
 });
+
+
+
+// CAMBIO DE FICHA
+function toggleContent(selectedContent) {
+    var fichaTecnicaSection = document.getElementById('fichaTecnicaSection');
+    var datosCuriososSection = document.getElementById('datosCuriososSection');
+    var btnFichaTecnica = document.getElementById('btnFichaTecnica');
+    var btnDatosCuriosos = document.getElementById('btnDatosCuriosos');
+
+    if (selectedContent === 'fichaTecnica') {
+        fichaTecnicaSection.style.display = 'block';
+        datosCuriososSection.style.display = 'none';
+    } else if (selectedContent === 'datosCuriosos') {
+        fichaTecnicaSection.style.display = 'none';
+        datosCuriososSection.style.display = 'block';
+    }
+}

@@ -1,124 +1,188 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../../../imagenes/favicon.ico">
     <link rel="stylesheet" href="../../../css/ficha-general.css">
     <link rel="stylesheet" href="../../../css/barra-inferior.css">
     <title>Afro Samurai</title>
-  </head>
-  <body>
-    <div class="primera-seccion"> <img id="icono" src="icono.webp" alt="Icon" class="icono-i">
-      <div id="nombre" class="h1">Afro Samurai</div>
-      <div id="tipo" style="display: none;">Anime</div>
-      <div class="h2">Afro Samurai (アフロサムライ), la historia gira en torno a un
-        samurái con peinado afro que busca la venganza, en un mundo que mezcla
-        elementos de la cultura samurái y la cultura afro-urbana.</div>
-      <div class="espacio-botones"> <span href="dc.html" class="boton11">Datos
-          Curiosos<a href="dc.html%22"></a></span> <span class="boton00"></span>
-        <span id="favoritoButton" class="boton-22"></span> </div>
+</head>
+
+<body>
+    <div class="seccion-inicial">
+        <i class="fa-solid fa-arrow-left 🡰" onclick="history.back()"></i>
+        <span id="favoritoButton" class="⭐"></span>
+        <img src="poster.webp" class="poster">
+        <img id="icono" src="icono.webp" class="icono-i">
+        <div id="nombre" class="h1">Afro Samurai</div>
+        <div id="tipo" class="h2">Serie de Anime (2007)</div>
     </div>
+
     <div class="seccion">
-      <div class="h3">Creador</div>
-      <div class="h4">Takashi Okazaki</div>
+        <div class="wrapper">
+            <div class="boton">
+                <input type="radio" id="btnFichaTecnica" name="opcion" onclick="toggleContent('fichaTecnica')" checked>
+
+                <label for="btnFichaTecnica">Ficha Técnica</label>
+            </div>
+            <div class="boton">
+                <input type="radio" id="btnDatosCuriosos" name="opcion" onclick="toggleContent('datosCuriosos')">
+                <label for="btnDatosCuriosos">Datos Curiosos</label>
+            </div>
+        </div>
     </div>
+
+    <div id="fichaTecnicaSection" style="display: block;">
     <div class="seccion">
-      <div class="h3">Episodios</div>
-      <div class="h4">1 Temporada - 5 Episodios</div>
+        <div class="h3">Sinopsis</div>
+        <div class="h4">Afro Samurai (アフロサムライ), la historia gira en torno a un samurái con peinado afro que busca la venganza, en un mundo que mezcla elementos de la cultura samurái y la cultura afro-urbana.</div>
     </div>
+
     <div class="seccion">
-      <div class="h3">Emisiones</div>
-      <div class="h4">Inicio: 4 de Enero del 2007</div>
-      <div class="h4">Fin: 1 de Febrero del 2007</div>
+        <div class="slider-f">
+            <div class="elemento-f">
+                <span class="fa-regular fa-user icono-f"></span>
+                <span class="h4">Takashi Okazaki</span>
+            </div>
+
+            <a href="../archivo/colecciones/kimetsu no yaiba/fr.html" class="elemento-f">
+                <span class="fa-regular fa-building icono-f"></span>
+                <span class="h4">Gonzo</span>
+            </a>
+
+            <div class="elemento-f">
+                <span class="fa-regular fa-film-canister icono-f"></span>
+                <span class="h4">1 Temporada</span>
+                <span class="h4">5 Episodios</span>
+            </div>
+
+            <div class="elemento-f">
+                <span class="fa-regular fa-star icono-f"></span>
+                <span class="h4">8.5/10</span>
+                <span class="h4">(IMDb)</span>
+            </div>
+
+            <div class="elemento-f">
+                <span class="fa-regular fa-tv-retro icono-f"></span>
+                <span class="h4">4 de Enero del 2007</span>
+            </div>
+        </div>
     </div>
+
     <div class="seccion">
-      <div class="h3">Estudio</div>
-      <div class="h4">Gonzo</div>
+        <div class="slider-t">
+            <a href="../archivo/colecciones/kimetsu no yaiba/fr.html" class="elemento-t">
+                <span class="h5">Acción</span>
+            </a>
+            <a href="../archivo/colecciones/kimetsu no yaiba/fr.html" class="elemento-t">
+                <span class="h5">Ciencia ficción</span>
+            </a>
+            <a href="../archivo/colecciones/kimetsu no yaiba/fr.html" class="elemento-t">
+                <span class="h5">Histórico</span>
+            </a>
+            <a href="../archivo/colecciones/kimetsu no yaiba/fr.html" class="elemento-t">
+                <span class="h5">Postapocalíptico</span>
+            </a>
+        </div>
     </div>
+
     <div class="seccion">
-      <table style="width: 100%" border="1">
-        <tbody>
-          <tr>
-            <td style="text-align: center;">Samurai <span style="color: #914eb1;">Jack</span></td>
-            <td>Samurai Jack</td>
-            <td>Samurai Jack</td>
-            <td>Samurai Jack</td>
-            <td>Samurai Jack</td>
-          </tr>
-          <tr>
-            <td><br>
-            </td>
-            <td><br>
-            </td>
-            <td><br>
-            </td>
-            <td><br>
-            </td>
-            <td><br>
-            </td>
-          </tr>
-          <tr>
-            <td><br>
-            </td>
-            <td><br>
-            </td>
-            <td><br>
-            </td>
-            <td><br>
-            </td>
-            <td><br>
-            </td>
-          </tr>
-          <tr>
-            <td><br>
-            </td>
-            <td><br>
-            </td>
-            <td><br>
-            </td>
-            <td><br>
-            </td>
-            <td><br>
-            </td>
-          </tr>
-          <tr>
-            <td><br>
-            </td>
-            <td><br>
-            </td>
-            <td><br>
-            </td>
-            <td><br>
-            </td>
-            <td><br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <div class="h4"> <a href="Accion.html">Acción</a>, <a href="CienciaFiccion.html">Ciencia
-          Ficción</a>, <a href="../../generos/historico.html">Histórico</a> y <a
-          href="Postapocaliptico.html">Postapocalíptico</a> </div>
+        <div class="trailer">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/cnZS1M23gRE?&disablekb=0fs=0showinfo=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
     </div>
+
     <div class="seccion">
-      <div class="h3">Trailer</div>
-      <div class="trailer"> <iframe src="https://www.youtube.com/embed/cnZS1M23gRE?controls=0&amp;showinfo=0"
-          title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen="" height="315" frameborder="0" width="560"></iframe>
-      </div>
+        <div class="h3">Plataformas</div>
+        <div class="slider-t">
+            <a href="../archivo/colecciones/kimetsu no yaiba/fr.html" class="elemento-t">
+                <span class="h5">Crunchyroll</span>
+            </a>
+            <a href="../archivo/colecciones/kimetsu no yaiba/fr.html" class="elemento-t">
+                <span class="h5">Apple TV</span>
+            </a>
+        </div>
     </div>
+    </div>
+
+    <div id="datosCuriososSection" style="display: none;">
+
     <div class="seccion">
-      <div class="h3">Plataformas</div>
-      <div class="boton-caja"> <a href="hola" class="boton">Explorar</a> </div>
+        <div class="dato">
+            <div class="h-d1">Alto costo de producción</div>
+            <div class="h-d2">Con solo 5 episodios la serie tiene el primer lugar en costo, pues cada uno costó poco mas de 1 millón se dólares; un aproximado de 5 millones la serie completa.</div>
+        </div>
     </div>
-    <div class="seccion-ultima"></div>
-    <div class="barra-inferior"> <a href="../../../minijuegos/minijuegos.html"><i
-          class="fa-regular fa-joystick icono-b" onclick="change(this)"></i></a>
-      <a href="../../../inicio/inicio.html"><i class="fa-regular fa-home icono-b"
-          onclick="change(this)"></i></a> <a href="../../../archivo/archivo.html"><i
-          class="fa-regular fa-folders icono-b-activo" onclick="change(this)"></i></a>
+
+    <div class="seccion">
+        <div class="dato">
+            <div class="h-d1">Altura de Justice</div>
+            <div class="h-d2">Justice mide 5’11.</div>
+        </div>
     </div>
+
+    <div class="seccion">
+        <div class="dato">
+        <div class="h-d1">Mismo productor y doblador</div>
+        <div class="h-d2">El productor de la serie, Samuel L. Jackson, es el mismo le da voz al protagonista.</div>
+    </div>
+    </div>
+
+    <div class="seccion">
+        <div class="dato">
+            <div class="h-d1">Cumpleaños de Afro</div>
+            <div class="h-d2">Afro Samurai nació el 1 de noviembre de 1976.</div>
+        </div>
+    </div>
+
+    <div class="seccion">
+        <div class="dato">
+            <div class="h-d1">¿Fantasma, o no?</div>
+            <div class="h-d2">Aunque Ninja Ninja es posiblemente un producto de la imaginación de Afro, se le ve a través de la serie interactuando con objetos físicos como zambullirse en un estanque de agua, pudiendo mover a Afro de un lado a otro y demás, todavía no está claro.</div>
+        </div>
+    </div>
+
+    <div class="seccion">
+        <div class="dato">
+            <div class="h-d1">Datos de Otsuru</div>
+            <div class="h-d2">La altura de Otsuru son 147 cm (4'10) y pesa 43 kg (96 lbs).</div>
+        </div>
+    </div>
+
+    <div class="seccion">
+        <div class="dato">
+            <img src="../../colecciones/kimetsu no yaiba/animes/kimetsu no yaiba/imagen 1.webp" class="imagen">
+            <div class="h-d1">Diferencias de Ninja y Afro</div>
+            <div class="h-d2">Ninja Ninja es esencialmente lo contrario de Afro en casos particulares: Ninja Ninja es más despreocupado y mucho más hablador que Afro. Es mucho más bajo de estatura que Afro. En contraste con el cabello de color oscuro de Afro, el cabello de Ninja Ninja es blanco. Ninja Ninja es un ninja en lugar de un samurái como Afro.</div>
+        </div>
+    </div>
+
+    <div class="seccion">
+        <div class="dato">
+            <div class="h-d1">Altura de Afro</div>
+            <div class="h-d2">Afro Samurai mide 5’11.</div>
+        </div>
+    </div>
+    
+    <div class="seccion">
+        <div class="dato">
+            <div class="h-d1">Parecido</div>
+            <div class="h-d2">El androide Afro Droid tiene cierto parecido con Yoshimitsu de la serie "Soul Calibur".</div>
+        </div>
+    </div>
+
+    <div class="seccion">
+        <div class="dato">
+            <div class="h-d1">Altura de Jinno</div>
+            <div class="h-d2">Jinno o Kuma mide 6’6.</div>
+        </div>
+    </div>
+
+    </div>
+    
     <script src="../../../js/configuracion.js"></script>
     <script src="../../../js/favorito-produccion.js"></script>
-  </body>
+</body>
+
 </html>

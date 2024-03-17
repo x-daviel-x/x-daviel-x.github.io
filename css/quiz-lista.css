@@ -12,49 +12,55 @@ body {
 }
 
 /* SECCIONES */
-.primera-seccion {
-    padding: 10px;
-    text-align: center;
-    margin: 10px;
-    border-radius: 20px;
-    background-color: #ffffff;
-    animation: barrido-desde-arriba 0.3s ease-in-out forwards;
+.seccion-encabezado {
+    margin: 3% 3% 25px;
+    display: flex;
+    align-items: center;
 }
 
 .seccion {
-    padding: 5px 15px 15px 15px;
+    margin: 3%;
     text-align: center;
-    animation: barrido-desde-arriba 0.3s ease-in-out forwards;
+}
+
+.seccion-pregunta {
+    padding: 20px;
+    border: 3px solid #dfdfdf;
+    border-radius: 20px;
+    margin: 35px 3% 3% 3%;
+    text-align: center;
 }
 
 .seccion-ultima {
     padding: 30px;
 }
 
-/* ELEMENTOS DE LAS SECCIONES */
-.icon {
-    font-size: 55px;
-    margin: 10px;
-    display: inline-block;
-    vertical-align: middle;
-}
+
 
 /* TEXTO */
 .h1 {
-    font-size: 24px;
-    color: black;
+    font-size: 30px;
     font-weight: bold;
-    display: inline-block;
-    vertical-align: middle;
+    color: black;
+    margin-left: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
+.contenedor {
+    position: relative;
+}
+  
 .h2 {
-    font-size: 18px;
-    color: gray;
-    font-weight: normal;
-    display: flex;
-    justify-content: space-between;
-
+    background-color: #e2e2e2;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -110%);
 }
 
 .h3 {
@@ -63,36 +69,66 @@ body {
     vertical-align: middle;
 }
 
-/* BOTONES */
-.boton-caja {
-    text-align: center;
+
+
+/* ELEMENTOS DE LAS SECCIONES */
+/* Parte Inicial */
+.🡰 {
+    font-size: 30px;
+    margin-right: 2px;
+    background: #e2e2e2;
+    border-radius: 10px;
+    padding: 5px 8px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
+/* Barra de Progreso */
+.progreso-container {
+    background-color: #e2e2e2;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progreso {
+    height: 15px;
+    background-color: #ff0000;
+    border-radius: 10px;
+    transition: width 0.3s ease-in-out;
+}
+
+/* Botones */
 .boton {
-    font-family: 'Poppins', sans-serif;
-    background-color: red;
-    color: white;
     font-size: 18px;
+    background-color: #e2e2e2;
     border: none;
-    padding: 10px 20px;
+    padding: 15px 20px;
     cursor: pointer;
     border-radius: 20px;
     margin: 10px 0px 10px;
     display: block;
     width: 100%;
+    text-align: center;
+}
+
+.boton.correcto {
+    background-color: #5cb85c;
+    color: white;
+    transition : all 0.3s ease;
+}
+
+.boton.incorrecto {
+    background-color: #ff0000;
+    color: white;
+    transition : all 0.3s ease;
 }
 
 .custom-button {
-    font-family: 'Poppins', sans-serif;
-    background-color: red;
-    color: white;
     font-size: 18px;
+    background-color: #e2e2e2;
     border: none;
-    padding: 10px 20px;
-    cursor: pointer;
+    padding: 15px 20px;
     border-radius: 20px;
-    margin: 10px 0px 10px;
-    display: block;
     width: 100%;
     animation: barrido-desde-arriba 0.3s ease-in-out forwards;
 }
@@ -104,6 +140,7 @@ body {
 }
 
 .question-image {
+    padding-top: 10px;
     max-width: 40%;
     height: auto;
     border-radius: 10px;
@@ -112,35 +149,46 @@ body {
 
 /* MODO OSCURO */
 body.modo-oscuro {
-    background-color: #252525;
+    background-color: #000000;
 }
-
-.modo-oscuro .primera-seccion {
-    background-color: #1b1b1b;
+.modo-oscuro .seccion-pregunta {
+    border: 3px solid #222222;
 }
-
-.modo-oscuro .seccion {
-    background-color: #252525;
+.modo-oscuro .🡰 {
+    background-color: #222222;
+    color: rgb(255, 255, 255);
 }
-
-.modo-oscuro .seccion-ultima {
-    background-color: #252525;
+.modo-oscuro .progreso-container {
+    background-color: #222222;
 }
-
+.modo-oscuro .progreso {
+    background-color: #ff0033;
+}
 .modo-oscuro .h1 {
     color: rgb(255, 255, 255);
 }
-
+.modo-oscuro .h2 {
+    background-color: #222222;
+    color: rgb(255, 255, 255);
+}
 .modo-oscuro .h3 {
     font-weight: normal;
     color: rgb(228, 228, 228);
 }
-
 .modo-oscuro .boton {
+    background-color: #222222;
+    color: rgb(226, 226, 226);
+}
+.modo-oscuro .boton.correcto {
+    background-color: #5cb85c;
+}
+.modo-oscuro .boton.incorrecto {
     background-color: #ff0033;
 }
-
-
+.modo-oscuro .custom-button {
+    background-color: #222222;
+    color: rgb(226, 226, 226);
+}
 
 /* ANIMACIONES */
 @keyframes barrido-desde-arriba {

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../../../../imagenes/favicon.ico">
+    <link rel="stylesheet" href="../../../../css/barra-inferior.css">
+    <link rel="stylesheet" href="../../../../css/menu-datos.css">
+    <title>Historial de cambios</title>
+</head>
+
+<body>
+    <div class="seccion-encabezado">
+        <i class="fa-solid fa-arrow-left 🡰" onclick="history.back()"></i>
+        <div class="h1">Historial de cambios</div>
+    </div>
+
+    <div class="seccion-info">
+        <div class="hn-3">
+            <span class="hn-2">Nuevo diseño</span>
+            <span class="hn-3">10/02/2024</span>
+        </div>
+        <div class="hn-4">Se ha rediseñado la interfaz de toda la aplicación, ahora es más intuitiva y cómoda a la vista.</div>
+    </div>
+
+
+    <div class="seccion-ultima"></div>
+
+    <div class="barra-inferior">
+        <a href="../../../../minijuegos/minijuegos.html"><i class="fa-regular fa-joystick icono-b" onclick="change(this)"></i></a>
+        <a href="../../../../inicio/inicio.html"><i class="fa-solid fa-home icono-b-activo" onclick="change(this)"></i></a>
+        <a href="../../../../archivo/archivo.html"><i class="fa-regular fa-folders icono-b" onclick="change(this)"></i></a>
+    </div>
+
+    <script src="../../../../js/redireccion.js"></script>   
+    <script src="../../../../js/configuracion.js"></script>    
+</body>
+</html>

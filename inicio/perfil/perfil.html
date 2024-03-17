@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../../imagenes/favicon.ico">
+    <link rel="stylesheet" href="../../css/barra-inferior.css">
+    <link rel="stylesheet" href="../../css/menu-general.css">
+    <title>Mi Perfil</title>
+</head>
+
+<body>
+    <div class="seccion-encabezado">
+        <div class="h1">Mi Perfil</div>
+    </div>
+
+    <div class="hf-2">Mi área</div>
+    
+    <a href="../../archivo/favoritos/lista de favoritos.html">
+        <div class="seccion-f">
+            <i class="fa-regular fa-star icono-f"></i>
+            <div class="hf-3">Lista de favoritos</div>
+            <div class="≫">></div>
+        </div>
+    </a>
+
+    <a href="../favoritos/lista de favoritos.html">
+        <div class="seccion-f">
+            <i class="fa-regular fa-eye icono-f"></i>
+            <div class="hf-3">Elementos vistos</div>
+            <div class="≫">></div>
+        </div>
+    </a>
+
+    <div class="hf-2">Configuración</div>
+    
+    <div class="seccion-f">
+        <i class="fa-regular fa-moon-over-sun icono-f"></i>
+        <div class="hf-3">Modo Oscuro</div>
+        <div class="btn-container">
+            <input type="checkbox" id="interruptor-modo" class="visually-hidden">
+            <label for="interruptor-modo" class="interruptor"></label>
+        </div>
+    </div>
+
+    <div class="seccion-f">
+        <i class="fa-regular fa-volume icono-f"></i>
+        <div class="hf-3">Sonidos en la App</div>
+        <div class="btn-container">
+            <input type="checkbox" id="interruptor-sonido" class="visually-hidden" checked>
+            <label for="interruptor-sonido" class="interruptor2"></label>
+        </div>
+        <audio id="correctSound"></audio>
+        <audio id="incorrectSound"></audio>
+    </div>
+
+    <div class="hf-2">Acerca de</div>
+
+    <a href="acerca de/vias de contacto/vias de contacto.html">
+        <div class="seccion-f">
+            <i class="fa-regular fa-users icono-f"></i>
+            <div class="hf-3">Vías de contacto</div>
+            <div class="≫">></div>
+        </div>
+    </a>
+    
+    <a href="acerca de/documentacion/documentacion.html">
+        <div class="seccion-f">
+            <i class="fa-regular fa-file icono-f"></i>
+            <div class="hf-3">Documentación</div>
+            <div class="≫">></div>
+        </div>
+    </a>
+
+    <div class="seccion-ultima"></div>
+
+    <div class="barra-inferior">
+        <a href="../../minijuegos/minijuegos.html"><i class="fa-regular fa-joystick icono-b" onclick="change(this)"></i></a>
+        <a href="../../inicio/inicio.html"><i class="fa-solid fa-home icono-b-activo" onclick="change(this)"></i></a>
+        <a href="../../archivo/archivo.html"><i class="fa-regular fa-folders icono-b" onclick="change(this)"></i></a>
+    </div>
+
+    <script src="../../js/redireccion.js"></script>   
+    <script src="../../js/configuracion.js"></script>    
+</body>
+</html>

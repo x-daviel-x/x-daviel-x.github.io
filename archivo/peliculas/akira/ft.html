@@ -3,67 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="../../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../../imagenes/favicon.ico">
     <link rel="stylesheet" href="../../../css/ficha-general.css">
     <link rel="stylesheet" href="../../../css/barra-inferior.css">
     <title>Akira</title>
 </head>
 
 <body>
-    <div class="primera-seccion">
-        <span id="favoritoButton" class="boton-flotante"></span>
-        <img id="icono" src="poster.webp" class="poster">
-        <div id="nombre" class="h1">Akira</div>
-        <div id="tipo" style="display: none;">Película</div>
-        <div class="h2">Akira (アキラ), en un Neo-Tokio posapocalíptico, dos amigos, Kaneda y Tetsuo, enfrentan un poder psíquico desatado después de un experimento secreto. La lucha de Tetsuo por controlar su poder desencadena el caos y revela oscuros secretos sobre el proyecto "Akira".</div>
-    </div>
+<div class="seccion-inicial">
+    <i class="fa-solid fa-arrow-left 🡰" onclick="history.back()"></i>
+    <span id="favoritoButton" class="⭐"></span>
+    <img src="poster.webp" class="poster-p">
+    <img id="icono" src="icono.webp" class="icono-i">
+    <div id="nombre" class="h1">Akira</div>
+    <div id="tipo" class="h2">Película (2007)</div>
+</div>
 
-    <div class="seccion">
-        <div class="h3">Dirección</div>
-        <div class="h4">Katsuhiro Otomo</div>
+ <div class="seccion">
+    <div class="h3">Sinopsis</div>
+    <div class="h4">Akira (アキラ), en un Neo-Tokio posapocalíptico, dos amigos, Kaneda y Tetsuo, enfrentan un poder psíquico desatado después de un experimento secreto. La lucha de Tetsuo por controlar su poder desencadena el caos y revela oscuros secretos sobre el proyecto "Akira".</div>
+</div>
+
+<div class="seccion">
+    <div class="slider-f">
+        <div class="elemento-f">
+            <span class="fa-regular fa-camera-movie icono-f"></span>
+            <span class="h4">Katsuhiro Otomo</span>
+        </div>
+
+        <a href="../archivo/colecciones/kimetsu no yaiba/fr.html" class="elemento-f">
+            <span class="fa-regular fa-building icono-f"></span>
+            <span class="h4">TMS Entertaiment</span>
+        </a>
+
+        <div class="elemento-f">
+            <span class="fa-regular fa-clock icono-f"></span>
+            <span class="h4">124 Minutos</span>
+        </div>
+
+        <div class="elemento-f">
+            <span class="fa-regular fa-star icono-f"></span>
+            <span class="h4">8.5/10</span>
+            <span class="h4">(IMDb)</span>
+        </div>
+
+        <div class="elemento-f">
+            <span class="fa-regular fa-tv-retro icono-f"></span>
+            <span class="h4">16 de Julio 1988</span>
         </div>
     </div>
+</div>
 
-    <div class="seccion">
-        <div class="h3">Duración</div>
-        <div class="h4">124 Minutos</div>
-        </div>
+<div class="seccion">
+    <div class="slider-t">
+        <a href="../archivo/colecciones/kimetsu no yaiba/fr.html" class="elemento-t">
+            <span class="h5">Acción</span>
+        </a>
+        <a href="../archivo/colecciones/kimetsu no yaiba/fr.html" class="elemento-t">
+            <span class="h5">Cyberpunk</span>
+        </a>
+        <a href="../archivo/colecciones/kimetsu no yaiba/fr.html" class="elemento-t">
+            <span class="h5">Misterio</span>
+        </a>
     </div>
+</div>
 
-    <div class="seccion">
-        <div class="h3">Estreno</div>
-        <div class="h4">16 de Julio 1988</div>
-        </div>
+<div class="seccion">
+    <div class="trailer">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/4I3C5Q19eDM?&disablekb=0fs=0showinfo=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
+</div>
 
-    <div class="seccion">
-        <div class="h3">Estudio</div>
-        <div class="h4">TMS Entertaiment</div>
-        </div>
+<div class="seccion">
+    <div class="h3">Plataformas</div>
+    <div class="slider-t">
+        <a href="../archivo/colecciones/kimetsu no yaiba/fr.html" class="elemento-t">
+            <span class="h5">Netflix</span>
+        </a>
+        <a href="../archivo/colecciones/kimetsu no yaiba/fr.html" class="elemento-t">
+            <span class="h5">Crunchyroll</span>
+        </a>
+        <a href="../archivo/colecciones/kimetsu no yaiba/fr.html" class="elemento-t">
+            <span class="h5">Prime Video</span>
+        </a>
     </div>
+</div>
 
-    <div class="seccion">
-        <div class="h3">Géneros</div>
-        <div class="h4">Acción, Cyberpunk, Misterio, y Postapocaliptico</div>
-        </div>
-    </div>
-
-    <div class="seccion">
-        <div class="h3">Plataformas</div>
-        <div class="boton-caja">
-            <a href="hola" class="boton">Explorar</a>
-        </div>
-    </div>
-    
-    <div class="seccion-ultima"></div>
-
-    <div class="barra-inferior">
-        <a href="../../../minijuegos/minijuegos.html"><i class="fa-regular fa-joystick icono-b" onclick="change(this)"></i></a>
-        <a href="../../../inicio/inicio.html"><i class="fa-regular fa-home icono-b" onclick="change(this)"></i></a>
-        <a href="../../../archivo/archivo.html"><i class="fa-regular fa-folders icono-b-activo" onclick="change(this)"></i></a>
-    </div>
-    
-    <script src="../../../js/configuracion.js"></script>   
-    <script src="../../../js/favorito-produccion.js"></script>  
+<script src="../../../js/configuracion.js"></script>
+<script src="../../../js/favorito-produccion.js"></script>
 </body>
+
 </html>

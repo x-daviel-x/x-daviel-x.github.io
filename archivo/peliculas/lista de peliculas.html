@@ -3,39 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../../imagenes/aniplus.ico">
     <link rel="stylesheet" href="../../css/barra-inferior.css">
-    <link rel="stylesheet" href="../../fuentes/iconos/css/all.min.css">
-    <link rel="stylesheet" href="../../css/menu-general.css">
-    <title>Peliculas</title>
+    <link rel="stylesheet" href="../../css/menu-cuadricula.css">
+    <title>Películas</title>
 </head>
 <body>
     <div class="seccion-encabezado">
-        <i class="fa-duotone fa-popcorn icono-1" style="--fa-primary-color: #e63b3b; --fa-secondary-color: #e1dc37; --fa-secondary-opacity: 1;"></i>
-        <div class="h1">Peliculas</div>
-        <div class="h2">Accede a información de cada pelicula con tan solo unos toques.</div>
+        <i class="fa-solid fa-arrow-left 🡰" onclick="history.back()"></i>
+        <div class="h1">Películas</div>
     </div>
 
     <div class="seccion">
-        <div class="boton-caja">
-            <a href="akira/ft.html" class="boton">Akira</a>
-            <a href="amor de gata/ft.html" class="boton-2">Amor de gata</a>
-            <a href="el castillo en el cielo/ft.html" class="boton-2">El castillo en el cielo</a>
-            <a href="el cuento de la princesa kaguya/ft.html" class="boton-2">El cuento de la princesa Kaguya</a>
-            <a href="el increible castillo vagabundo/ft.html" class="boton-2">El increíble castillo vagabundo</a>
-            <a href="el jardin de las palabras/ft.html" class="boton-2">El jardín de las palabras</a>
-            <a href="el mundo secreto de Arriety/ft.html" class="boton-2">El mundo secreto de Arriety</a>
-            <a href="el niño y la bestia/ft.html" class="boton-2">El niño y la bestia</a>
-            <a href="el tiempo contigo.html" class="boton-2">El tiempo contigo</a>
-            <a href="el viaje de chihiro/ft.html" class="boton-2">El viaje de Chihiro</a>
-            <a href="hiroshima/ft.html" class="boton-2">Hiroshima</a>
-            <a href="interstella 5555/ft.html" class="boton-2">Interstella 5555</a>
-            <a href="kiki: entregas a domicilio/ft.html" class="boton-2">Kiki: Entregas a domicilio</a>
-            <a href="la chica que saltaba a través del tiempo/ft.html" class="boton-2">La chica que saltaba a través del tiempo</a>
-            <a href="la colina de las amapolas/ft.html" class="boton-2">La colina de las amapolas</a>
-        </div>
-    </div>
+    <section class="cuadricula-2">
 
-    <div class="seccion-ultima"></div>
+        <a href="akira/ft.html" class="boton-c">
+            <img class="boton-c-poster" src="../peliculas/akira/poster.webp">
+            <div class="hc-2">Akira</div>
+        </a>
+
+        <a href="../../archivo/colecciones/kimetsu no yaiba/animes/kimetsu no yaiba/ft.html" class="boton-c">
+            <img class="boton-c-poster" src="../peliculas/amor de gata/poster.webp">
+            <div class="hc-2">Amor de gata</div>
+        </a>
+
+        <a href="../../archivo/peliculas/akira/ft.html" class="boton-c">
+            <img class="boton-c-poster" src="../peliculas/el castillo en el cielo/poster.webp">
+            <div class="hc-2">El castillo en el cielo</div>
+        </a>
+
+        <a href="../../archivo/colecciones/kimetsu no yaiba/fr.html" class="boton-c">
+            <img class="boton-c-poster" src="../peliculas/el cuento de la princesa kaguya/poster.webp">
+            <div class="hc-2">El cuento de la princesa Kaguya</div>
+        </a>
+
+        <a href="../../archivo/animes/afro samurai/ft.html" class="boton-c">
+            <img class="boton-c-poster" src="../peliculas/el increible castillo vagabundo/poster.webp">
+            <div class="hc-2">El increible castillo vagabundo</div>
+        </a>
+
+        <a href="../../archivo/animes/afro samurai/ft.html" class="boton-c">
+            <img class="boton-c-poster" src="../peliculas/el jardin de las palabras/poster.webp">
+            <div class="hc-2">El jardín de las palabras</div>
+        </a>
+    </div>
+    </section>
+
+    <div class="seccion-ultima">
+    </div>
 
     <div class="barra-inferior">
         <a href="../../minijuegos/minijuegos.html"><i class="fa-regular fa-joystick icono-b" onclick="change(this)"></i></a>
@@ -43,7 +58,6 @@
         <a href="../../archivo/archivo.html"><i class="fa-regular fa-folders icono-b-activo" onclick="change(this)"></i></a>
     </div>
 
-    <script src="../../js/configuracion.js"></script> 
+    <script src="../../js/configuracion.js"></script>  
 </body>
-
 </html>

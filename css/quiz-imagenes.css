@@ -8,16 +8,22 @@ body {
 }
 
 /* SECCIONES */
-.primera-seccion {
-    padding: 10px;
-    text-align: center;
-    background-color: #ffffff;
-    border-radius: 20px;
-    margin: 10px;
+.seccion-encabezado {
+    margin: 3% 3% 25px;
+    display: flex;
+    align-items: center;
 }
 
 .seccion {
-    padding: 5px 15px 15px 15px;
+    margin: 3%;
+    text-align: center;
+}
+
+.seccion-pregunta {
+    padding: 20px;
+    border: 3px solid #dfdfdf;
+    border-radius: 20px;
+    margin: 35px 3% 3% 3%;
     text-align: center;
 }
 
@@ -25,18 +31,121 @@ body {
     padding: 40px;
 }
 
+
+
+/* TEXTO */
+.h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    margin-left: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.contenedor {
+    position: relaative;
+}
+  
+.h2 {
+    background-color: #e2e2e2;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -110%);
+}
+
+.h3 {
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+
+
 /* ELEMENTOS DE LAS SECCIONES */
-.icon {
-    font-size: 55px;
-    margin: 10px;
+/* Parte Inicial */
+.🡰 {
+    font-size: 30px;
+    margin-right: 2px;
+    background: #e2e2e2;
+    border-radius: 10px;
+    padding: 5px 8px;
     display: inline-block;
     vertical-align: middle;
+}
+
+/* Barra de Progreso */
+.progreso-container {
+    background-color: #e2e2e2;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progreso {
+    height: 15px;
+    background-color: #ff0000;
+    border-radius: 10px;
+    transition: width 0.3s ease-in-out;
+}
+
+
+
+/* BOTONES */
+.boton-caja {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.boton {
+    color: white;
+    font-size: 0px;
+    padding: 10px;
+    background-color: #e2e2e2;
+    border: none;
+    border-radius: 20px;
+}
+
+.boton.correcto {
+    background-color: #5cb85c;
+    color: white;
+    transition : all 0.3s ease;
+}
+
+.boton.incorrecto {
+    background-color: #ff0000;
+    color: white;
+    transition : all 0.3s ease;
+}
+
+
+.boton img {
+    max-width: 100%;
+    height: auto;
+}
+
+.custom-button {
+    font-size: 18px;
+    background-color: #e2e2e2;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 20px;
+    width: 100%;
+    animation: barrido-desde-arriba 0.3s ease-in-out forwards;
 }
 
 
 
 
 
+
+/* Memorama */
 .minijuego-container {
     display: flex;
     flex-direction: column;
@@ -82,67 +191,94 @@ body {
 
 
 
-  
-/* TEXTO */
-.h1 {
-    font-size: 24px;
-    color: black;
-    font-weight: bold;
-    display: inline-block;
-    vertical-align: middle;
-}
 
-.h2 {
-    font-size: 18px;
-    color: gray;
-    font-weight: normal;
+
+
+
+/* TIC TAC TOE */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 100%)); /* Ajusta el tamaño de las columnas */
+    grid-gap: 3%; /* Agrega espacio entre las celdas */
+    justify-content: center;
+}
+    
+.cell {
+    width: 100%; /* Ocupa todo el ancho de la celda del tablero */
+    height: 100px; /* Mantiene una relación de aspecto cuadrada */
+    background-color: #e2e2e2;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 20px;
+}
+    
+#result {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    
+}
+    
+
+
+.caja-personaje {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 3%;
+    border: 3px solid #dfdfdf;
+    border-radius: 20px;
     justify-content: space-between;
 }
 
-.h3 {
+    
+#character-info {
+    margin-bottom: 20px;
+}
+    
+#character-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.custom-button2 {
     font-size: 18px;
+    background-color: #e2e2e2;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 20px;
+    animation: barrido-desde-arriba 0.3s ease-in-out forwards;
+}
+
+
+
+
+
+
+.h22 {
+    font-size: 18px;
+    color: #333;
+    text-align: right;
+}
+.h23 {
+    font-size: 24px;
     font-weight: bold;
-    vertical-align: middle;
+    text-align: right;
 }
 
-/* BOTONES */
-.boton-caja {
-    margin-top: 10px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 5px;
-}
 
-.boton {
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    font-size: 0px;
-    border: none;
-    padding: 3px;
-    cursor: pointer;
-    border-radius: 20px;
-    margin: 0px;
-}
 
-.boton img {
-    max-width: 100%;
-    height: auto;
-}
 
-.custom-button {
-    font-family: 'Inter', sans-serif;
-    background-color: red;
-    color: white;
-    font-size: 18px;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 20px;
-    margin: 10px 0px 10px;
-    display: block;
-    width: 100%;
-}
+
+
+
 
 /* OPCIONES */
 #options {
@@ -151,43 +287,69 @@ body {
     justify-content: center;
 }
 
-.option {
-    width: 100%; /* Cambiamos el ancho al 100% para mostrar las opciones en una columna */
-    margin: 50
-}
-
 
 
 /* MODO OSCURO */
 body.modo-oscuro {
-    background-color: #252525;
+    background-color: #000000;
 }
-
-.modo-oscuro .primera-seccion {
-    background-color: #1b1b1b;
+.modo-oscuro .seccion-pregunta {
+    border: 3px solid #222222;
 }
-
-.modo-oscuro .seccion {
-    background-color: #252525;
-}
-
-.modo-oscuro .card {
+.modo-oscuro .🡰 {
     background-color: #333;
+    color: rgb(255, 255, 255);
 }
-
-.modo-oscuro .card.matched {
-    background-color: #585858;
+.modo-oscuro .progreso-container {
+    background-color: #222222;
 }
-
+.modo-oscuro .progreso {
+    background-color: #ff0033;
+}
 .modo-oscuro .h1 {
     color: rgb(255, 255, 255);
 }
-
+.modo-oscuro .h2 {
+    background-color: #333;
+    color: rgb(255, 255, 255);
+}
 .modo-oscuro .h3 {
     font-weight: normal;
     color: rgb(228, 228, 228);
 }
-
 .modo-oscuro .boton {
-    background-color: #252525;
+    background-color: #222222;
+    color: rgb(226, 226, 226);
+}
+.modo-oscuro .boton.correcto {
+    background-color: #5cb85c;
+}
+.modo-oscuro .boton.incorrecto {
+    background-color: #ff0033;
+}
+.modo-oscuro .custom-button {
+    background-color: #222222;
+    color: rgb(226, 226, 226);
+}
+.modo-oscuro .card {
+    background-color: #333;
+}
+.modo-oscuro .card.matched {
+    background-color: #5cb85c;
+}
+
+
+
+.modo-oscuro .caja-personaje {
+    border-color: #333;
+}
+.modo-oscuro .h22 {
+    color: rgb(255, 255, 255);
+}
+.modo-oscuro .h23 {
+    color: rgb(228, 228, 228);
+}
+.modo-oscuro .cell {
+    background-color: #333;
+    color: white;
 }

@@ -45,9 +45,10 @@ document.addEventListener('DOMContentLoaded', () => {
   ];
 
   const cantidadMinima = 3;
-  const cantidadMaxima = 5;
+  const cantidadMaxima = 6;
   const cantidadBanco = images.length;
   const cantidadAMostrar = Math.min(Math.max(getRandomNumber(cantidadMinima, cantidadMaxima) * 2, cantidadMinima * 2), cantidadBanco);
+  const cantidadDePares = cantidadAMostrar / 2;
   const cards = getShuffledSubset(images, cantidadAMostrar);
   const duplicatedCards = [...cards, ...cards];
 
@@ -56,8 +57,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const memoryGame = document.querySelector('.memory-game');
   let flippedCards = [];
   let matchedCards = [];
+  let flippedPairsCount = 0;
+  let maxFlippedPairs = cantidadDePares;
+  let progressBar = document.getElementById('progressBar');
 
-  let timer; // Variable para almacenar el temporizador
+  let timer;
 
   function getRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -76,6 +80,11 @@ document.addEventListener('DOMContentLoaded', () => {
     img.src = errorImage;
   }
 
+  function updateProgressBar() {
+    const progress = (flippedPairsCount / maxFlippedPairs) * 50;
+    progressBar.style.width = progress + "%";
+  }
+
   function flipCard() {
     if (flippedCards.length < 2 && !this.classList.contains('flipped') && !this.classList.contains('matched')) {
       this.classList.add('flipped');
@@ -86,7 +95,10 @@ document.addEventListener('DOMContentLoaded', () => {
       img.alt = '';
 
       if (flippedCards.length === 2) {
-        setTimeout(checkMatch, 500);
+        setTimeout(() => {
+          checkMatch();
+          updateProgressBar();
+        }, 300);
       }
     }
   }
@@ -96,6 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (card1.dataset.image === card2.dataset.image) {
       card1.classList.add('matched');
       card2.classList.add('matched');
+      flippedPairsCount++;
       checkWin();
     } else {
       setTimeout(() => {
@@ -114,17 +127,16 @@ document.addEventListener('DOMContentLoaded', () => {
     matchedCards = document.querySelectorAll('.matched');
 
     if (matchedCards.length === allCards.length) {
-      clearTimeout(timer); 
-      showMessage('¡Ganaste!');
-      correctSound.play(); // Reproduce el sonido de respuesta correcta
-      document.getElementById("restartButton").style.display = "block"; // Muestra el botón de reinicio
+      clearTimeout(timer);
+      showMessage('¡Has ganado!');
+      correctSound.play();
+      document.getElementById("restartButton").style.display = "block";
     }
   }
 
   function showMessage(message) {
     const mensajeVictoriaElement = document.getElementById('mensajeVictoria');
     mensajeVictoriaElement.textContent = message;
-    // Deshabilita los eventos de clic en las tarjetas para evitar la manipulación del juego.
     document.querySelectorAll('.card').forEach(card => card.removeEventListener('click', flipCard));
   }
 
@@ -151,26 +163,24 @@ document.addEventListener('DOMContentLoaded', () => {
       memoryGame.appendChild(cardElement);
     });
 
-    // Obtiene el elemento HTML para el temporizador
-    const tiempoRestanteElement = document.getElementById('tiempoRestante');
-
-    let tiempoRestante = 99;
+    let tiempoRestante = 98;
     timer = setInterval(() => {
-      document.getElementById('tiempoRestante').textContent = `⏱️: ${tiempoRestante} segundos`;
+      document.getElementById('tiempoRestante').textContent = ` ${tiempoRestante} `;
 
       if (tiempoRestante === 0) {
         clearInterval(timer);
         showMessage('¡Has perdido!');
-        // Deshabilita los eventos de clic en las tarjetas después de mostrar el mensaje de pérdida.
         document.querySelectorAll('.card').forEach(card => card.removeEventListener('click', flipCard));
-        incorrectSound.play(); // Reproduce el sonido de respuesta incorrecta
-        document.getElementById("restartButton").style.display = "block"; // Muestra el botón de reinicio
+        incorrectSound.play();
+        document.getElementById("restartButton").style.display = "block";
       } else {
         tiempoRestante--;
       }
     }, 1000);
-  }
 
+    // Configurar la barra de progreso inicialmente vacía
+    progressBar.style.width = "0%";
+  }
 
   createBoard();
 });

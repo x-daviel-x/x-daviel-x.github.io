@@ -54,12 +54,10 @@ a {
 .modo-oscuro .barra-inferior {
     background-color: #1b1b1b;
 }
-
 .modo-oscuro .icono-b {
     color: rgb(255, 255, 255);
     border: 7px solid #1b1b1b;
 }
-
 .modo-oscuro .icono-b-activo {
     background: #ff0033;
     border: 5px solid #313131;

@@ -4,26 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../../imagenes/favicon.ico">
-    <link rel="stylesheet" href="../../css/ficha-favoritos.css">
     <link rel="stylesheet" href="../../css/barra-inferior.css">
+    <link rel="stylesheet" href="../../css/menu-general.css">
     <title>Favoritos</title>
 </head>
 
 <body>
     <div class="seccion-encabezado">
-        <i class="fa-duotone fa-star icono-1" style="--fa-primary-color: #faf200; --fa-secondary-color: #faf200; --fa-secondary-opacity: 1;"></i>
+        <i class="fa-solid fa-arrow-left 🡰" onclick="history.back()"></i>
         <div class="h1">Favoritos</div>
-        <div class="h2">Mira tus producciones guardadas de manera organizada.</div>
     </div>
    
-    <div id="favoritosLista" class="seccion-favoritos"></div>
+    <div id="favoritosLista"></div>
 
     <div class="seccion-ultima"></div>
 
     <div class="barra-inferior">
         <a href="../../minijuegos/minijuegos.html"><i class="fa-regular fa-joystick icono-b" onclick="change(this)"></i></a>
-        <a href="../../inicio/inicio.html"><i class="fa-regular fa-home icono-b icono-b" onclick="change(this)"></i></a>
-        <a href="../../archivo/archivo.html"><i class="fa-regular fa-folders icono-b-activo" onclick="change(this)"></i></a>
+        <a href="../../inicio/inicio.html"><i class="fa-regular fa-home icono-b icono-b-activo" onclick="change(this)"></i></a>
+        <a href="../../archivo/archivo.html"><i class="fa-regular fa-folders icono-b" onclick="change(this)"></i></a>
     </div>
 
     <script src="../../js/configuracion.js"></script>    

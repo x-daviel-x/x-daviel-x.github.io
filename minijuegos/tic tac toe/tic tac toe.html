@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/barra-inferior.css">
+    <link rel="stylesheet" href="../../css/quiz-imagenes.css">
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+  <div class="seccion-encabezado">
+      <i class="fa-solid fa-xmark 🡰" onclick="history.back()"></i>
+      <div class="h1">Tic Tac Toe</div>
+  </div>
+
+
+  <div class="caja-personaje">
+    <img id="character-image" src="" alt="Character Image">
+    <div class="caja-texto">
+      <div class="h22">Juegas contra</div>
+      <div class="h23" id="character-message"></div>
+    </div>
+  </div>
+
+  <div id="character-info"> </div>
+  <div class="seccion">
+    <div id="tic-tac-toe-board" class="board"></div>
+  </div>
+
+  <div class="seccion">
+  <p id="result"></p>
+  <div class="custom-button2" id="reset-button" style="display: none;">Reiniciar</div>
+  </div>
+
+  <script src="../../js/configuracion.js"></script>
+  <script src="../../js/minijuego-tic-tac-toe.js"></script>
+</body>
+</html>

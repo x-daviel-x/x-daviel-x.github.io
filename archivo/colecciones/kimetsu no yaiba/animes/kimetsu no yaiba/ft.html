@@ -3,73 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="../../../../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../../../../imagenes/favicon.ico">
     <link rel="stylesheet" href="../../../../../css/ficha-general.css">
     <link rel="stylesheet" href="../../../../../css/barra-inferior.css">
-    <title>Ficha de Anime</title>
+    <title>Afro Samurai</title>
 </head>
 
 <body>
-    <div class="primera-seccion">
+    <div class="seccion-inicial">
+        <i class="fa-solid fa-arrow-left 🡰" onclick="history.back()"></i>
+        <span id="favoritoButton" class="⭐"></span>
+        <img src="poster.webp" class="poster">
         <img id="icono" src="icono.webp" class="icono-i">
         <div id="nombre" class="h1">Kimetsu no Yaiba</div>
-        <div id="tipo" style="display: none;">Anime</div>
-        <div class="h2">Demon Slayer (鬼滅の刃), sigue a Tanjiro Kamado en su búsqueda para vengar a su familia y curar a su hermana convertida en demonio mientras se convierte en un cazador de demonios hábil y valiente.</div>
-        <a href="dc.html" class="boton">Datos Curiosos</a>
-        <a id="favoritoButton" class="boton-2">Añadir a Favoritos</a>
+        <div id="tipo" class="h2">Serie de Anime (2019)</div>
     </div>
 
     <div class="seccion">
-        <div class="h3">Creador</div>
-        <div class="h4">Koyoharu Gotouge</div>
+        <div class="wrapper">
+            <div class="boton">
+                <input type="radio" id="btnFichaTecnica" name="opcion" onclick="toggleContent('fichaTecnica')" checked>
+
+                <label for="btnFichaTecnica">Ficha Técnica</label>
+            </div>
+            <div class="boton">
+                <input type="radio" id="btnDatosCuriosos" name="opcion" onclick="toggleContent('datosCuriosos')">
+                <label for="btnDatosCuriosos">Datos Curiosos</label>
+            </div>
+        </div>
+    </div>
+
+    <div id="fichaTecnicaSection" style="display: block;">
+    <div class="seccion">
+        <div class="h3">Sinopsis</div>
+        <div class="h4">Demon Slayer (鬼滅の刃), sigue a Tanjiro Kamado en su búsqueda para vengar a su familia y curar a su hermana convertida en demonio mientras se convierte en un cazador de demonios hábil y valiente.</div>
+    </div>
+
+    <div class="seccion">
+        <div class="slider-f">
+            <div class="elemento-f">
+                <span class="fa-regular fa-user icono-f"></span>
+                <span class="h4">Koyoharu Gotouge</span>
+            </div>
+
+            <div class="elemento-f">
+                <span class="fa-regular fa-building icono-f"></span>
+                <span class="h4">Ufotable</span>
+            </div>
+
+            <div class="elemento-f">
+                <span class="fa-regular fa-film-canister icono-f"></span>
+                <span class="h4">1 Temporada</span>
+                <span class="h4">26 Episodios</span>
+                <span class="h4">1 OVA</span>
+            </div>
+
+            <div class="elemento-f">
+                <span class="fa-regular fa-star icono-f"></span>
+                <span class="h4">8.5/10</span>
+                <span class="h4">(IMDb)</span>
+            </div>
+
+            <div class="elemento-f">
+                <span class="fa-regular fa-tv-retro icono-f"></span>
+                <span class="h4">6 de abril del 2019</span>
+            </div>
         </div>
     </div>
 
     <div class="seccion">
-        <div class="h3">Episodios</div>
-        <div class="h4">1 Temporada - 26 Episodios - 1 OVA</div>
+        <div class="slider-t">
+            <a href="../archivo/colecciones/kimetsu no yaiba/fr.html" class="elemento-t">
+                <span class="h5">Acción</span>
+            </a>
+            <a href="../archivo/colecciones/kimetsu no yaiba/fr.html" class="elemento-t">
+                <span class="h5">Ciencia ficción</span>
+            </a>
+            <a href="../archivo/colecciones/kimetsu no yaiba/fr.html" class="elemento-t">
+                <span class="h5">Histórico</span>
+            </a>
+            <a href="../archivo/colecciones/kimetsu no yaiba/fr.html" class="elemento-t">
+                <span class="h5">Postapocalíptico</span>
+            </a>
         </div>
     </div>
 
     <div class="seccion">
-        <div class="h3">Emisiones</div>
-        <div class="h4">Inicio: 6 de abril del 2019</div>
-        <div class="h4">Fin: En emisión</div>
-    </div>
-
-    <div class="seccion">
-        <div class="h3">Estudio</div>
-        <div class="h4">Ufotable</div>
-        </div>
-    </div>
-
-    <div class="seccion">
-        <div class="h3">Géneros</div>
-        <div class="h4">
-            <a href="../../../../../generos/accion.html">Acción</a>, 
-            <a href="../../../../../generos/ciencia ficcion.html">Ciencia Ficción</a>, 
-            <a href="../../../../../generos/historico.html">Histórico</a> y 
-            <a href="../../../../../generos/postapocaliptico.html">Postapocalíptico</a>
+        <div class="trailer">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VQGCKyvzIM4?&disablekb=0fs=0showinfo=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
     </div>
 
     <div class="seccion">
         <div class="h3">Plataformas</div>
-        <div class="boton-caja">
-            <a href="hola" class="boton">Explorar</a>
+        <div class="slider-t">
+            <a href="https://www.netflix.com/title/81091393" class="elemento-t">
+                <span class="h5">Netflix</span>
+            </a>
+            <a href="https://www.crunchyroll.com/es/series/GY5P48XEY/demon-slayer-kimetsu-no-yaiba" class="elemento-t">
+                <span class="h5">Crunchyroll</span>
+            </a>
+        </div>
+    </div>
+    </div>
+
+    <div id="datosCuriososSection" style="display: none;">
+
+    <div class="seccion">
+        <div class="dato">
+            <div class="h-d1">Cambio de nombre</div>
+            <div class="h-d2">Originalmente esta obra anime se iba a titular "Kisatsu No Yaiba", sin embargo cambió de nombre debido a que era muy explícito. El kanji “Sastu” significa matar por lo que lo cambiaron por “metsu” que significa destruir, un sinónimo un poco más liviano.</div>
+        </div>
+    </div>
+
+    <div class="seccion">
+        <div class="dato">
+            <div class="h-d1">El autor es un misterio</div>
+            <div class="h-d2">Aunque el autor de la obra se presenta como Koyoharu Gotōge, este es un nombre falso. Actualmente se no se conoce ni el nombre, aspecto físico, ni el género del autor de Demon Slayer y las únicas veces que se ha presentado fue como un cocodrilo con gafas.</div>
+        </div>
+    </div>
+
+    <div class="seccion">
+        <div class="dato">
+        <div class="h-d1">Récord de ventas</div>
+        <div class="h-d2">El manga de Kimetsu No Yaiba posee un récord que consiguió en el año 2019. Este es el único en toda la historia de Japón que ocupó todos los puestos del Top 10 de ventas nacional, logro que pudo mantener un total de 2 semanas.</div>
+    </div>
+    </div>
+
+    <div class="seccion">
+        <div class="dato">
+            <div class="h-d1">Spin offs</div>
+            <div class="h-d2">Existen varias obras a modo de spin offs de Kimetsu No Yaiba. Por un lado está la novela Kimetsu No Yaiba: Flowe of Hapiness y la novela Kimetsu No Yaiba: One Winged Butterfly, mientras que por el otro un manga de dos capítulos llamado Kimetsu No Yaiba: Tomioka Giyuu Gaiden.</div>
+        </div>
+    </div>
+
+    <div class="seccion">
+        <div class="dato">
+            <img src="imagen 1.webp" class="imagen">
+            <div class="h-d1">La máscara de Urokodaki</div>
+            <div class="h-d2">La máscara que utiliza Urokodaki en la serie anime es la máscara Tengu. Estas eran criaturas sobrenaturales de la mitología japonesa que eran consideradas como un tipo de dios. Originalmente se representaban con un pico y más tarde con una nariz extremadamente larga.</div>
+        </div>
+    </div>
+
+    <div class="seccion">
+        <div class="dato">
+            <div class="h-d1">Edades</div>
+            <div class="h-d2">El protagonista Tanjiro Kamado tiene tan solo 13 años al inicio de la saga, y mide un metro con 65 centímetros, mientras que su hermana, Nezuko Kamado, tiene 14 años, un año más que el protagonista.</div>
+        </div>
+    </div>
+
+    <div class="seccion">
+        <div class="dato">
+            <div class="h-d1">Película y protocolos</div>
+            <div class="h-d2">En el estreno de la película "Demon Slayer: Muguen Train" fue tanto el éxito que los cines suspendieron las restricciones de asientos que se tenían por la pandemia del COVID-19. Solamente el primer día la película logró vender 673,220 boletos.</div>
+        </div>
+    </div>
+
+
+    <div class="seccion">
+        <div class="dato">
+            <div class="h-d1">Los territorios de los pilares</div>
+            <div class="h-d2">Debido a lo difícil que es convertirse en uno de los pilares, son muy pocos los que existen en el mundo. Es por ello que cada uno de ellos tiene asignado un territorio específico que proteger y del cual debe recopilar información.</div>
         </div>
     </div>
     
-    <div class="seccion-ultima"></div>
-
-    <div class="barra-inferior">
-        <a href="../../../../../minijuegos/minijuegos.html"><i class="fa-regular fa-joystick icono-b" onclick="change(this)"></i></a>
-        <a href="../../../../../inicio/inicio.html"><i class="fa-regular fa-home icono-b" onclick="change(this)"></i></a>
-        <a href="../../../../../archivo/archivo.html"><i class="fa-regular fa-folders icono-b-activo" onclick="change(this)"></i></a>
+    <div class="seccion">
+        <div class="dato">
+            <div class="h-d1">Película y protocolos</div>
+            <div class="h-d2">Antes de que el manga de Kimetsu No Yaiba tuviera su adaptación en formato serie, se estrenó una película que contaba la historia de los 5 primeros episodios. Esta se llamó Kimetsu No Yaiba: Kyoudai No Kizuna y salió el 29 de marzo de 2019, días antes de que se estrenara el anime oficial.</div>
+        </div>
     </div>
 
-    <script src="../../../../../js/configuracion.js"></script> 
-    <script src="../../../../../js/favorito-produccion.js"></script>  
+    <div class="seccion">
+        <div class="dato">
+            <div class="h-d1">Tiempo para ser un pilar</div>
+            <div class="h-d2">Para convertirse en pilar se necesita derrotar a una de las Doce Lunas Demoníacas o derrotar a 50 demonios. En caso de conseguirlo se necesitaría un entrenamiento de 5 años mínimo o incluso menos si se trata de alguien con poderes excepcionales.</div>
+        </div>
+    </div>
+
+    </div>
+
+    <script src="../../../../../js/configuracion.js"></script>
+    <script src="../../../../../js/favorito-produccion.js"></script>
 </body>
 
 </html>

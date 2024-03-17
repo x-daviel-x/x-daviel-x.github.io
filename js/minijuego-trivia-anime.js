@@ -8,8 +8,8 @@ const incorrectSound = document.getElementById("incorrectSound");
 
 let currentQuestionIndex = -1; 
 let score = 0;
-const maxQuestions = 10; // Límite de preguntas
-const questionTime = 15000; // Tiempo por pregunta en segundos
+const maxQuestions = 4; // Límite de preguntas
+const questionTime = 15; // Tiempo por pregunta en segundos
 let countdownTimer;
 let questions = [
 
@@ -114,7 +114,7 @@ let questions = [
         correctAnswer: 2
     },
     {
-        question: "¿Con quién se casó Vegeta?",
+        question: "¿Con quién se casó Vegeta en Dragon Ball?",
         options: ["Milk", "Bulma", "Videl", "Launch"],
         correctAnswer: 2
     },
@@ -124,7 +124,7 @@ let questions = [
         correctAnswer: 4
     },
     {
-        question: "¿Dónde tuvo lugar la primera transformación de Super Saiyajin por parte de Goku?",
+        question: "¿Dónde tuvo lugar la primera transformación de Super Saiyajin por parte de Goku en Dragon Ball Z?",
         options: ["Corporación Cápsula", "Planeta Namek", "Palacio del Gran Kaio", "Kamehouse"],
         correctAnswer: 2
     },
@@ -165,7 +165,7 @@ let questions = [
     },
     {
         question: "¿En qué serie de anime la protagonista es una cazadora de cartas mágicas?",
-        options: ["Bleach", "Sakura Card Captor", "Ataque a los titanes", "Dragon Ball Z"],
+        options: ["Bleach", "Sakura Card Captor", "Ataque a los titanes", "Dragon Ball Z Kai"],
         correctAnswer: 2
     },
     {
@@ -313,12 +313,12 @@ let questions = [
         options: ["Respiración del Rayo", "Respiración del Agua", "Respiración del Sol", "Respiración del Viento"],
         correctAnswer: 3
     },
-        {
-            question: "¿Cuál es el título del arco en Naruto donde Sasuke se une a Orochimaru?",
-            options: ["Arco de los Exámenes Chūnin", "Arco del Regreso de Itachi", "Arco de la Aldea de la Arena", "Arco de la Búsqueda de Sasuke"],
-            correctAnswer: 4
-        },
-    ];
+    {
+        question: "En Naruto, ¿cuál es el título del arco  donde Sasuke se une a Orochimaru?",
+        options: ["Arco de los Exámenes Chūnin", "Arco del Regreso de Itachi", "Arco de la Aldea de la Arena", "Arco de la Búsqueda de Sasuke"],
+        correctAnswer: 4
+    },
+];
 
 function startQuiz() {
     score = 0;
@@ -329,6 +329,12 @@ function startQuiz() {
 
 function showNextQuestion() {
     currentQuestionIndex++;
+    
+    // Restablecer estilos de los botones al mostrar la siguiente pregunta
+    optionButtons.forEach((button) => {
+        button.classList.remove("correcto", "incorrecto");
+        button.disabled = false;
+    });
 
     if (currentQuestionIndex < maxQuestions && currentQuestionIndex < questions.length) {
         const question = questions[currentQuestionIndex];
@@ -336,7 +342,6 @@ function showNextQuestion() {
 
         for (let i = 0; i < optionButtons.length; i++) {
             optionButtons[i].textContent = question.options[i];
-            optionButtons[i].disabled = false;
         }
 
         startCountdown();
@@ -347,24 +352,51 @@ function showNextQuestion() {
 
 function startCountdown() {
     let timeLeft = questionTime;
-    timeDisplay.textContent = `⏱️ ${timeLeft} segundos`;
+    timeDisplay.textContent = ` ${timeLeft}`;
+
+    // Añadido para calcular y actualizar el progreso de la barra
+    const progress = ((currentQuestionIndex + 1) / maxQuestions) * 100;
+    progressBar.style.width = progress + "%";
+
     countdownTimer = setInterval(() => {
         if (timeLeft <= 0) {
-            // Si el tiempo se agota, marcar la respuesta como incorrecta y pasar a la siguiente pregunta.
-            checkAnswer(-1);
+            handleTimeout();
         } else {
-                timeDisplay.textContent = `⏱️ ${timeLeft} segundos`;
+            timeDisplay.textContent = ` ${timeLeft}`;
         }
         timeLeft--;
 
-        if (currentQuestionIndex === 1 && timeLeft === 10) {
+        if (currentQuestionIndex === 0 && timeLeft === (questionTime - 15)) {
             // Si es la primera pregunta y el tiempo se agota, reproduce el sonido de respuesta incorrecta.
             incorrectSound.play();
         }
     }, 1000);
 }
 
+function handleTimeout() {
+    clearInterval(countdownTimer); // Detener la cuenta regresiva
 
+    if (currentQuestionIndex >= maxQuestions) {
+        return; // Evita que se sigan procesando respuestas después de las preguntas programadas
+    }
+
+    // Marcar la respuesta como incorrecta y pasar a la siguiente pregunta.
+    const question = questions[currentQuestionIndex];
+    const selectedButton = optionButtons[question.correctAnswer - 1];
+
+    message.textContent = "✖";
+    incorrectSound.play(); // Reproduce el sonido de respuesta incorrecta
+    selectedButton.classList.add("incorrecto");
+
+    disableOptions();
+
+    setTimeout(() => {
+        message.textContent = "";
+        showNextQuestion();
+    }, 1000);
+}
+
+// Función para verificar si la opción es corrrecta o incorrecta
 function checkAnswer(selectedIndex) {
     clearInterval(countdownTimer); // Detener la cuenta regresiva
 
@@ -373,13 +405,17 @@ function checkAnswer(selectedIndex) {
     }
 
     const question = questions[currentQuestionIndex];
+    const selectedButton = optionButtons[selectedIndex - 1];
+
     if (selectedIndex === question.correctAnswer) {
         score++;
-        message.textContent = "Correcta";
+        message.textContent = "✔";
         correctSound.play(); // Reproduce el sonido de respuesta correcta
+        selectedButton.classList.add("correcto");
     } else {
-        message.textContent = "Incorrecta";
+        message.textContent = "✖";
         incorrectSound.play(); // Reproduce el sonido de respuesta incorrecta
+        selectedButton.classList.add("incorrecto");
     }
 
     scoreDisplay.textContent = score + " ⭐";
@@ -397,16 +433,6 @@ function disableOptions() {
     });
 }
 
-// Reemplaza la función showFinalMessage() actual con esta versión modificada
-function showFinalMessage() {
-    questionText.textContent = "Tu puntaje puntaje final ha sido " + score + "/10 ⭐";
-    message.textContent = "";
-    timeDisplay.style.display = "none"; // Oculta el texto del tiempo restante
-    scoreDisplay.style.display = "none"; // Oculta el puntaje (⭐)
-    document.getElementById("restartButton").style.display = "block"; // Muestra el botón de reinicio
-    removeButtons(); // Elimina los botones de opción
-}
-
 // Función para mezclar aleatoriamente un array (Fisher-Yates shuffle)
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -420,6 +446,16 @@ function removeButtons() {
     optionButtons.forEach((button) => {
         button.style.display = "none";
     });
+}
+
+// Función para mostrar el mensaje final
+function showFinalMessage() {
+    questionText.textContent = "Tu puntaje final ha sido " + score + "/10 ⭐";
+    message.textContent = "";
+    timeDisplay.style.display = "none";
+    document.getElementById("restartButton").style.display = "block";
+
+    removeButtons(); // Elimina los botones de opción
 }
 
 startQuiz();

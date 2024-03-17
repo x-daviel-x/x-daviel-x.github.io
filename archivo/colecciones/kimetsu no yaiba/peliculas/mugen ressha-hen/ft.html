@@ -3,71 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="../../../../.../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../../../../imagenes/favicon.ico">
     <link rel="stylesheet" href="../../../../../css/ficha-general.css">
     <link rel="stylesheet" href="../../../../../css/barra-inferior.css">
     <title>El tren infinito</title>
 </head>
 
 <body>
-    <div class="primera-seccion">
-        <img id="icono" src="poster.webp" class="poster">
-        <div id="nombre" class="h1">El tren infinito</div>
-        <div id="tipo" style="display: none;">Película de Kimetsu no Yaiba</div>
-        <div class="h2">Kimetsu No Yaiba; Mugen Ressha-hen (劇場版 「鬼 滅 の 刃」 無限 列車 編) Tanjiro Kamado y sus amigos del Demon Slayer Corps acompañan a Kyōjurō Rengoku, el Flame Hashira, para investigar una misteriosa serie de desapariciones que ocurren dentro de un tren aparentemente infinitamente largo. Poco saben que Enmu, la última de las Lunas Inferiores de los Doce Kizuki, también está a bordo y les ha preparado una trampa.</div>
-        <a id="favoritoButton" class="boton">Añadir a Favoritos</a>
-    </div>
+<div class="seccion-inicial">
+    <i class="fa-solid fa-arrow-left 🡰" onclick="retrocederYReiniciar()"></i>
+    <span id="favoritoButton" class="⭐"></span>
+    <img src="poster.webp" class="poster-p">
+    <img id="icono" src="icono.webp" class="icono-i">
+    <div id="nombre" class="h1">El tren infinito</div>
+    <div id="tipo" class="h2">Película de Kimetsu no Yaiba</div>
+</div>
 
-    <div class="seccion">
-        <div class="h3">Dirección</div>
-        <div class="h4">Haruo Sotozaki</div>
+ <div class="seccion">
+    <div class="h3">Sinopsis</div>
+    <div class="h4">Kimetsu No Yaiba; Mugen Ressha-hen (劇場版 「鬼 滅 の 刃」 無限 列車 編) Tanjiro Kamado y sus amigos del Demon Slayer Corps acompañan a Kyōjurō Rengoku, el Flame Hashira, para investigar una misteriosa serie de desapariciones que ocurren dentro de un tren aparentemente infinitamente largo. Poco saben que Enmu, la última de las Lunas Inferiores de los Doce Kizuki, también está a bordo y les ha preparado una trampa.</div>
+</div>
+
+<div class="seccion">
+    <div class="slider-f">
+        <div class="elemento-f">
+            <span class="fa-regular fa-camera-movie icono-f"></span>
+            <span class="h4">Haruo Sotozaki</span>
+        </div>
+
+        <a href="../archivo/colecciones/kimetsu no yaiba/fr.html" class="elemento-f">
+            <span class="fa-regular fa-building icono-f"></span>
+            <span class="h4">Shueisha, Ufotable</span>
+            <span class="h4">y Aniplex</span>
+        </a>
+
+        <div class="elemento-f">
+            <span class="fa-regular fa-clock icono-f"></span>
+            <span class="h4">117 Minutos</span>
+        </div>
+
+        <div class="elemento-f">
+            <span class="fa-regular fa-star icono-f"></span>
+            <span class="h4">8.5/10</span>
+            <span class="h4">(IMDb)</span>
+        </div>
+
+        <div class="elemento-f">
+            <span class="fa-regular fa-tv-retro icono-f"></span>
+            <span class="h4">16 de Octubre de 2020</span>
         </div>
     </div>
+</div>
 
-    <div class="seccion">
-        <div class="h3">Duración</div>
-        <div class="h4">117 Minutos</div>
-        </div>
+<div class="seccion">
+    <div class="slider-t">
+        <a href="../../../../generos/accion.html" class="elemento-t">
+            <span class="h5">Acción</span>
+        </a>
+        <a href="../../../../generos/ciencia ficcion.html" class="elemento-t">
+            <span class="h5">Ciencia Ficción</span>
+        </a>
+        <a href="../../../../generos/historico.html" class="elemento-t">
+            <span class="h5">Historico</span>
+        </a>
+        <a href="../../../../generos/postapocaliptico.html" class="elemento-t">
+            <span class="h5">Postapocalíptico</span>
+        </a>
     </div>
+</div>
 
-    <div class="seccion">
-        <div class="h3">Estreno</div>
-        <div class="h4">16 de Octubre de 2020</div>
-        </div>
+<div class="seccion">
+    <div class="trailer">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-AwLMRgcEoA?&disablekb=0fs=0showinfo=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
+</div>
 
-    <div class="seccion">
-        <div class="h3">Estudios</div>
-        <div class="h4">Shueisha, Ufotable y Aniplex</div>
-        </div>
+<div class="seccion">
+    <div class="h3">Plataformas</div>
+    <div class="slider-t">
+        <a href="https://www.crunchyroll.com/es/watch/GWDU8P2PZ/demon-slayer--kimetsu-no-yaiba--the-movie-mugen-train" class="elemento-t">
+            <span class="h5">Crunchyroll</span>
+        </a>
+        <a href="https://www.primevideo.com/detail/Guardianes-de-la-noche--Kimetsu-no-Yaiba--La-Pel%C3%ADcula-Tren-Infinito/0RDSEUUQ44LPTS2FOM23B1JAOL" class="elemento-t">
+            <span class="h5">Prime Video</span>
+        </a>
     </div>
+</div>
+<script>
+    function retrocederYReiniciar() {
+        // Guardar la URL actual antes de retroceder
+        var urlActual = window.location.href;
+        
+        // Retroceder en el historial del navegador
+        history.back();
+        
+        // Esperar un breve momento antes de cargar la página anterior y reiniciarla
+        setTimeout(function() {
+            // Cargar nuevamente la página anterior
+            window.location.href = urlActual;
+        }, 100);
+    }
+</script>
 
-    <div class="seccion">
-        <div class="h3">Géneros</div>
-        <div class="h4">
-            <a href="../../../../../generos/accion.html">Acción</a>, 
-            <a href="../../../../../generos/ciencia ficcion.html">Ciencia Ficción</a>, 
-            <a href="../../../../generos/historico.html">Histórico</a> y 
-            <a href="../../../../../generos/postapocaliptico.html">Postapocalíptico</a>
-        </div>
-    </div>
-
-    <div class="seccion">
-        <div class="h3">Plataformas</div>
-        <div class="boton-caja">
-            <a href="hola" class="boton">Explorar</a>
-        </div>
-    </div>
-    
-    <div class="seccion-ultima"></div>
-
-    <div class="barra-inferior">
-        <a href="../../../../../minijuegos/minijuegos.html"><i class="fa-regular fa-joystick icono-b" onclick="change(this)"></i></a>
-        <a href="../../../../../inicio/inicio.html"><i class="fa-regular fa-home icono-b" onclick="change(this)"></i></a>
-        <a href="../../../../../archivo/archivo.html"><i class="fa-regular fa-folders icono-b-activo" onclick="change(this)"></i></a>
-    </div>
-
-    <script src="../../../../../js/configuracion.js"></script> 
-    <script src="../../../../../js/favorito-produccion.js"></script> 
+<script src="../../../../../js/configuracion.js"></script>
+<script src="../../../../../js/favorito-produccion.js"></script>
 </body>
+
 </html>
