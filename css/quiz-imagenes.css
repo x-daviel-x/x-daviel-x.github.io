@@ -22,7 +22,7 @@ body {
 .seccion-pregunta {
     padding: 20px;
     border: 3px solid #dfdfdf;
-    border-radius: 20px;
+    border-radius: 15px;
     margin: 35px 3% 3% 3%;
     text-align: center;
 }
@@ -58,6 +58,9 @@ body {
     position: absolute;
     left: 50%;
     transform: translate(-50%, -110%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .h3 {
@@ -194,6 +197,22 @@ body {
 
 
 
+/* Nueva regla para la capa superpuesta */
+.overlay {
+    position: absolute;
+    top: 250px;
+    left: 10%;
+    width: 80vw;
+    height: 200px;
+    background: rgba(128, 128, 128, 0.329);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    z-index: 1;
+}
 
 /* TIC TAC TOE */
 .board {
@@ -201,24 +220,32 @@ body {
     grid-template-columns: repeat(3, minmax(0, 100%)); /* Ajusta el tamaño de las columnas */
     grid-gap: 3%; /* Agrega espacio entre las celdas */
     justify-content: center;
+    position: relative; /* Añadido para posicionar elementos hijos */
 }
     
 .cell {
     width: 100%; /* Ocupa todo el ancho de la celda del tablero */
-    height: 100px; /* Mantiene una relación de aspecto cuadrada */
+    height: 30vw; /* Mantiene una relación de aspecto cuadrada */
     background-color: #e2e2e2;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 35px;
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 15px;
+    transition : all 0.3s ease;
 }
     
+
+
+
+
+
+
+
 #result {
     font-size: 1.2rem;
     margin-bottom: 20px;
-    
 }
     
 
@@ -229,7 +256,7 @@ body {
     padding: 10px;
     margin: 3%;
     border: 3px solid #dfdfdf;
-    border-radius: 20px;
+    border-radius: 15px;
     justify-content: space-between;
 }
 

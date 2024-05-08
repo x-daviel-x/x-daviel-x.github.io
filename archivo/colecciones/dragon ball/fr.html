@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../../../images/favicon.ico">
+    <link rel="stylesheet" href="../../../css/barra-inferior.css">
+    <link rel="stylesheet" href="../../../css/ficha-general.css">
+    <title>Franquicia Dragon Ball</title>
+</head>
+<body>
+
+<div class="seccion-inicial">
+    <i class="fa-solid fa-arrow-left 🡰" onclick="history.back()"></i>
+    <img src="poster.gif" class="poster">
+    <div id="nombre" cd="db" class="h1">Dragon Ball</div>
+    <div id="tipo" class="h2">Colección</div>
+</div>
+
+<div class="seccion">
+    <div class="wrapper">
+        <div class="boton">
+            <input type="radio" id="btnAni" name="opcion" onclick="toggleContent('Ani')" checked>
+            <label for="btnAni">Animes</label>
+        </div>
+        <div class="boton">
+            <input type="radio" id="btnPeli" name="opcion" onclick="toggleContent('Peli')">
+            <label for="btnPeli">Películas</label>
+        </div>
+    </div>
+</div>
+
+<div id="aniSection" style="display: block;">
+    <div class="seccion">
+        <a href="animes/dragon ball/ft.html" class="elemento-l">
+            <img class="icono-i-l" src="animes/dragon ball/icono.webp">
+            <div class="h4">Dragon Ball</div>
+        </a>
+        <a href="animes/dragon ball z/" class="elemento-l">
+            <img class="icono-i-l" src="animes/dragon ball z/icono.webp">
+            <div class="h4">Dragon Ball Z</div>
+        </a>
+        <a href="animes/dragon ball gt/" class="elemento-l">
+            <img class="icono-i-l" src="animes/dragon ball gt/icono.webp">
+            <div class="h4">Dragon Ball GT</div>
+        </a>
+        <a href="animes/dragon ball gt/" class="elemento-l">
+            <img class="icono-i-l" src="animes/dragon ball z kai/icono.webp">
+            <div class="h4">Dragon Ball Z Kai</div>
+        </a>
+        <a href="animes/dragon ball gt/" class="elemento-l">
+            <img class="icono-i-l" src="animes/dragon ball super/icono.webp">
+            <div class="h4">Dragon Ball Super</div>
+        </a>
+    </div>
+</div>
+
+<div id="peliSection" style="display: none;">
+    <div class="seccion">
+        <div class="h3">Dragon Ball (Inicio)</div>
+        <div class="cuadricula-2">
+            <a href="peliculas/mugen ressha-hen/ft.html" class="boton-c">
+                <img class="boton-c-poster" src="peliculas/dragon ball/1 La leyenda de Shen Long.webp">
+                <div class="hp-2">La leyenda de Sheng Long</div>
+            </a>
+            <a href="peliculas/mugen ressha-hen/ft.html" class="boton-c">
+                <img class="boton-c-poster" src="peliculas/dragon ball/2 La princesa durmiente en el castillo mágico.webp">
+                <div class="hp-2">La princesa durmiente en el castillo mágico</div>
+            </a>
+            <a href="peliculas/mugen ressha-hen/ft.html" class="boton-c">
+                <img class="boton-c-poster" src="peliculas/dragon ball/3 Una gran aventura mágica.webp">
+                <div class="hp-2">Una gran aventura mágica</div>
+            </a>
+            <a href="peliculas/mugen ressha-hen/ft.html" class="boton-c">
+                <img class="boton-c-poster" src="peliculas/dragon ball/4 El camino hacia el más fuerte.webp">
+                <div class="hp-2">El camino hacia el más fuerte</div>
+            </a>
+        </div>
+    </div>
+    <div class="seccion">
+        <div class="h3">Dragon Ball Z</div>
+        <div class="cuadricula-2"> 
+            <a href="peliculas/mugen ressha-hen/ft.html" class="boton-c">
+                <img class="boton-c-poster" src="peliculas/dragon ball z/6 ¡Devuélveme a mi Gohan!.webp">
+                <div class="hp-2">¡Devuélveme a mi Gohan!</div>
+            </a>
+            <a href="peliculas/mugen ressha-hen/ft.html" class="boton-c">
+                <img class="boton-c-poster" src="peliculas/dragon ball z/7 El hombre mas fuerte de este mundo.webp">
+                <div class="hp-2">El hombre mas fuerte de este mundo</div>
+            </a>
+            <a href="peliculas/mugen ressha-hen/ft.html" class="boton-c">
+                <img class="boton-c-poster" src="peliculas/dragon ball z/8 Super batalla decisiva por el planeta Tierra.webp">
+                <div class="hp-2">Super batalla decisiva por el planeta Tierra</div>
+            </a>
+            <a href="peliculas/mugen ressha-hen/ft.html" class="boton-c">
+                <img class="boton-c-poster" src="peliculas/dragon ball z/9 Super Saiyajin Son Goku.webp">
+                <div class="hp-2">Super Saiyajin Son Goku</div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<script src="../../../js/configuracion.js"></script>
+<script src="../../../js/favorito-produccion.js"></script>
+</body>
+
+</html>

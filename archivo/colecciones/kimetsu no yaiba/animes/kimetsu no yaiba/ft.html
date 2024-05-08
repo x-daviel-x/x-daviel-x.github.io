@@ -12,18 +12,18 @@
 <body>
     <div class="seccion-inicial">
         <i class="fa-solid fa-arrow-left 🡰" onclick="history.back()"></i>
-        <span id="favoritoButton" class="⭐"></span>
         <img src="poster.webp" class="poster">
-        <img id="icono" src="icono.webp" class="icono-i">
-        <div id="nombre" class="h1">Kimetsu no Yaiba</div>
-        <div id="tipo" class="h2">Serie de Anime (2019)</div>
+        <span id="favoritoButton" class="⭐"></span>
+        <img id="icono" style="display: none" src="icono.webp" class="icono-i">
+        <img src="logo.webp" class="logo">
+        <div id="nombre" class="h1" style="display: none">Kimetsu no Yaiba</div>
+        <div id="tipo" class="h2" style="display: none">Serie de Anime (2019)</div>
     </div>
 
     <div class="seccion">
         <div class="wrapper">
             <div class="boton">
                 <input type="radio" id="btnFichaTecnica" name="opcion" onclick="toggleContent('fichaTecnica')" checked>
-
                 <label for="btnFichaTecnica">Ficha Técnica</label>
             </div>
             <div class="boton">
@@ -35,7 +35,6 @@
 
     <div id="fichaTecnicaSection" style="display: block;">
     <div class="seccion">
-        <div class="h3">Sinopsis</div>
         <div class="h4">Demon Slayer (鬼滅の刃), sigue a Tanjiro Kamado en su búsqueda para vengar a su familia y curar a su hermana convertida en demonio mientras se convierte en un cazador de demonios hábil y valiente.</div>
     </div>
 
@@ -97,18 +96,17 @@
     <div class="seccion">
         <div class="h3">Plataformas</div>
         <div class="slider-t">
-            <a href="https://www.netflix.com/title/81091393" class="elemento-t">
-                <span class="h5">Netflix</span>
+            <a href="../archivo/colecciones/kimetsu no yaiba/fr.html" class="elemento-t">
+                <img src="../../../../../imagenes/plataformas/netflix.png">
             </a>
-            <a href="https://www.crunchyroll.com/es/series/GY5P48XEY/demon-slayer-kimetsu-no-yaiba" class="elemento-t">
-                <span class="h5">Crunchyroll</span>
+            <a href="../archivo/colecciones/kimetsu no yaiba/fr.html" class="elemento-t">
+                <img src="../../../../../imagenes/plataformas/crunchyroll.png">
             </a>
         </div>
     </div>
     </div>
 
     <div id="datosCuriososSection" style="display: none;">
-
     <div class="seccion">
         <div class="dato">
             <div class="h-d1">Cambio de nombre</div>
@@ -125,9 +123,9 @@
 
     <div class="seccion">
         <div class="dato">
-        <div class="h-d1">Récord de ventas</div>
-        <div class="h-d2">El manga de Kimetsu No Yaiba posee un récord que consiguió en el año 2019. Este es el único en toda la historia de Japón que ocupó todos los puestos del Top 10 de ventas nacional, logro que pudo mantener un total de 2 semanas.</div>
-    </div>
+            <div class="h-d1">Récord de ventas</div>
+            <div class="h-d2">El manga de Kimetsu No Yaiba posee un récord que consiguió en el año 2019. Este es el único en toda la historia de Japón que ocupó todos los puestos del Top 10 de ventas nacional, logro que pudo mantener un total de 2 semanas.</div>
+        </div>
     </div>
 
     <div class="seccion">
@@ -159,7 +157,6 @@
         </div>
     </div>
 
-
     <div class="seccion">
         <div class="dato">
             <div class="h-d1">Los territorios de los pilares</div>
@@ -180,7 +177,6 @@
             <div class="h-d2">Para convertirse en pilar se necesita derrotar a una de las Doce Lunas Demoníacas o derrotar a 50 demonios. En caso de conseguirlo se necesitaría un entrenamiento de 5 años mínimo o incluso menos si se trata de alguien con poderes excepcionales.</div>
         </div>
     </div>
-
     </div>
 
     <script src="../../../../../js/configuracion.js"></script>

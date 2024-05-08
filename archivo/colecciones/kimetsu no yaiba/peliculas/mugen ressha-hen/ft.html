@@ -11,16 +11,15 @@
 
 <body>
 <div class="seccion-inicial">
-    <i class="fa-solid fa-arrow-left 🡰" onclick="retrocederYReiniciar()"></i>
+    <i class="fa-solid fa-arrow-left 🡰" onclick="history.back()"></i>
     <span id="favoritoButton" class="⭐"></span>
     <img src="poster.webp" class="poster-p">
-    <img id="icono" src="icono.webp" class="icono-i">
+    <img id="icono" src="poster.webp" class="icono-i" style="display: none">
     <div id="nombre" class="h1">El tren infinito</div>
-    <div id="tipo" class="h2">Película de Kimetsu no Yaiba</div>
+    <div id="tipo" class="h2" style="display: none">Película de Kimetsu no Yaiba</div>
 </div>
 
  <div class="seccion">
-    <div class="h3">Sinopsis</div>
     <div class="h4">Kimetsu No Yaiba; Mugen Ressha-hen (劇場版 「鬼 滅 の 刃」 無限 列車 編) Tanjiro Kamado y sus amigos del Demon Slayer Corps acompañan a Kyōjurō Rengoku, el Flame Hashira, para investigar una misteriosa serie de desapariciones que ocurren dentro de un tren aparentemente infinitamente largo. Poco saben que Enmu, la última de las Lunas Inferiores de los Doce Kizuki, también está a bordo y les ha preparado una trampa.</div>
 </div>
 
@@ -81,29 +80,15 @@
 <div class="seccion">
     <div class="h3">Plataformas</div>
     <div class="slider-t">
-        <a href="https://www.crunchyroll.com/es/watch/GWDU8P2PZ/demon-slayer--kimetsu-no-yaiba--the-movie-mugen-train" class="elemento-t">
-            <span class="h5">Crunchyroll</span>
+        <a href="../archivo/colecciones/kimetsu no yaiba/fr.html" class="elemento-t">
+            <img src="../../../../../imagenes/plataformas/crunchyroll.png" class="icono-p">
+
+        <a href="../archivo/colecciones/kimetsu no yaiba/fr.html" class="elemento-t">
+            <img src="../../../../../imagenes/plataformas/prime.png" class="icono-p">
         </a>
-        <a href="https://www.primevideo.com/detail/Guardianes-de-la-noche--Kimetsu-no-Yaiba--La-Pel%C3%ADcula-Tren-Infinito/0RDSEUUQ44LPTS2FOM23B1JAOL" class="elemento-t">
-            <span class="h5">Prime Video</span>
         </a>
     </div>
 </div>
-<script>
-    function retrocederYReiniciar() {
-        // Guardar la URL actual antes de retroceder
-        var urlActual = window.location.href;
-        
-        // Retroceder en el historial del navegador
-        history.back();
-        
-        // Esperar un breve momento antes de cargar la página anterior y reiniciarla
-        setTimeout(function() {
-            // Cargar nuevamente la página anterior
-            window.location.href = urlActual;
-        }, 100);
-    }
-</script>
 
 <script src="../../../../../js/configuracion.js"></script>
 <script src="../../../../../js/favorito-produccion.js"></script>

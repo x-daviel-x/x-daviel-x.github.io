@@ -1,21 +1,24 @@
 /* BUSQUEDA */
+.input-container {
+    display: flex; /* Utilizamos flexbox para colocar los elementos dentro del contenedor */
+    align-items: center; /* Centramos verticalmente los elementos */
+    justify-content: space-between;
+}
+
 .search-container {
-    position: relative;
-    width: 100%;
-    text-align: left;
+    flex: 1; /* Esto hace que la barra de búsqueda ocupe todo el espacio disponible */
+    margin-right: 10px;
 }
 
 input[type="text"] {
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-weight: bold;
-    width: 95%;
-    padding: 2.5%;
-    border: 1px solid #e2e2e2;
-    border-radius: 20px;
-    vertical-align:bottom;
+    width: 96%;
+    padding: 5px 2%;
+    border: 3px solid #e2e2e2;
+    border-radius: 10px;
     text-align: left;
-    cursor: pointer;
 }
 
 /* RESULTADOS */
@@ -34,7 +37,7 @@ input[type="text"] {
     padding: 10px;
     background-color: white;
     border: none;
-    border-radius: 20px;
+    border-radius: 15px;
     margin: 10px auto;
     cursor: pointer;
     display: flex;
@@ -77,8 +80,8 @@ input[type="text"] {
 
 /* MODO OSCURO */
 .modo-oscuro input[type="text"] {
-    background-color: #222222;
-    border: none;
+    background-color: #0e0e0e;
+    border: 3px solid #222;
     color:#ffffff;
 }
 .modo-oscuro .result{

@@ -11,199 +11,214 @@
 </head>
 
 <body>
-    <div class="seccion-encabezado">
+    <div class="seccion-inicial">
         <div class= "h1">AniPlus</div>
-        <a href="perfil/perfil.html" class="fa-regular fa-circle-user icono-f"></a>
+        <div class="caja-iconos">
+            <a href="novedades/novedades.html" class="fa-regular fa-bell icono-f"></a>
+            <a onclick="toggleContent('Busqueda')" id="btnBusqueda" class="fa-regular fa-search icono-f"></a>
+            <a href="perfil/perfil.html" class="fa-regular fa-circle-user icono-f"></a>
+        </div>
     </div>
-    
+
+    <div id="busquedaSection" style="display: none;">
     <div class="seccion">
-        <div class="search-container">
-            <input type="text" id="searchInput" placeholder="Busca aquí...">
+        <div class="input-container">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="🔍︎ Busca aquí..." autofocus>
+            </div>
+            <a onclick="toggleContent('Inicio')" id="btnInicio" class="fa-regular fa-circle-x icono-f"></a>
         </div>
         <div class="seccion-resultados">
             <ul class="results" id="resultsList"></ul>
         </div>
     </div>
+    </div>
+
+    <div id="inicioSection" style="display: block;">
 
     <div class="seccion">
         <div class="slider">
             <a href="novedades/novedades.html#1" class="elemento-sn">
                 <img src="imagenes/portada 1.webp">
-                <div class="hsn-1">¡Nueva Temporada Muy Larga!</div>
-            </a>
-            <a href="novedades/novedades.html#2" class="elemento-sn">
-                <img src="imagenes/portada 2.webp">
-                <div class="hsn-1">Nuevos episodios</div>
-            </a>
-            <a href="novedades/novedades.html#3" class="elemento-sn">
-                <img src="imagenes/portada 3.webp">
-                <div class="hsn-1">Nuevo anime</div>
+                <div class="hsn-1">• ¡Estreno de nueva temporada!</div>
+                <div class="hsn-2">My Hero Academia</div>
             </a>
             <a href="novedades/novedades#4.html" class="elemento-sn">
                 <img src="imagenes/portada 4.webp">
-                <div class="hsn-1">Clásico de Acción con un texto aun más largo</div>
+                <div class="hsn-1">• Clásico de Acción con un texto aun más largo</div>
+                <div class="hsn-2">Chainsaw Man</div>
+            </a>
+            <a href="novedades/novedades.html#2" class="elemento-sn">
+                <img src="imagenes/portada 2.webp">
+                <div class="hsn-1">Nuevos episodios en emisión</div>
+                <div class="hsn-2">Ataque a los titanes</div>
+            </a>
+            <a href="novedades/novedades.html#3" class="elemento-sn">
+                <img src="imagenes/portada 3.webp">
+                <div class="hsn-1">Nuevo anime añadido</div>
+                <div class="hsn-2">Tokyo Ghoul</div>
             </a>
             <a href="../archivo/animes/afro samurai/ft.html" class="elemento-sn">
                 <img src="imagenes/portada 5.webp">
-                <div class="hsn-1">Datos Curiosos</div>
+                <div class="hsn-1">Explora diversos Datos Curiosos</div>
+                <div class="hsn-2">Death Note</div>
             </a>
         </div>
         <a href="novedades/novedades.html" class="boton">Ver Novedades</a>
     </div>
 
-    <div class="seccion-catalogo">
+    <div class="seccion">
         <a href="catalogos/animes clasicos.html">
-            <span class="hc-1">Colecciones clásicos<span>
-            <span class="≫">➜</span>
+            <span class="hc-1">Películas fascinantes<span>
+            <span class="➜">➜</span>
         </a>
-        <div class="catalogo">
-            <a href="../archivo/colecciones/kimetsu no yaiba/fr.html" class="elemento-cf">
-                <img src="../archivo/colecciones/kimetsu no yaiba/icono.webp" alt="Historia 3">
-                <span class="hc-2">Kimetsu no Yaiba</span>
+        <div class="slider">
+            <a href="peliculas/mugen ressha-hen/ft.html" class="boton-c">
+                <img src="../archivo/peliculas/akira/poster.webp">
+                <div class="cajita">
+                    <i class="fa-regular fa-fire 🔥"></i>
+                    <div class="hp-1">Tendencia</div>
+                </div>
+                <div class="hp-2">Akira</div>
             </a>
-
-            <a href="../archivo/colecciones/kimetsu no yaiba/fr.html" class="elemento-cf">
-                <img src="../archivo/colecciones/kimetsu no yaiba/icono.webp" alt="Historia 3">
-                <span class="hc-2">Kimetsu no Yaiba</span>
+            <a href="peliculas/mugen ressha-hen/ft.html" class="boton-c">
+                <img src="../archivo/peliculas/amor de gata/poster.webp">
+                <div class="cajita">
+                    <i class="fa-regular fa-sparkles 🔥"></i>
+                    <div class="hp-1">Nueva Temporada</div>
+                </div>
+                <div class="hp-2">Amor de gata</div>
             </a>
-            
-            <a href="../archivo/colecciones/kimetsu no yaiba/fr.html" class="elemento-cf">
-                <img src="../archivo/colecciones/kimetsu no yaiba/icono.webp" alt="Historia 3">
-                <span class="hc-2">Kimetsu no Yaiba</span>
+            <a href="peliculas/mugen ressha-hen/ft.html" class="boton-c">
+                <img src="../archivo/peliculas/el castillo en el cielo/poster.webp">
+                <div class="cajita">
+                    <i class="fa-regular fa-fire 🔥"></i>
+                </div>
+                <div class="hp-2">El castillo en el cielo</div>
+            </a>
+            <a href="peliculas/mugen ressha-hen/ft.html" class="boton-c">
+                <img src="../archivo/peliculas/el cuento de la princesa kaguya/poster.webp">
+                <div class="hp-2">El cuento de la princesa Kaguya</div>
             </a>
         </div>
     </div>
 
-
-
-
-
-
-
-    
     <div class="seccion">
         <div class="slider">
+            <a href="../archivo/colecciones/dragon ball/fr.html" class="elemento-personaje">
+                <img src="../minijuegos/tic tac toe/goku/goku.webp">
+                <div class="caja-texto2">
+                    <div class="hsp-1">Dragon Ball</div>
+                    <div class="hc-3">5 Series de anime y más de 20 Películas</div>
+                </div>
+            </a>
+            <a href="../archivo/colecciones/dragon ball/fr.html" class="elemento-personaje">
+                <img src="../minijuegos/tic tac toe/edward/edward.png">
+                <div class="caja-texto2">
+                <div class="hsp-1">Fullmetal Alchemist</div>
+                <div class="hc-3">2 Series de anime y 2 Películas</div>
+                </div>
+            </a>
+            <a href="../archivo/colecciones/fullmetal alchemist/icono.webp" class="elemento-personaje">
+                <img src="../minijuegos/tic tac toe/naruto/naruto.png">
+                <div class="caja-texto2">
+                <div class="hsp-1">Naruto</div>
+                <div class="hc-3">3 Series de anime y 10 Películas</div>
+                </div>
+            </a>
+            <a href="../archivo/colecciones/kimetsu no yaiba/fr.html" class="elemento-personaje">
+                <img src="../minijuegos/tic tac toe/tanjiro/tanjiro.png" class="character-image">
+                <div class="caja-texto2">
+                <div class="hsp-1">Kimetsu no Yaiba</div>
+                <div class="hc-3">1 Serie de anime y 3 Películas</div>
+                </div>
+            </a>
+        </div>
+    </div>
 
-            <div class="elemento-sp"> 
-                <img src="../archivo/animes/afro samurai/poster.webp">
-
+    <div class="seccion">
+        <div class="slider">
+            <a href="../archivo/animes/afro samurai/ft.html" class="elemento-sp"> 
+                <img src="../archivo/animes/afro samurai/poster.webp" class="contenedor-nuevop">
                 <div class="contenedor-nuevo">
                     <img src="../archivo/animes/afro samurai/icono.webp">
                     <div class="contenedor-sp-t">
-                        <div class="hsp-1">Afro Samuraisss</div>
+                        <div class="hsp-1">Afro Samurai</div>
                         <div class="hc-3">Clásico de Misterio y Fantasía Oscura</div>
                     </div>
                 </div>
-            </div>
-            
-
-
-
-            <a href="../archivo/animes/afro samurai/ft.html" class="elemento-sp"> 
-            <div class="contenedor-nuevop">
-            <img src="../archivo/animes/afro samurai/poster.webp">
-            </div>
-
-            <div class="contenedor-nuevo">
-                <img src="../archivo/animes/afro samurai/icono.webp">
-                <div class="contenedor-sp-t">
-                    <div class="hsp-1">Afro Samurai</div>
-                    <div class="hc-3">Clásico de Misterio y Fantasía Oscura</div>
-                </div>
-            </div>
             </a>
-            
-            <a href="../archivo/animes/afro samurai/ft.html" class="elemento-sp"> 
-            <div class="contenedor-nuevop">
-            <img src="../archivo/animes/afro samurai/poster.webp">
-            </div>
-
-            <div class="contenedor-nuevo">
-                <img src="../archivo/animes/afro samurai/icono.webp">
-                <div class="contenedor-sp-t">
-                    <div class="hsp-1">Afro Samurai</div>
-                    <div class="hc-3">Clásico de Misterio y Fantasía Oscura</div>
+            <a href="../archivo/colecciones/kimetsu no yaiba/fr.html" class="elemento-sp"> 
+                <img src="../archivo/colecciones/kimetsu no yaiba/animes/kimetsu no yaiba/poster.webp" class="contenedor-nuevop">
+                <div class="contenedor-nuevo">
+                    <img src="../archivo/colecciones/kimetsu no yaiba/animes/kimetsu no yaiba/icono.webp">
+                    <div class="contenedor-sp-t">
+                        <div class="hsp-1">Kimetsu no Yaiba</div>
+                        <div class="hc-3">Peleas elementales fascinantes</div>
+                    </div>
                 </div>
-            </div>
             </a>
-            
-            <a href="../archivo/animes/afro samurai/ft.html" class="elemento-sp"> 
-            <div class="contenedor-nuevop">
-            <img src="../archivo/animes/afro samurai/poster.webp">
-            </div>
-
-            <div class="contenedor-nuevo">
-                <img src="../archivo/animes/afro samurai/icono.webp">
-                <div class="contenedor-sp-t">
-                    <div class="hsp-1">Afro Samurai</div>
-                    <div class="hc-3">Clásico de Misterio y Fantasía Oscura</div>
+            <a href="../archivo/colecciones/kimetsu no yaiba/fr.html" class="elemento-sp"> 
+                <img src="../archivo/colecciones/dragon ball/poster.gif" class="contenedor-nuevop">
+                <div class="contenedor-nuevo">
+                    <img src="../archivo/colecciones/dragon ball/animes/dragon ball/icono.webp">
+                    <div class="contenedor-sp-t">
+                        <div class="hsp-1">Dragon Ball</div>
+                        <div class="hc-3">Luchas frenéticas e intensas</div>
+                    </div>
                 </div>
-            </div>
-            </a>
-            
-            <a href="../archivo/animes/afro samurai/ft.html" class="elemento-sp"> 
-            <div class="contenedor-nuevop">
-            <img src="../archivo/animes/afro samurai/poster.webp">
-            </div>
-
-            <div class="contenedor-nuevo">
-                <img src="../archivo/animes/afro samurai/icono.webp">
-                <div class="contenedor-sp-t">
-                    <div class="hsp-1">Afro Samurai</div>
-                    <div class="hc-3">Clásico de Misterio y Fantasía Oscura</div>
-                </div>
-            </div>
             </a>
         </div>
     </div>
 
-    <div class="seccion-catalogo">
+    <div class="seccion">
         <a href="catalogos/animes clasicos.html">
             <span class="hc-1">Columnas de anime<span>
-            <span class="≫">➜</span>
+            <span class="➜">➜</span>
         </a>
-        <div class="catalogo">
+        <div class="slider">
             <!-- PRIMERA COLUMNA -->
             <div class="columna">
                 <a href="../archivo/animes/afro samurai/ft.html" class="elemento-cc">
                     <img src="../archivo/animes/afro samurai/icono.webp">
-                    <div class="caja-texto">
-                    <div class="hc-2">Afro Samurai</div>
-                    <div class="hc-3">Acción · Drama · Artes Marciales</div>
-                </div>
-                <a href="../archivo/animes/afro samurai/ft.html" class="elemento-cc">
-                    <img src="../archivo/animes/afro samurai/icono.webp">
-                    <span class="hc-2">Afro Samurai</span>
+                    <div>
+                        <div class="hsp-1">Afro Samurai</div>
+                        <div class="hc-3">Acción · Drama · Artes Marciales</div>
+                    </div>
+                </a>
+                <a href="../archivo/animes/akame ga kill!/icono.webp" class="elemento-cc">
+                    <img src="../archivo/animes/akame ga kill!/icono.webp">
+                    <span class="hsp-1">Akame ga Kill!</span>
                 </a>
                 <a href="../archivo/animes/afro samurai/ft.html" class="elemento-cc">
-                    <img src="../archivo/animes/afro samurai/icono.webp">
-                    <span class="hc-2">Afro Samurai</span>
+                    <img src="../archivo/animes/akatsuki no yona/icono.webp">
+                    <span class="hsp-1">Akatsuki no Yona</span>
                 </a>
             </div>
             <!-- SEGUNDA COLUMNA -->
             <div class="columna">
                 <a href="../archivo/colecciones/kimetsu no yaiba/animes/kimetsu no yaiba/ft.html" class="elemento-cc">
                     <img src="../archivo/colecciones/kimetsu no yaiba/animes/kimetsu no yaiba/icono.webp">
-                    <span class="hc-2">Kimetsu no Yaiba</span>
+                    <span class="hsp-1">Kimetsu no Yaiba</span>
                 </a>
                 <a href="../archivo/colecciones/kimetsu no yaiba/animes/kimetsu no yaiba/ft.html" class="elemento-cc">
                     <img src="../archivo/colecciones/kimetsu no yaiba/animes/kimetsu no yaiba/icono.webp">
-                    <span class="hc-2">Kimetsu no Yaiba</span>
+                    <span class="hsp-1">Kimetsu no Yaiba</span>
                 </a>
                 <a href="../archivo/colecciones/kimetsu no yaiba/animes/kimetsu no yaiba/ft.html" class="elemento-cc">
                     <img src="../archivo/colecciones/kimetsu no yaiba/animes/kimetsu no yaiba/icono.webp">
-                    <span class="hc-2">Kimetsu no Yaiba</span>
+                    <span class="hsp-1">Kimetsu no Yaiba</span>
                 </a>
             </div>
             <!-- TERCERA COLUMNA -->
             <div class="columna">
                 <a href="../archivo/colecciones/kimetsu-no yaiba/animes/kimetsu-no-yaiba/ft.html" class="elemento-cc">
                     <img src="../archivo/colecciones/kimetsu no yaiba/animes/kimetsu no yaiba/icono.webp"">
-                    <span class="hc-2">Kimetsu no Yaiba</span>
+                    <span class="hsp-1">Kimetsu no Yaiba</span>
                 </a>
                 <a href="../archivo/colecciones/kimetsu-no yaiba/animes/kimetsu-no-yaiba/ft.html" class="elemento-cc">
                     <img src="../archivo/colecciones/kimetsu no yaiba/animes/kimetsu no yaiba/icono.webp">
-                    <span class="hc-2">Kimetsu no Yaiba</span>
+                    <span class="hsp-1">Kimetsu no Yaiba</span>
                 </a>
                 <a href="../archivo/colecciones/kimetsu-no yaiba/animes/kimetsu-no-yaiba/ft.html" class="elemento-cc">
                     <img src="../archivo/colecciones/kimetsu no yaiba/animes/kimetsu no yaiba/icono.webp">
@@ -214,76 +229,43 @@
     </div>
 
     <div class="seccion">
-        <div class="slider">
-            <a href="novedades/novedades.html#1" class="elemento-sp">
-                <img src="imagenes/portada 5.webp">
-                <div class="contenedor-sp">
-                    <div class="contenedor-sp-t">
-                        <div class="hsp-1">Death Note</div>
-                        <div class="hsp-2">Clásico de Misterio y Fantasía Oscura</div>
-                    </div>
-                    <div class="boton">Ver ficha</div>
-                </div>
-            </a>
-            <a href="novedades/novedades.html#1" class="elemento-spg">
-                <img src="imagenes/portada 4.webp">
-                <div class="hspg-1">Chainsaw Man</div>
-                <div class="hspg-2">Acción sangrienta al máximo</div>
-            </a>
-            <a href="novedades/novedades.html#2" class="elemento-sp">
-                <img src="../archivo/animes/afro samurai/poster.webp">
-                <div class="contenedor-sp">
-                    <div class="contenedor-sp-t">
-                        <div class="hsp-1">Afro Samurai</div>
-                        <div class="hsp-2">Lucha postapocalíptica de Samuráis</div>
-                    </div>
-                    <div class="boton">Ver ficha</div>
-                </div>
-            </a>
-            <a href="novedades/novedades.html#1" class="elemento-spg">
-                <img src="imagenes/portada 2.webp">
-                <div class="hspg-1">Ataque a los titanes</div>
-                <div class="hspg-2">Intensa y constante lucha contra titanes</div>
-            </a>
-            <a href="novedades/novedades.html#1" class="elemento-sp">
-                <img src="imagenes/portada 3.webp">
-                <div class="contenedor-sp">
-                    <div class="contenedor-sp-t">
-                        <div class="hsp-1">Tokyo Ghoul</div>
-                        <div class="hsp-2">Entra en el mundo de los Ghouls</div>
-                    </div>
-                    <div class="boton">Ver ficha</div>
-                </div>
-            </a>
-        </div>
-    </div>
-
-    <div class="seccion-catalogo">
         <a href="catalogos/animes clasicos.html">
-            <span class="hc-1">Películas clásicas<span>
-            <span class="≫">➜</span>
+            <span class="hc-1">Géneros
+            <span class="➜">➜</span>
         </a>
-        <div class="catalogo">
-            <a href="../archivo/peliculas/akira/ft.html" class="elemento-cf">
-                <img src="../archivo/peliculas/akira/icono.webp">
-                <span class="hc-2">Akira</span>
+        <div class="slider">
+            <a href="/archivo/generos/historico.html" class="elemento-cf">
+                <span class="fa-regular fa-clock icono-f"></span>
+                <span class="hc-2">Histórico</span>
             </a>
-
-            <a href="../archivo/colecciones/kimetsu no yaiba/peliculas/mugen ressha-hen/ft.html" class="elemento-cf">
-                <img src="../archivo/colecciones/kimetsu no yaiba/peliculas/mugen ressha-hen/poster.webp">
-                <span class="hc-2">El tren infinito</span>
+            <a href="/archivo/generos/historico.html" class="elemento-cf">
+                <span class="fa-regular fa-swords icono-f"></span>
+                <span class="hc-2">Acción</span>
+            </a>
+            <a href="/archivo/generos/historico.html" class="elemento-cf">
+                <span class="fa-regular fa-uniform-martial-arts icono-f"></span>
+                <span class="hc-2">Artes marciales</span>
+            </a>
+            <a href="/archivo/generos/historico.html" class="elemento-cf">
+                <span class="fa-regular fa-compass icono-f"></span>
+                <span class="hc-2">Aventura</span>
+            </a>
+            <a href="/archivo/generos/historico.html" class="elemento-cf">
+                <span class="fa-regular fa-head-side-gear icono-f"></span>
+                <span class="hc-2">Cyberpunk</span>
             </a>
         </div>
     </div>
-    
-    <div class="seccion-ultima"></div>
 
+    <div class="seccion-final"></div>
     <div class="barra-inferior">
         <a href="../minijuegos/minijuegos.html"><i class="fa-regular fa-joystick icono-b" onclick="change(this)"></i></a>
         <a href="../inicio/inicio.html"><i class="fa-solid fa-home icono-b" onclick="change(this)"></i></a>
         <a href="../archivo/archivo.html"><i class="fa-regular fa-folders icono-b" onclick="change(this)"></i></a>
     </div>
     
+    </div>
+
     <script src="../js/configuracion.js"></script>  
     <script src="../js/barra-busqueda.js"></script>
 </body>

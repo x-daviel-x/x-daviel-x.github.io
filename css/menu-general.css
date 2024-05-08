@@ -18,6 +18,9 @@ body {
     align-items: center;
 }
 
+.seccion {
+    margin: 3%;
+}
 
 .seccion-f {
     margin: 3%;
@@ -44,6 +47,34 @@ body {
     padding: 40px;
 }
 
+.cuadricula-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Mínimo 200px, máximo 1fr */
+    grid-gap: 10px;
+    text-align: center;
+}
+.boton-c {
+    position: relative;
+    border-radius: 15px;
+}
+.boton-c-poster {
+    width: 100%;
+    height: 250px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+.hp-2 {
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 10px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 5px;
+    font-size: 18px;
+    background: #e2e2e2;
+    border-radius: 0px 0px 15px 15px;
+}
 
 
 /* TEXTO */
@@ -110,7 +141,11 @@ a {
     display: block; /* Muestra el Nombre en una línea separada */
 }
 
-
+/* Estilos para el Nombre */
+.hc-2 {
+    font-size: 18px;
+    padding: 0px 4px;
+}
 
 /* ELEMENTOS DE LAS SECCIONES */
 .🡰 {
@@ -188,13 +223,8 @@ a {
 }
 
 
-
-
-
-
 /* Interruptor */
-/* Estilo para el interruptor de Sonidos en la App */
-.interruptor2 {
+.interruptor {
     width: 60px;
     height: 34px;
     background-color: #ccc;
@@ -207,7 +237,7 @@ a {
     align-items: center;
 }
 
-.interruptor2::after {
+.interruptor::after {
     content: '';
     position: absolute;
     top: 5px;
@@ -219,20 +249,56 @@ a {
     transition: transform 0.3s;
 }
 
-#interruptor-sonido:checked + .interruptor2 {
-    background-color: #f32121; /* Color del interruptor encendido */
-}
-#interruptor-sonido:checked + .interruptor2::after {
+.interruptor-checkbox:checked + .interruptor::after {
     transform: translateX(26px);
     /* Posición del interruptor cuando está encendido */
 }
 
+.interruptor-checkbox:checked + .interruptor {
+    background-color: #f32121; /* Color del interruptor encendido */
+}
 
 
 
+/* Interruptor de Ficha Técnica y Datos Curiosos */
+.cuadricula {
+    border-width: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    gap: 10px;
+}
 
+.wrapper {
+    display: flex;
+    gap: 10px;
+    text-align: center;
+}
 
-
+.boton {
+    flex-grow: 1;
+}
+  
+.boton input[type=radio] {
+    display: none;
+}
+  
+.boton label {
+    display: block;
+    padding: 15px 0px;
+    background-color: #e2e2e2;
+    color: black;
+    font-size: 18px;
+    border: 3px solid #e2e2e2;
+    border-radius: 20px;
+    transition : all .3s 0s ease;
+}
+  
+.boton input[type=radio]:checked + label {
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    border: 3px solid #e2e2e2;
+}
 
 
 /* MODO OSCURO */
@@ -262,6 +328,9 @@ body.modo-oscuro {
     font-weight: normal;
     color: rgb(228, 228, 228);
 }
+.modo-oscuro .hc-2 {
+    color: rgb(228, 228, 228);
+}
 .modo-oscuro .h2 {
     font-weight: normal;
     color: rgb(228, 228, 228);
@@ -269,7 +338,24 @@ body.modo-oscuro {
 .modo-oscuro .h3 {
     font-weight: normal;
 }
+.modo-oscuro .boton label {
+    color: white;
+    background-color: #222222;
+    border: 3px solid #222222;
+}
+.modo-oscuro .boton input[type=radio]:checked + label {
+    border: 3px solid #222222;
+    background-color: #000000;
+}
 
+.modo-oscuro .boton-c {
+    background-color: #222222;
+}
+
+.modo-oscuro .hp-2 {
+    color: rgb(228, 228, 228);
+    background-color: #222222;
+}
 
 
 /* ANIMACIONES */

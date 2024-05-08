@@ -20,9 +20,6 @@ const elements = [
         icon: "../archivo/colecciones/kimetsu no yaiba/peliculas/mugen ressha-hen/poster.webp", 
         keywords: ["koyoharu gotouge", "demon slayer", "鬼滅の刃"]
     },
-
-
-
     { 
         title: "Afro Samurai", 
         subtitle: "Anime", 
@@ -30,9 +27,6 @@ const elements = [
         icon: "../archivo/animes/afro samurai/icono.webp",
         keywords: ["afro samurai", "negro", "prieto"]
     },
-
-
-
     { 
         title: "Akira", 
         subtitle: "Película", 
@@ -41,7 +35,6 @@ const elements = [
         keywords: ["akira", "pelicula", "acción"]
     },
 ];
-
 
 const searchInput = document.getElementById("searchInput");
 const resultsList = document.getElementById("resultsList");
@@ -53,7 +46,6 @@ searchInput.classList.add("tilted-text");
 searchInput.addEventListener("input", function () {
     const inputValue = searchInput.value.toLowerCase();
     const filteredElements = elements.filter((element) => {
-        // Comprueba si el valor de búsqueda coincide con el título, el subtítulo o las palabras clave
         return (
             element.title.toLowerCase().includes(inputValue) || 
             element.subtitle.toLowerCase().includes(inputValue) || 
@@ -61,7 +53,7 @@ searchInput.addEventListener("input", function () {
         );
     });
 
-    resultsList.innerHTML = ""; // Limpia la lista de resultados
+    resultsList.innerHTML = "";
 
     if (inputValue !== "") {
         if (filteredElements.length > 0) {
@@ -69,43 +61,31 @@ searchInput.addEventListener("input", function () {
                 const listItem = document.createElement("li");
                 listItem.classList.add("result");
 
-                // Agrega un evento de clic al elemento de resultado (listItem)
                 listItem.addEventListener("click", function () {
-                    // Redirige al usuario a la página correspondiente al hacer clic en el resultado
                     window.location.href = element.link;
+                    clearSearchResults();
                 });
 
                 const link = document.createElement("a");
                 link.href = element.link;
 
-                // Crea una imagen
                 const image = document.createElement("img");
-                // Utiliza el campo 'icon' para construir la ruta de acceso a la imagen del icono
                 image.src = element.icon;
-                // Establece un atributo alt para la accesibilidad
-                image.alt = element.title;
 
-                // Agrega la imagen al resultado
                 listItem.appendChild(image);
 
-                // Agrega el título y el subtítulo al resultado
                 const resultText = document.createElement("div");
                 resultText.classList.add("result-text");
 
-                // Agrega el título y el subtítulo al contenedor de texto
                 resultText.innerHTML = `
                     <div class="title">${element.title}</div>
                     <div class="subtitle">${element.subtitle}</div>
                 `;
 
-                // Agrega el contenedor de texto al resultado
                 listItem.appendChild(resultText);
-
-                // Agrega el resultado a la lista de resultados
                 resultsList.appendChild(listItem);
             });
         } else {
-            // Si no se encontraron resultados, muestra un resultado especial
             const listItem = document.createElement("li");
             listItem.classList.add("result");
             
@@ -119,5 +99,28 @@ searchInput.addEventListener("input", function () {
             listItem.appendChild(resultText);
             resultsList.appendChild(listItem);
         }
+    }
+});
+
+const clearButton = document.getElementById("btnInicio");
+clearButton.addEventListener("click", function() {
+    searchInput.value = "";
+    resultsList.innerHTML = "";
+});
+
+const btnBusqueda = document.getElementById("btnBusqueda");
+btnBusqueda.addEventListener("click", function() {
+    toggleContent('Busqueda');
+    searchInput.focus();
+});
+
+function clearSearchResults() {
+    searchInput.value = "";
+    resultsList.innerHTML = "";
+}
+
+resultsList.addEventListener("click", function(event) {
+    if (event.target.classList.contains("result")) {
+        clearSearchResults();
     }
 });

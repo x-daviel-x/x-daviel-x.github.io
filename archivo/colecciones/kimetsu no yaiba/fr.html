@@ -5,73 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../../../images/favicon.ico">
     <link rel="stylesheet" href="../../../css/barra-inferior.css">
-    <link rel="stylesheet" href="../../../css/ficha-franquicia.css">
+    <link rel="stylesheet" href="../../../css/ficha-general.css">
     <title>Franquicia</title>
 </head>
-<body>
 
+<body>
 <div class="seccion-inicial">
     <i class="fa-solid fa-arrow-left 🡰" onclick="history.back()"></i>
     <img src="poster.gif" class="poster">
-    <img id="icono" src="icono.webp" class="icono-i-1">
-    <div id="nombre" class="h1">Kimetsu no Yaiba</div>
+    <div id="nombre" cd="kny" class="h1">Kimetsu no Yaiba</div>
     <div id="tipo" class="h2">Colección</div>
 </div>
 
 <div class="seccion">
-    <div class="wrapper">
-        <div class="boton">
-            <input type="radio" id="btnFichaTecnica" name="opcion" onclick="toggleContent('fichaTecnica')" checked>
-            <label for="btnFichaTecnica">Animes</label>
-        </div>
-        <div class="boton">
-            <input type="radio" id="btnDatosCuriosos" name="opcion" onclick="toggleContent('datosCuriosos')">
-            <label for="btnDatosCuriosos">Películas</label>
-        </div>
+<div class="wrapper">
+    <div class="boton">
+        <input type="radio" id="btnAni" name="opcion" onclick="toggleContent('Ani')" checked>
+        <label for="btnAni">Animes</label>
+    </div>
+    <div class="boton">
+        <input type="radio" id="btnPeli" name="opcion" onclick="toggleContent('Peli')">
+        <label for="btnPeli">Películas</label>
     </div>
 </div>
+</div>
 
-<div id="fichaTecnicaSection" style="display: block;">
+<div id="aniSection" style="display: block;">
 <div class="seccion">
-    <a href="animes/kimetsu no yaiba/ft.html">
-        <div class="elemento-l">
-            <img class="icono-i" src="animes/kimetsu no yaiba/icono.webp">
-            <div class="h4">Kimetsu no Yaiba</div>
-        </div>
+    <a href="animes/kimetsu no yaiba/ft.html" class="elemento-l">
+        <img class="icono-i-l" src="animes/kimetsu no yaiba/icono.webp">
+        <div class="h4">Kimetsu no Yaiba</div>
     </a>
-    <a href="animes/kimetsu no yaiba/ft.html">
-        <div class="elemento-l">
-            <img class="icono-i" src="animes/kimetsu no yaiba/icono.webp">
-            <div class="h4">Kimetsu no Yaiba</div>
-        </div>
-    </a>
-    <a href="animes/kimetsu no yaiba/ft.html">
-        <div class="elemento-l">
-            <img class="icono-i" src="animes/kimetsu no yaiba/icono.webp">
-            <div class="h4">Kimetsu no Yaiba</div>
-        </div>
+    <a href="animes/kimetsu no yaiba/ft.html" div class="elemento-l">
+        <img class="icono-i-l" src="animes/kimetsu no yaiba/icono.webp">
+        <div class="h4">Kimetsu no Yaiba</div>
     </a>
 </div>
 </div>
 
-
-<div id="datosCuriososSection" style="display: none;">
-<div class="seccion-slider">
-    <div class="h3">Películas</div>
-        <div class="slider">
-            <a href="peliculas/mugen ressha-hen/ft.html" class="elemento-p">
-                <img src="peliculas/mugen ressha-hen/poster.webp" alt="Historia 3">
-                <span class="h4">Kimetsu no Yaiba</span>
-            </a>
-            <a href="peliculas/mugen ressha-hen/ft.html" class="elemento-p">
-                <img src="peliculas/mugen ressha-hen/poster.webp" alt="Historia 3">
-                <span class="h4">Kimetsu no Yaiba</span>
-            </a>
-            <a href="peliculas/mugen ressha-hen/ft.html" class="elemento-p">
-                <img src="peliculas/mugen ressha-hen/poster.webp" alt="Historia 3">
-                <span class="h4">Kimetsu no Yaiba</span>
-            </a>
-        </div>
+<div id="peliSection" style="display: none;">
+<div class="seccion">
+<section class="cuadricula-2">
+    <a href="peliculas/mugen ressha-hen/ft.html" class="boton-c">
+        <img class="boton-c-poster" src="peliculas/mugen ressha-hen/poster.webp">
+        <div class="hp-2">El tren infinito</div>
+    </a>
+    <a href="peliculas/mugen ressha-hen/ft.html" class="boton-c">
+        <img class="boton-c-poster" src="peliculas/mugen ressha-hen/poster.webp">
+        <div class="hp-2">El tren infinito</div>
+    </a>
 </div>
 </div>
     

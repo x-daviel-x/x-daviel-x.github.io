@@ -91,21 +91,3 @@ document.addEventListener('DOMContentLoaded', function () {
         favoritosLista.appendChild(enlace);
     });
 });
-
-
-
-// CAMBIO DE FICHA
-function toggleContent(selectedContent) {
-    var fichaTecnicaSection = document.getElementById('fichaTecnicaSection');
-    var datosCuriososSection = document.getElementById('datosCuriososSection');
-    var btnFichaTecnica = document.getElementById('btnFichaTecnica');
-    var btnDatosCuriosos = document.getElementById('btnDatosCuriosos');
-
-    if (selectedContent === 'fichaTecnica') {
-        fichaTecnicaSection.style.display = 'block';
-        datosCuriososSection.style.display = 'none';
-    } else if (selectedContent === 'datosCuriosos') {
-        fichaTecnicaSection.style.display = 'none';
-        datosCuriososSection.style.display = 'block';
-    }
-}

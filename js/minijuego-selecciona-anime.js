@@ -8,7 +8,7 @@ const incorrectSound = document.getElementById("incorrectSound");
 
 let currentQuestionIndex = -1; 
 let score = 0;
-const maxQuestions = 5; // Límite de preguntas
+const maxQuestions = 10; // Límite de preguntas
 const questionTime = 15; // Tiempo por pregunta en segundos
 let countdownTimer;
 let questions = [

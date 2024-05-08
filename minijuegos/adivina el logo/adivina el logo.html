@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/barra-inferior.css">
+    <link rel="stylesheet" href="../../css/quiz-lista.css">
+    <title>Adivina el Logo</title>
+</head>
+
+<body>
+    <audio id="correctSound" src="https://www.pacdv.com/sounds/interface_sound_effects/sound102.wav"></audio>
+    <audio id="incorrectSound" src="https://www.pacdv.com/sounds/interface_sound_effects/sound103.wav"></audio>
+    
+    <div class="seccion-encabezado">
+        <i class="fa-solid fa-xmark 🡰" onclick="history.back()"></i>
+        <div class="h1">Adivina el Logo</div>
+    </div>
+
+    <div class="seccion">
+        <div class="progreso-container">
+            <div class="progreso" id="progressBar"></div>
+        </div>
+    </div>
+
+    <div class="seccion-pregunta">
+        <div class="h2" id="message"></div>
+        <div class="h3"><div id="questionText"></div></div>
+        <img id="questionImage" src="" alt="Imagen de la pregunta" class="logo">
+    </div>
+
+    <div class="seccion">
+        <button class="boton" onclick="checkAnswer(1)"></button>
+        <button class="boton" onclick="checkAnswer(2)"></button>
+        <button class="boton" onclick="checkAnswer(3)"></button>
+        <button class="boton" onclick="checkAnswer(4)"></button>
+        <div id="message"></div>
+    </div>
+
+    <div class="seccion">
+        <div id="finalMessage"></div>
+        
+        <div id="buttons">
+            <button id="restartButton" class="custom-button" style="display: none;" onclick="location.reload();">Reiniciar ⟳</button>
+        </div>
+    </div>
+    
+    <span id="score" style="display: none;">0 ⭐</span>
+
+    <script src="../../js/configuracion.js"></script>   
+    <script src="../../js/minijuego-adivina-logo.js"></script>
+</body>
+</html>

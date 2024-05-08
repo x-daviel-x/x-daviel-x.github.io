@@ -14,16 +14,15 @@
         <i class="fa-solid fa-arrow-left 🡰" onclick="history.back()"></i>
         <span id="favoritoButton" class="⭐"></span>
         <img src="poster.webp" class="poster">
-        <img id="icono" src="icono.webp" class="icono-i">
+        <img id="icono" src="icono.webp" class="icono-i" style="display: none">
         <div id="nombre" class="h1">Afro Samurai</div>
-        <div id="tipo" class="h2">Serie de Anime (2007)</div>
+        <div id="tipo" class="h2" style="display: none">Serie de Anime (2007)</div>
     </div>
 
     <div class="seccion">
         <div class="wrapper">
             <div class="boton">
                 <input type="radio" id="btnFichaTecnica" name="opcion" onclick="toggleContent('fichaTecnica')" checked>
-
                 <label for="btnFichaTecnica">Ficha Técnica</label>
             </div>
             <div class="boton">
@@ -35,7 +34,6 @@
 
     <div id="fichaTecnicaSection" style="display: block;">
     <div class="seccion">
-        <div class="h3">Sinopsis</div>
         <div class="h4">Afro Samurai (アフロサムライ), la historia gira en torno a un samurái con peinado afro que busca la venganza, en un mundo que mezcla elementos de la cultura samurái y la cultura afro-urbana.</div>
     </div>
 
@@ -46,10 +44,10 @@
                 <span class="h4">Takashi Okazaki</span>
             </div>
 
-            <a href="../archivo/colecciones/kimetsu no yaiba/fr.html" class="elemento-f">
+            <div href="../archivo/colecciones/kimetsu no yaiba/fr.html" class="elemento-f">
                 <span class="fa-regular fa-building icono-f"></span>
                 <span class="h4">Gonzo</span>
-            </a>
+            </div>
 
             <div class="elemento-f">
                 <span class="fa-regular fa-film-canister icono-f"></span>
@@ -97,10 +95,10 @@
         <div class="h3">Plataformas</div>
         <div class="slider-t">
             <a href="../archivo/colecciones/kimetsu no yaiba/fr.html" class="elemento-t">
-                <span class="h5">Crunchyroll</span>
+                <img src="../../../../../imagenes/plataformas/crunchyroll.png">
             </a>
             <a href="../archivo/colecciones/kimetsu no yaiba/fr.html" class="elemento-t">
-                <span class="h5">Apple TV</span>
+                <img src="../../../../../imagenes/plataformas/apple-tv.png">
             </a>
         </div>
     </div>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../fuentes/iconos/css/all.min.css">
+    <link rel="stylesheet" href="../../css/barra-inferior.css">
+    <link rel="stylesheet" href="../../css/menu-general.css">
+    <title>Sobrenatural</title>
+</head>
+
+<body>
+<div class="seccion-encabezado">
+    <i class="fa-solid fa-arrow-left 🡰" onclick="history.back()"></i>
+    <div id="nombre" cd="sobrenatural" class="h1">Sobrenatural</div>
+</div>
+
+<div class="seccion">
+    <div class="wrapper">
+        <div class="boton">
+            <input type="radio" id="btnColecciones" name="opcion" onclick="toggleContent('colecciones')" checked>
+            <label for="btnColecciones">Colecciones</label>
+        </div>
+        <div class="boton">
+            <input type="radio" id="btnAnimes" name="opcion" onclick="toggleContent('animes')">
+            <label for="btnAnimes">Animes</label>
+        </div>
+        <div class="boton">
+            <input type="radio" id="btnPeliculas" name="opcion" onclick="toggleContent('peliculas')">
+            <label for="btnPeliculas">Películas</label>
+        </div>
+    </div>
+</div>
+
+<div id="coleccionesSection" style="display: block;">
+    <a href="../../colecciones/kimetsu no yaiba/icono.webp">
+        <div class="seccion-i">
+            <img class="icono-i" src="../colecciones/kimetsu no yaiba/icono.webp">
+            <div class="h2">Kimetsu no Yaiba</div>
+        </div>
+    </a>
+</div>
+
+<div id="animesSection" style="display: none;">
+    <a href="../animes/anohana/icono.webp">
+        <div class="seccion-i">
+            <img class="icono-i" src="../animes/anohana/icono.webp">
+            <div class="h2">Anohana</div>
+        </div>
+    </a>
+</div>
+
+<div id="peliculasSection" style="display: none;">
+    <div class="seccion">
+        <section class="cuadricula-2">
+        <a href="akira/ft.html" class="boton-c">
+            <img class="boton-c-poster" src="../peliculas/el tiempo contigo/poster.webp">
+            <div class="hp-2">El tiempo contigo</div>
+        </a>
+</div>
+
+<div class="seccion-ultima"></div>
+<div class="barra-inferior">
+    <a href="../../minijuegos/minijuegos.html"><i class="fa-regular fa-joystick icono-b" onclick="change(this)"></i></a>
+    <a href="../../inicio/inicio.html"><i class="fa-regular fa-home icono-b" onclick="change(this)"></i></a>
+    <a href="../../archivo/archivo.html"><i class="fa-regular fa-folders icono-b-activo" onclick="change(this)"></i></a>
+</div>
+
+<script src="../../js/configuracion.js"></script> 
+</body>
+
+</html>

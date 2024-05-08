@@ -11,12 +11,13 @@
 
 <body>
     <div class="seccion-encabezado">
+        <i class="fa-solid fa-arrow-left 🡰" onclick="history.back()"></i>
         <div class="h1">Mi Perfil</div>
     </div>
 
     <div class="hf-2">Mi área</div>
     
-    <a href="../../archivo/favoritos/lista de favoritos.html">
+    <a href="favoritos/lista de favoritos.html">
         <div class="seccion-f">
             <i class="fa-regular fa-star icono-f"></i>
             <div class="hf-3">Lista de favoritos</div>
@@ -38,17 +39,17 @@
         <i class="fa-regular fa-moon-over-sun icono-f"></i>
         <div class="hf-3">Modo Oscuro</div>
         <div class="btn-container">
-            <input type="checkbox" id="interruptor-modo" class="visually-hidden">
+            <input type="checkbox" id="interruptor-modo" class="visually-hidden interruptor-checkbox">
             <label for="interruptor-modo" class="interruptor"></label>
         </div>
     </div>
-
+    
     <div class="seccion-f">
         <i class="fa-regular fa-volume icono-f"></i>
         <div class="hf-3">Sonidos en la App</div>
         <div class="btn-container">
-            <input type="checkbox" id="interruptor-sonido" class="visually-hidden" checked>
-            <label for="interruptor-sonido" class="interruptor2"></label>
+            <input type="checkbox" id="interruptor-sonido" class="visually-hidden interruptor-checkbox" checked>
+            <label for="interruptor-sonido" class="interruptor"></label>
         </div>
         <audio id="correctSound"></audio>
         <audio id="incorrectSound"></audio>

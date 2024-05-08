@@ -26,7 +26,7 @@ body {
 .seccion-pregunta {
     padding: 20px;
     border: 3px solid #dfdfdf;
-    border-radius: 20px;
+    border-radius: 15px;
     margin: 35px 3% 3% 3%;
     text-align: center;
 }
@@ -53,15 +53,36 @@ body {
 }
   
 .h2 {
-    background-color: #e2e2e2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 20px;
     height: 20px;
     padding: 10px;
     border-radius: 15px;
     position: absolute;
     left: 50%;
+    color: black;
     transform: translate(-50%, -110%);
+    background-color: #e2e2e2;
 }
+
+.h2.correcto {
+    background-color: #5cb85c;
+    color: white;
+    transition : all 0.3s ease;
+}
+
+.h2.incorrecto {
+    background-color: #ff0000;
+    color: white;
+    transition : all 0.3s ease;
+}
+
+
+
+
+
 
 .h3 {
     font-size: 18px;
@@ -85,17 +106,25 @@ body {
 
 /* Barra de Progreso */
 .progreso-container {
-    background-color: #e2e2e2;
     border-radius: 10px;
     overflow: hidden;
+    border: 3px solid #e2e2e2e2;
 }
 
 .progreso {
     height: 15px;
-    background-color: #ff0000;
+    background-color: #e2e2e2;
     border-radius: 10px;
     transition: width 0.3s ease-in-out;
 }
+.progreso.correcto {
+    background-color: #5cb85c;
+}
+.progreso.incorrecto {
+    background-color: #ff0000;
+}
+
+
 
 /* Botones */
 .boton {
@@ -104,7 +133,7 @@ body {
     border: none;
     padding: 15px 20px;
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 15px;
     margin: 10px 0px 10px;
     display: block;
     width: 100%;
@@ -138,13 +167,18 @@ body {
     width: 100%;
     margin: 5
 }
-
 .question-image {
     padding-top: 10px;
     max-width: 40%;
     height: auto;
     border-radius: 10px;
     animation: barrido-desde-arriba 0.4s ease-in-out forwards;
+}
+.logo {
+    max-width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 15px;
 }
 
 /* MODO OSCURO */
@@ -159,11 +193,36 @@ body.modo-oscuro {
     color: rgb(255, 255, 255);
 }
 .modo-oscuro .progreso-container {
-    background-color: #222222;
+    border: solid 3px #222222;
+    background-color: #000000;
 }
 .modo-oscuro .progreso {
-    background-color: #ff0033;
+    background-color: #222222;
 }
+
+
+.modo-oscuro .progreso.correcto {
+    background-color: #5cb85c;
+}
+.modo-oscuro .progreso.incorrecto {
+    background-color: #ff0000;
+}
+
+
+.modo-oscuro .h2.correcto {
+    background-color: #5cb85c;
+    color: white;
+    transition : all 0.3s ease;
+}
+
+.modo-oscuro  .h2.incorrecto {
+    background-color: #ff0000;
+    color: white;
+    transition : all 0.3s ease;
+}
+
+
+
 .modo-oscuro .h1 {
     color: rgb(255, 255, 255);
 }

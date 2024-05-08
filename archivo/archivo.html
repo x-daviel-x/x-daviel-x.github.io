@@ -6,6 +6,7 @@
     <link rel="icon" type="image/x-icon" href="../imagenes/favicon.ico">
     <link rel="stylesheet" href="../css/barra-inferior.css">
     <link rel="stylesheet" href="../css/menu-general.css">
+    <link rel="stylesheet" href="../css/barra-busqueda.css">
     <title>Archivo</title>
 </head>
 
@@ -13,6 +14,18 @@
     <div class="seccion-encabezado">
         <div class="h1">Archivo</div>
     </div>
+
+        <div class="seccion">
+            <div class="input-container">
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="🔍︎ Busca aquí..." autofocus>
+                </div>
+                <a onclick="toggleContent('Inicio')" id="btnInicio" class="fa-regular fa-circle-x icono-f"></a>
+            </div>
+            <div class="seccion-resultados">
+                <ul class="results" id="resultsList"></ul>
+            </div>
+        </div>
 
     <a href="colecciones/lista de colecciones.html">
         <div class="seccion-f">
@@ -56,14 +69,13 @@
 
     <div class="seccion-ultima"></div>
 
-
     <div class="barra-inferior">
         <a href="../minijuegos/minijuegos.html"><i class="fa-regular fa-joystick icono-b" onclick="change(this)"></i></a>
         <a href="../inicio/inicio.html"><i class="fa-regular fa-home icono-b" onclick="change(this)"></i></a>
         <a href="#"><i class="fa-solid fa-folders icono-b  icono-b" onclick="change(this)"></i></a>
     </div>
 
-    <script src="../js/redireccion.js"></script>   
+    <script src="../js/barra-busqueda.js"></script>
     <script src="../js/configuracion.js"></script>    
 </body>
 </html>

@@ -8,7 +8,7 @@ const incorrectSound = document.getElementById("incorrectSound");
 
 let currentQuestionIndex = -1; 
 let score = 0;
-const maxQuestions = 4; // Límite de preguntas
+const maxQuestions = 10; // Límite de preguntas
 const questionTime = 15; // Tiempo por pregunta en segundos
 let countdownTimer;
 let questions = [
@@ -336,6 +336,17 @@ function showNextQuestion() {
         button.disabled = false;
     });
 
+    const h2Elements = document.querySelectorAll('.h2');
+    h2Elements.forEach((element) => {
+        element.classList.remove('correcto', 'incorrecto');
+    });
+
+    const BarraP = document.querySelectorAll('.progreso');
+    BarraP.forEach((element) => {
+        element.classList.remove('correcto', 'incorrecto');
+    });
+
+
     if (currentQuestionIndex < maxQuestions && currentQuestionIndex < questions.length) {
         const question = questions[currentQuestionIndex];
         questionText.textContent = question.question;
@@ -387,6 +398,8 @@ function handleTimeout() {
     message.textContent = "✖";
     incorrectSound.play(); // Reproduce el sonido de respuesta incorrecta
     selectedButton.classList.add("incorrecto");
+    message.classList.add("incorrecto");
+    progressBar.classList.add("incorrecto");
 
     disableOptions();
 
@@ -401,7 +414,7 @@ function checkAnswer(selectedIndex) {
     clearInterval(countdownTimer); // Detener la cuenta regresiva
 
     if (currentQuestionIndex >= maxQuestions) {
-        return; // Evita que se sigan procesando respuestas después de las 3 preguntas
+        return; // Evita que se sigan procesando respuestas
     }
 
     const question = questions[currentQuestionIndex];
@@ -412,10 +425,14 @@ function checkAnswer(selectedIndex) {
         message.textContent = "✔";
         correctSound.play(); // Reproduce el sonido de respuesta correcta
         selectedButton.classList.add("correcto");
+        message.classList.add("correcto");
+        progressBar.classList.add("correcto");
     } else {
         message.textContent = "✖";
         incorrectSound.play(); // Reproduce el sonido de respuesta incorrecta
         selectedButton.classList.add("incorrecto");
+        message.classList.add("incorrecto");
+        progressBar.classList.add("incorrecto");
     }
 
     scoreDisplay.textContent = score + " ⭐";

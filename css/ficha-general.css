@@ -12,124 +12,63 @@ body {
 }
 
 /* SECCIONES */
-.primera-seccion {
-    border-radius: 20px;
-    text-align: center;
-    margin: 3%;
-    animation: barrido-desde-arriba 0.3s ease-in-out forwards;
-}
-
-.seccion-inicial {
-    margin: 3%;
-    animation: barrido-desde-arriba 0.6s ease-in-out forwards;
-}
-
 .seccion {
     margin: 3%;
     transition : all .4s 0s ease;
 }
-
 .seccion-ultima {
     padding: 40px;
 }
 
-
-
-/* TEXTO */
-/* Parte Inicial */
-.h1 {
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-    vertical-align: middle;
-    position: fixed;
-    left: 75px;
-    bottom: 40px;
-    text-shadow: 0px 0px 10px black;
+/* PARTE INICIAL */
+.seccion-inicial {
+    margin: 3%;
+    position: relative;
 }
-
-.h2 {
-    font-size: 18px;
-    color: white;
-    vertical-align: middle;
-    position: fixed;
-    left: 75px;
-    bottom: 20px;
-    text-shadow: 0px 0px 10px black;
+.poster {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 200px;
+    object-fit: cover;
+    mask-image: linear-gradient(to top, transparent 0%, black 20%);
 }
-
-/* Ficha Técnica */
-.h3 {
-    font-size: 20px;
-    font-weight: bold;
-    padding-bottom: 5px;
+.poster-p {
+    width: 100%;
+    height: 450px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    mask-image: linear-gradient(to top, transparent 0%, black 20%);
+    object-fit: cover;
 }
-
-.h4 {
-    font-size: 16px;
-    color: #333333;
-    display: inline-block;
-}
-
-.h5 {
-    font-size: 16px;
-    background-color: #e2e2e2;
-    border-radius: 25px;
-    padding: 10px;
-    white-space: nowrap;
-}
-
-/* Datos Curiosos */
-.h-d1 {
-    font-size: 18px;
-    font-weight: bold;
-    padding-bottom: 5px;
-}
-
-.h-d2 {
-    font-size: 16px;
-    color: #333333;
-    display: inline-block;
-}
-
-
-
-/* ELEMENTOS DE LAS SECCIONES */
-/* Sección Inicial */
 .🡰 {
     font-size: 30px;
     background: #e2e2e2;
     padding: 5px 8px;
-    position: fixed;
     top: 0px;
     left: 0px;
-    border-radius: 18px 0px 10px 0px;
+    border-radius: 14px 0px 10px 0px;
+    position: absolute;
+    z-index: 1;
 }
-
 .⭐ {
+    position: absolute;
     font-size: 20px;
     background: #e2e2e2;
     padding: 5px 10px;
-    position: fixed;
-    top: 5px;
-    right: 5px;
+    top: 3px;
+    right: 3px;
+    border-radius: 12px;
+    z-index: 3;
+}
+.logo {
+    position: absolute;
+    height: 80px;
+    bottom: 0px;
+    left: 0px;
+    filter: drop-shadow(0px 0px 6px);
     border-radius: 15px;
 }
-
-.poster {
-    width: 100%;
-    border-radius: 20px;
-    height: 200px;
-    object-fit: cover;
-}
-
-.poster-p {
-    width: 100%;
-    height: 450px;
-    border-radius: 20px;
-    object-fit: cover;
-}
-
 .icono-i {
     display: flex;
     position: fixed;
@@ -139,47 +78,58 @@ body {
     border-radius: 20px;
     box-shadow: 0px 0px 10px #999999;
 }
-
-/* Interruptor de Ficha Técnica y Datos Curiosos */
-.cuadricula {
-    border-width: 10px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    text-align: center;
-    gap: 10px;
+.h1 {
+    position: absolute;
+    left: 8px;
+    bottom: 8px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0px 0px 5px gray;
+}
+.h2 {
+    position: absolute;
+    left: 8px;
+    bottom: 35px;
+    font-size: 18px;
+    color: white;
+    text-shadow: 0px 0px 5px gray;
 }
 
+
+
+/* INTERRUPTORES */
 .wrapper {
     display: flex;
     gap: 10px;
     text-align: center;
 }
-
 .boton {
     flex-grow: 1;
+    width: 150px; /* Ancho fijo para los botones */
 }
-  
 .boton input[type=radio] {
     display: none;
 }
-  
 .boton label {
     display: block;
-    padding: 15px 10px;
+    padding: 15px 0px;
     background-color: #e2e2e2;
     color: black;
     font-size: 18px;
     border: 3px solid #e2e2e2;
-    border-radius: 20px;
+    border-radius: 15px;
     transition : all .3s 0s ease;
 }
-  
 .boton input[type=radio]:checked + label {
     background-color: #f2f2f2;
-    border-radius: 20px;
     border: 3px solid #e2e2e2;
+    border-radius: 15px;
 }
 
+
+
+/* FICHA TÉCNICA */
 /* Deslizador de Iconos de Fuente */
 .slider-f {
     display: grid;
@@ -189,33 +139,42 @@ body {
     justify-items: center;
     gap: 10px;
 }
-
 .elemento-f {
     display: grid;
-    width: 100px;
+    width: 25vw;
 }
-
 .icono-f {
     font-size: 30px;
-    display: inline-block;
     vertical-align: middle;
     padding-bottom: 5px;
 }
-
-/* Deslizador de Géneros */
+/* Deslizador de Géneros y Plataformas */
 .slider-t {
     display: flex;
     overflow-x: auto;
     gap: 5px;
     scroll-snap-type: x mandatory;
 }
-
 .elemento-t {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    padding: 0px;
+    justify-content: center;
+    background-color: #e2e2e2;
+    border-radius: 15px;
+    padding: 10px;
+}
+.elemento-t img {
+    height: 25px; 
+}
+.h4 {
+    font-size: 18px;
+    color: #333333;
+    display: inline-block;
+}
+.h5 {
+    font-size: 16px;
+    white-space: nowrap;
 }
 
 /* Sección Trailer */
@@ -223,26 +182,93 @@ body {
     position: relative;
     padding-bottom: 50%;
 }
-  
 .trailer iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 20px;
+    border-radius: 15px;
+}
+.h3 {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 5px;
 }
 
-/* Datos Curiosos */
+
+
+/* DATOS CURIOSOS */
 .dato {
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 15px;
     border: 3px solid #dfdfdf;
 }
 .imagen {
     max-width: 100%;
-    border-radius: 15px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+.h-d1 {
+    font-size: 18px;
+    font-weight: bold;
     padding-bottom: 5px;
+}
+.h-d2 {
+    font-size: 16px;
+    color: #333333;
+    display: inline-block;
+}
+
+
+
+/* Sección Lista */
+.elemento-l {
+    background-color: #e2e2e2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 10px auto;
+    animation: barrido-desde-arriba-barra 0.3s ease-in-out forwards;
+}
+.icono-i-l {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 25%;
+    object-fit: cover;
+}
+
+/* Sección Películas */
+.cuadricula-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Mínimo 200px, máximo 1fr */
+    grid-gap: 10px;
+    text-align: center;
+}
+.boton-c {
+    position: relative;
+    border-radius: 15px;
+}
+.boton-c-poster {
+    width: 100%;
+    height: 250px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+.hp-2 {
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 10px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 5px;
+    font-size: 16px;
+    background: #e2e2e2;
+    border-radius: 0px 0px 15px 15px;
 }
 
 
@@ -252,14 +278,14 @@ body.modo-oscuro {
     background-color: #000000;
 }
 .modo-oscuro .🡰 {
-    background: #000000;
+    background: #222222;
     color: white;
 }
 .modo-oscuro .icono-f {
     color: white;
 }
 .modo-oscuro .⭐ {
-    background: #000000;
+    background: #222222;
     color: white;
 }
 .modo-oscuro .h1 {
@@ -293,6 +319,19 @@ body.modo-oscuro {
 }
 .modo-oscuro .h-d2 {
     color: #c8c8c8;
+}
+.modo-oscuro .hp-2 {
+    color: rgb(228, 228, 228);
+    background-color: #222222;
+}
+.modo-oscuro .elemento-t {
+    background-color: #222222;
+}
+.modo-oscuro .elemento-l {
+    background-color: #222222;
+}
+.modo-oscuro .boton-c {
+    background-color: #222222;
 }
 
 /* ANIMACIONES */

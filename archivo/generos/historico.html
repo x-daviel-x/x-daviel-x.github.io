@@ -12,66 +12,77 @@
 <body>
 <div class="seccion-encabezado">
     <i class="fa-solid fa-arrow-left 🡰" onclick="history.back()"></i>
-    <div class="h1">Histórico</div>
+    <div id="nombre" cd="historico" class="h1">Histórico</div>
 </div>
 
-<div class="hd-2">Colecciones</div>
-<a href="../../colecciones/kimetsu no yaiba/icono.webp">
-    <div class="seccion-i">
-        <img class="icono-i" src="../colecciones/kimetsu no yaiba/icono.webp">
-        <div class="h2">Kimetsu no Yaiba</div>
+<div class="seccion">
+    <div class="wrapper">
+        <div class="boton">
+            <input type="radio" id="btnColecciones" name="opcion" onclick="toggleContent('colecciones')" checked>
+            <label for="btnColecciones">Colecciones</label>
+        </div>
+        <div class="boton">
+            <input type="radio" id="btnAnimes" name="opcion" onclick="toggleContent('animes')">
+            <label for="btnAnimes">Animes</label>
+        </div>
+        <div class="boton">
+            <input type="radio" id="btnPeliculas" name="opcion" onclick="toggleContent('peliculas')">
+            <label for="btnPeliculas">Películas</label>
+        </div>
     </div>
-</a>
+</div>
 
+<div id="coleccionesSection" style="display: block;">
+    <a href="../../colecciones/kimetsu no yaiba/icono.webp">
+        <div class="seccion-i">
+            <img class="icono-i" src="../colecciones/kimetsu no yaiba/icono.webp">
+            <div class="h2">Kimetsu no Yaiba</div>
+        </div>
+    </a>
+</div>
 
+<div id="animesSection" style="display: none;">
+    <a href="../animes/akatsuki no yona/icono.webp">
+        <div class="seccion-i">
+            <img class="icono-i" src="../animes/akatsuki no yona/icono.webp">
+            <div class="h2">Akatsuki no Yona</div>
+        </div>
+    </a>
 
-<div class="hd-2">Animes</div>
+    <a href="../animes/berserk/icono.webp">
+        <div class="seccion-i">
+            <img class="icono-i" src="../animes/berserk/icono.webp">
+            <div class="h2">Berserk</div>
+        </div>
+    </a>
 
-<a href="../animes/akatsuki no yona/icono.webp">
-    <div class="seccion-i">
-        <img class="icono-i" src="../animes/akatsuki no yona/icono.webp">
-        <div class="h2">Akatsuki no Yona</div>
+    <a href="../animes/samurai x/icono.webp">
+        <div class="seccion-i">
+            <img class="icono-i" src="../animes/samurai x/icono.webp">
+            <div class="h2">Samurái X</div>
+        </div>
+    </a>
+</div>
+
+<div id="peliculasSection" style="display: none;">
+    <div class="seccion">
+        <section class="cuadricula-2">
+        <a href="akira/ft.html" class="boton-c">
+            <img class="boton-c-poster" src="../peliculas/akira/poster.webp">
+            <div class="hp-2">Akira</div>
+        </a>
+        
+        <a href="../../archivo/colecciones/kimetsu no yaiba/animes/kimetsu no yaiba/ft.html" class="boton-c">
+            <img class="boton-c-poster" src="../peliculas/amor de gata/poster.webp">
+            <div class="hp-2">Amor de gata</div>
+        </a>
+        
+        <a href="../../archivo/peliculas/akira/ft.html" class="boton-c">
+            <img class="boton-c-poster" src="../peliculas/el castillo en el cielo/poster.webp">
+            <div class="hp-2">El castillo en el cielo</div>
+        </a>
     </div>
-</a>
-
-<a href="../animes/berserk/icono.webp">
-    <div class="seccion-i">
-        <img class="icono-i" src="../animes/berserk/icono.webp">
-        <div class="h2">Berserk</div>
-    </div>
-</a>
-
-<a href="../animes/samurai x/icono.webp">
-    <div class="seccion-i">
-        <img class="icono-i" src="../animes/samurai x/icono.webp">
-        <div class="h2">Samurái X</div>
-    </div>
-</a>
-
-
-
-<div class="hd-2">Películas</div>
-
-<a href="../peliculas/hiroshima/icono.webp">
-    <div class="seccion-i">
-        <img class="icono-i" src="../peliculas/hiroshima/icono.webp">
-        <div class="h2">Hiroshima</div>
-    </div>
-</a>
-
-<a href="../peliculas/la tumba de las luciérnagas/icono.webp">
-    <div class="seccion-i">
-        <img class="icono-i" src="../peliculas/la tumba de las luciérnagas/icono.webp">
-        <div class="h2">La tumba de las luciérnagas</div>
-    </div>
-</a>
-
-<a href="../peliculas/se levanta el viento/icono.webp">
-    <div class="seccion-i">
-        <img class="icono-i" src="../peliculas/se levanta el viento/icono.webp">
-        <div class="h2">Se levanta el viento</div>
-    </div>
-</a>
+</div>
 
 <div class="seccion-ultima"></div>
 <div class="barra-inferior">

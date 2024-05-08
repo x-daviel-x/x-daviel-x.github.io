@@ -23,7 +23,7 @@ body {
 }
 
 .seccion {
-    margin: 3% 3% 30px;
+    margin: 3%;
     animation: barrido-desde-arriba 0.4s ease-in-out forwards;
 }
 
@@ -53,25 +53,24 @@ body {
     text-overflow: ellipsis;
 }
 
-.h2 {
+.hb-2 {
     font-size: 18px;
     vertical-align: middle;
     padding: 0px 10px;
 }
 
-.hc-2 {
+.hp-2 {
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 10px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 5px;
     font-size: 18px;
-    color: black;
+    background: #e2e2e2;
+    border-radius: 0px 0px 15px 15px;
 }
-
-.hc-200 {
-    font-size: 20px;
-    font-weight: bold;
-    vertical-align: middle;
-    padding: 0px 20px;
-    text-shadow: rgb(207, 207, 207) 0px 0px 6px;
-}
-
 
 
 /* ELEMENTOS DE LAS SECCIONES */
@@ -96,7 +95,7 @@ body {
 .cuadricula-1 {
     margin: 10px auto;
     display: grid;
-    grid-template-columns: repeat(1, 1fr); /* Mínimo 200px, máximo 1fr */
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 10px;
     justify-items: center;
     text-align: center;
@@ -104,14 +103,14 @@ body {
 
 .cuadricula-2 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Mínimo 200px, máximo 1fr */
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
     text-align: center;
 }
 
 .cuadricula-3 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Mínimo 200px, máximo 1fr */
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     text-align: center;
 }
@@ -123,10 +122,14 @@ body {
     width: 100%;
     background-color: #e2e2e2;
     font-size: 14px;
-    border-radius: 20px;
+    border-radius: 15px;
     animation: button-shimmer 1s infinite;
     transition: all 0.2s ease-in-out;
     padding: 25px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .boton-img {
@@ -134,15 +137,13 @@ body {
     padding-bottom: 10px;
     border-radius: 10px;
     object-fit: cover;
+    display: flex;
     filter: brightness(0) grayscale(100%);
 }
 
 .boton-c {
-    padding: 8px;
-    font-size: 14px;
-    border-radius: 20px;
-    animation: button-shimmer 1s infinite;
-    transition: all 0.2s ease-in-out;
+    position: relative;
+    border-radius: 15px;
 }
 
 .boton-c-img {
@@ -154,8 +155,8 @@ body {
 
 .boton-c-poster {
     width: 100%;
-    height: 200px;
-    border-radius: 10px;
+    height: 250px;
+    border-radius: 15px;
     object-fit: cover;
 }
 
@@ -181,11 +182,12 @@ body.modo-oscuro {
 .modo-oscuro .h1 {
     color: rgb(255, 255, 255);
 }
-.modo-oscuro .h2 {
+.modo-oscuro .hb-2 {
     color: rgb(228, 228, 228);
 }
-.modo-oscuro .hc-2 {
+.modo-oscuro .hp-2 {
     color: rgb(228, 228, 228);
+    background-color: #222222;
 }
 .modo-oscuro .icono-i {
     filter: brightness(10%);
@@ -193,11 +195,8 @@ body.modo-oscuro {
 .modo-oscuro .boton {
     background-color: #222222;
 }
-.modo-oscuro .boton-c {
-    background-color: #222222;
-}
 .modo-oscuro .boton-img {
-    filter: brightness(1000%) grayscale(100%);
+    filter: grayscale(1) brightness(10.5);
 }
 
 

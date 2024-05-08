@@ -9,7 +9,7 @@ const questionImage = document.getElementById("questionImage");
 
 let currentQuestionIndex = -1;
 let score = 0;
-const maxQuestions = 2; // Límite de preguntas
+const maxQuestions = 10; // Límite de preguntas
 const questionTime = 15; // Tiempo por pregunta en segundos
 let countdownTimer;
 let questions = [
@@ -372,7 +372,7 @@ function showNextQuestion() {
     questionImage.src = question.image;
 
     // Reinicia el estilo de la imagen
-    questionImage.style.filter = "brightness(20%)";
+    questionImage.style.filter = "drop-shadow(2px 4px 6px red) brightness(20%)";
 
     for (let i = 0; i < optionButtons.length; i++) {
         optionButtons[i].textContent = question.options[i];
